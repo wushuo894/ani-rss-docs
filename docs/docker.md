@@ -16,7 +16,7 @@
 
 [使用文档](https://docs.wushuo.top/docs)
 
-![Xnip2024-10-15_20-41-53.jpg](./image/Xnip2024-10-15_20-41-53.jpg)
+![Xnip2024-11-05_05-31-50.png](./image/Xnip2024-11-05_05-31-50.png)
 
 默认 用户名: admin 密码: admin
 
