@@ -79,7 +79,7 @@ docker compose up -d
 
 ### Container Manager 部署
 
-![Xnip2024-09-26_20-25-16.jpg](https://docs.wushuo.top/image/Xnip2024-09-26_20-25-16.jpg)
+![Xnip2024-09-26_20-25-16.jpg](./image/Xnip2024-09-26_20-25-16.jpg)
 
 在注册表搜索 **ani-rss** 选择第一个 wushuo894/ani-rss 并下载
 
@@ -97,7 +97,7 @@ docker compose up -d
 设置 配置文件存放位置 /config
 设置 番剧存放位置(和你的QB保持一致,/Media 仅作示例) /Media
 
-![Xnip2024-09-26_20-39-43.jpg](https://docs.wushuo.top/image/Xnip2024-09-26_20-39-43.jpg)
+![Xnip2024-09-26_20-39-43.jpg](./image/Xnip2024-09-26_20-39-43.jpg)
 
 确认配置无误后点击完成
 
@@ -105,15 +105,5 @@ docker compose up -d
 
 默认 用户名:admin 密码:admin
 
-<hr style="height: 1px;">
-<div>
-<div style="display: flex;">
-<img src="./image/tr.png" alt="transmission" width="60">
-<img src="./image/qb.png" alt="qbittorrent" width="60">
-<img src="./image/aria2.png" alt="qbittorrent" width="60">
-</div>
-
-<p>支持 <strong>Transmission</strong> <strong>qBittorrent</strong> <strong>Aria2</strong></p>
-</div>
 
 
