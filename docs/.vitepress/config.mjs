@@ -9,8 +9,8 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         logo: '/mikan-pic.png',
         nav: [
-            {text: 'Home', link: '/'},
-            {text: 'Examples', link: '/start'}
+            {text: '首页', link: '/'},
+            {text: '快速开始', link: '/start'}
         ],
         sidebar: [
             {
