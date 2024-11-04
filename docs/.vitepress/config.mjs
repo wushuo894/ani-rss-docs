@@ -52,6 +52,7 @@ export default defineConfig({
             level: 'deep',
             label: '页面导航'
         },
+        head: [['link', { rel: 'icon', href: '/mikan-pic.png' }]]
     },
     lastUpdated: true,
     markdown: {
