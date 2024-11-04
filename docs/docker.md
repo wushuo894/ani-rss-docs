@@ -36,7 +36,7 @@ ps: 如果需要开启 文件已下载自动跳过 功能 请确保 qBittorrent 
 
 ### Docker 部署
 
-```md
+```bash
 docker run -d \
 --name ani-rss \
 -v /volume1/docker/ani-rss/config:/config \
@@ -73,7 +73,7 @@ services:
 
 启动容器
 
-```shell
+```bash
 docker compose up -d
 ```
 

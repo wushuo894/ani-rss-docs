@@ -30,20 +30,20 @@
 
 ##### Windows
 
-```md
+```bash
 winget install 'OpenJDK 11'
 ```
 
 ##### Linux
 
-```md
+```bash
 sudo apt update
 sudo apt install openjdk-11-jdk
 ```
 
 #### macOS
 
-```md
+```bash
 brew update
 brew install openjdk@11
 ```
@@ -52,7 +52,7 @@ brew install openjdk@11
 
 下载最新的 **ani-rss-jar-with-dependencies.jar** [链接](https://github.com/wushuo894/ani-rss/releases/latest)
 
-```md
+```bash
 java -jar -Xmx1g ./ani-rss-jar-with-dependencies.jar --port 7789
 ```
 
@@ -60,7 +60,7 @@ java -jar -Xmx1g ./ani-rss-jar-with-dependencies.jar --port 7789
 
 #### 脚本运行 支持自动重启
 
-```md
+```bash
 wget https://github.com/wushuo894/ani-rss/raw/master/docker/run.sh
 sudo chmod -R 777 ./run.sh
 sudo bash ./run.sh
