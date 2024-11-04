@@ -26,7 +26,9 @@
 | CONFIG | 配置文件存放位置 | /config       |
 | TZ     | 时区       | Asia/Shanghai |
 
-ps: 如果需要开启 文件已下载自动跳过 功能 请确保 qBittorrent 与本程序 docker 映射挂载路径一致
+::: warning
+如果需要开启 文件已下载自动跳过 功能 请确保 qBittorrent 与本程序 docker 映射挂载路径一致
+:::
 
 ## 视频教程
 

@@ -14,7 +14,6 @@ export default defineConfig({
         ],
         sidebar: [
             {
-                text: 'Examples',
                 items: [
                     {text: '快速开始', link: '/start'},
                     {text: 'Docker部署', link: '/docker'},
@@ -31,9 +30,33 @@ export default defineConfig({
         search: {
             provider: 'local'
         },
+        docFooter: {
+            prev: '上一篇',
+            next: '下一篇'
+        },
+        darkModeSwitchLabel: '外观',
+        returnToTopLabel: '返回顶部',
+        sidebarMenuLabel: '菜单',
+        editLink: {
+            pattern: 'https://github.com/wushuo894/ani-rss-docs/edit/main/docs/:path',
+            text: '在 GitHub 上编辑此页面'
+        },
+        lastUpdated: {
+            text: '最后更新于',
+            formatOptions: {
+                dateStyle: 'short',
+                timeStyle: 'medium'
+            }
+        },
         outline: {
-            level: 'deep'
-        }
+            level: 'deep',
+            label: '页面导航'
+        },
     },
-    lastUpdated: true
+    lastUpdated: true,
+    markdown: {
+        image: {
+            lazyLoading: true
+        }
+    }
 })
