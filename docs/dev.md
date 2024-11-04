@@ -87,7 +87,7 @@ pnpm run build
 
 #### 3. 将`ani-rss-update.exe`放入`/src/main/resources/`
 
-你可以从[https://github.com/wushuo894/ani-rss-update/](https://github.com/wushuo894/ani-rss-update/)下载它
+你可以从[https://github.com/wushuo894/ani-rss-update](https://github.com/wushuo894/ani-rss-update)下载它
 
 #### 4. 编译后端代码
 
