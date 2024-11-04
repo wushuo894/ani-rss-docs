@@ -78,4 +78,4 @@ sudo bash ./run.sh
 
 使用矿神套件源 `https://spk7.imnks.com` , 搜索 `ani-rss` 安装
 
-![Xnip2024-09-09_08-15-17.jpg](./image/Xnip2024-09-09_08-15-17.jpg)
+![Xnip2024-11-05_05-41-50.png](./image/Xnip2024-11-05_05-41-50.png)
