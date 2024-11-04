@@ -4,7 +4,9 @@
 
 ### Windows 端口被占用
 
+```log
 BindException: Address already in use: bind
+```
 
 可能是 Hyper-V 随机占用端口导致的
 
