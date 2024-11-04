@@ -264,7 +264,9 @@ url: http://[IP]:7789/api/web_hook
 
 设置ApiKey后请将url改为
 
-    http://[IP]:7789/api/web_hook?s=[ApiKey]
+```md
+http://[IP]:7789/api/web_hook?s=[ApiKey]
+```
 
 保持emby与ani-rss的映射路径一致可以有更好的效果
 
