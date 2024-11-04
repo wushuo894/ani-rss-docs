@@ -12,7 +12,7 @@ BindException: Address already in use: bind
 
     --port [端口号 如 13888]
 
-![PixPin_2024-10-17_03-37-35.png](image/PixPin_2024-10-17_03-37-35.png)
+<img src="./image/PixPin_2024-10-17_03-37-35.png" alt="PixPin_2024-10-17_03-37-35.png" width="300">
 
 ### qBittorrent 未配置完成
 
