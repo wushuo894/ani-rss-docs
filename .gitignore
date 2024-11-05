@@ -46,3 +46,4 @@ logs
 *.log
 .git
 cache
+node_modules
