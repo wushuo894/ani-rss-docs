@@ -13,7 +13,7 @@ ANI-RSS
 
 <a href="start">快速开始</a>
 |
-<a href="docs">使用文档</a>
+<a href="add-rss">使用文档</a>
 |
 <a href="docker">Docker部署</a>
 |

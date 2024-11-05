@@ -20,9 +20,7 @@ export default defineConfig({
                 items: [
                     {text: '快速开始', link: '/start'},
                     {text: 'Docker部署', link: '/docker'},
-                    {text: '参与开发', link: '/dev'},
-                    {text: '常见问题', link: '/faq'},
-                    {text: '其他', link: '/other'}
+                    {text: '添加订阅', link: '/add-rss'},
                 ]
             },
             {
@@ -33,6 +31,13 @@ export default defineConfig({
                     {text: '代理设置', link: '/config/proxy'},
                     {text: '登录设置', link: '/config/login'},
                     {text: '通知', link: '/config/message'}
+                ]
+            },
+            {
+                items: [
+                    {text: '参与开发', link: '/dev'},
+                    {text: '常见问题', link: '/faq'},
+                    {text: '其他', link: '/other'}
                 ]
             }
         ],
