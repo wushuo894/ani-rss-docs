@@ -10,14 +10,15 @@ export default defineConfig({
         logo: '/mikan-pic.png',
         nav: [
             {text: '首页', link: '/'},
-            {text: '快速开始', link: '/start'}
+            {text: '快速开始', link: '/start'},
+            {text: '使用文档', link: '/docs'}
         ],
         sidebar: [
             {
                 items: [
                     {text: '快速开始', link: '/start'},
                     {text: 'Docker部署', link: '/docker'},
-                    {text: '使用说明', link: '/docs'},
+                    {text: '使用文档', link: '/docs'},
                     {text: '参与开发', link: '/dev'},
                     {text: '常见问题', link: '/faq'},
                     {text: '相关文章', link: '/other'}
