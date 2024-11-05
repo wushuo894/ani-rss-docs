@@ -156,9 +156,9 @@ S01E31.chs.ass
 │ ├─Season 1
 │ │ S1E3.mp4
 │ └─Season 01
-│ S01E04.mp4
-│ 安达与岛村(2020) S1E5.mp4
-│ 安达与岛村(2020) S01E06.mp4
+│   S01E04.mp4
+│   安达与岛村(2020) S1E5.mp4
+│   安达与岛村(2020) S01E06.mp4
 ```
 
 ::: warning
@@ -175,7 +175,7 @@ ani-rss:
 docker run -d \
 --name ani-rss \
 -v /volume1/docker/ani-rss/config:/config \
--v /volume2/Media/:/Media \
+-v /volume2/Media:/Media \
 -p 7789:7789 \
 -e PORT="7789" \
 -e CONFIG="/config" \
@@ -190,9 +190,11 @@ qbittorrent:
 docker run -d --name qbittorrent \
 -v /volume1/docker/qbittorrent/config:/config \
 -v /volume2/downloads:/downloads \
--v /volume2/Media/:/Media \
+-v /volume2/Media:/Media \
 -p 8080:8080 \
 -p 6881:6881 \
+-e TZ=Asia/Shanghai \
+--restart always \
 linuxserver/qbittorrent
 ```
 
