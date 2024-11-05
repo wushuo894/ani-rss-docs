@@ -11,7 +11,8 @@ export default defineConfig({
         nav: [
             {text: '首页', link: '/'},
             {text: '快速开始', link: '/start'},
-            {text: '使用文档', link: '/docs'}
+            {text: '使用文档', link: '/docs'},
+            {text: '常见问题', link: '/faq'}
         ],
         sidebar: [
             {
@@ -73,7 +74,7 @@ export default defineConfig({
             level: 'deep',
             label: '页面导航'
         },
-        head: [['link', { rel: 'icon', href: '/favicon.ico' }]]
+        head: [['link', {rel: 'icon', href: '/favicon.ico'}]]
     },
     lastUpdated: true,
     markdown: {
