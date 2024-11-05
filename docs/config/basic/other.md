@@ -31,7 +31,9 @@ url: http://[IP]:7789/api/web_hook
 http://[IP]:7789/api/web_hook?s=[ApiKey]
 ```
 
+::: info
 保持emby与ani-rss的映射路径一致可以有更好的效果
+:::
 
 ### 禁止公网访问
 
