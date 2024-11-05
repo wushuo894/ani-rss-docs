@@ -23,7 +23,7 @@ ANI-RSS
 
 <p></p>
 
-<div style="display: flex;justify-content: center;">
+<div>
 <a href="https://github.com/wushuo894/ani-rss"><img src="https://img.shields.io/badge/-GitHub-181717?logo=github" alt="GitHub"></a>
 <img src="https://img.shields.io/github/license/wushuo894/ani-rss" alt="GitHub License">
 <a href="https://github.com/wushuo894/ani-rss/releases/latest"><img src="https://img.shields.io/github/v/release/wushuo894/ani-rss?color=blue&amp;label=download&amp;sort=semver" alt="GitHub release (latest SemVer)"></a>
@@ -31,11 +31,11 @@ ANI-RSS
 <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=_EKAkxs6Ld4fWcMNAbUQzcp4tv20vjVH&amp;authKey=KG3GAsZfKQosbAWkks%2FbEj0LCGwxoeLJ3DTU0loHkGdHLqHYgJNv3%2BmSERmYt47b&amp;noverify=0&amp;group_code=171563627"><img src="https://img.shields.io/static/v1?label=QQ%E7%BE%A4&amp;message=171563627&amp;color=blue" alt="qq-qun"></a>
 </div>
 
-<img src="./image/Xnip2024-11-05_05-31-50.png" alt="截图" width="900">
+<img src="./image/Xnip2024-11-05_05-31-50.png" alt="截图">
 
 <hr style="height: 1px;">
 
-<div style="display: flex;justify-content: center;">
+<div>
 <img src="./image/tr.png" alt="transmission" width="60">
 <img src="./image/qb.png" alt="qbittorrent" width="60">
 <img src="./image/aria2.png" alt="aria2" width="60">
@@ -51,4 +51,5 @@ ANI-RSS
 ```
 
 [投喂作者](https://afdian.com/a/wushuo894)
+
 

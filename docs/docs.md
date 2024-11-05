@@ -9,7 +9,7 @@
 #### 下载工具
 
 <div>
-<div style="display: flex;">
+<div>
 <img src="./image/tr.png" alt="transmission" width="60">
 <img src="./image/qb.png" alt="qbittorrent" width="60">
 <img src="./image/aria2.png" alt="qbittorrent" width="60">
