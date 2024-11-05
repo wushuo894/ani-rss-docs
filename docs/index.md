@@ -31,7 +31,7 @@ ANI-RSS
 <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&amp;k=_EKAkxs6Ld4fWcMNAbUQzcp4tv20vjVH&amp;authKey=KG3GAsZfKQosbAWkks%2FbEj0LCGwxoeLJ3DTU0loHkGdHLqHYgJNv3%2BmSERmYt47b&amp;noverify=0&amp;group_code=171563627"><img src="https://img.shields.io/static/v1?label=QQ%E7%BE%A4&amp;message=171563627&amp;color=blue" alt="qq-qun"></a>
 </div>
 
-<img src="./image/Xnip2024-11-05_05-31-50.png" alt="截图">
+<img src="./image/Xnip2024-11-05_05-31-50.png" alt="截图" id="index-img">
 
 <hr style="height: 1px;">
 
