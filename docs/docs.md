@@ -21,11 +21,17 @@
 
 | 名称           | 自动下载 | 下载时重命名 | 下载时复杂解构重命名 | 下载完成后重命名 |
 |--------------|------|--------|------------|----------|
-| qBittorrent  | √    | √      | √          | √        |
-| Transmission | √    | √      | ×          | √        |
-| Aria2        | √    | ×      | ×          | √        |
+| qBittorrent  | ✅    | ✅      | ✅          | ✅        |
+| Transmission | ✅    | ✅      | ❌          | ✅        |
+| Aria2        | ✅    | ❌      | ❌          | ✅        |
 
+::: info
 强烈推荐使用 **qBittorrent**
+:::
+
+::: warning
+**使用 Aria2 时，必须让 ani-rss 与 Aria2 路径保持一致才能自动重命名 详见** [docker映射挂载](#docker映射挂载)
+:::
 
 不支持下载时重命名会导致:
 
@@ -34,11 +40,13 @@
 
 `个人喜欢使用 Webhook 通知让` [EmbyPinyin](https://github.com/wushuo894/EmbyPinyin) `(我的另一个项目) 处理中文拼音首字母索引`
 
-**使用 Aria2 时，必须让 ani-rss 与 Aria2 路径保持一致才能自动重命名 详见** [docker映射挂载](#docker映射挂载)
-
 #### 保存位置
 
-下载器的保存位置 如果为空则 **不会进行下载**
+下载器的保存位置
+
+::: warning
+如果为空则 **不会进行下载**
+:::
 
 ### 剧场版保存位置
 
@@ -55,18 +63,18 @@
 
 ```md
 ├─A
-│  └─安达与岛村
-│      └─S01
-│              安达与岛村 S01E01.mp4
-│              安达与岛村 S01E02.mp4
-│              安达与岛村 S01E03.mp4
+│ └─安达与岛村
+│ └─S01
+│ 安达与岛村 S01E01.mp4
+│ 安达与岛村 S01E02.mp4
+│ 安达与岛村 S01E03.mp4
 │
 ├─B
-│  ├─BanG Dream! It's MyGO!!!!!
-│  │  └─S01
-│  │          BanG Dream! It's MyGO!!!!! S01E01.mp4
-│  │          BanG Dream! It's MyGO!!!!! S01E02.mp4
-│  │          BanG Dream! It's MyGO!!!!! S01E03.mp4
+│ ├─BanG Dream! It's MyGO!!!!!
+│ │ └─S01
+│ │ BanG Dream! It's MyGO!!!!! S01E01.mp4
+│ │ BanG Dream! It's MyGO!!!!! S01E02.mp4
+│ │ BanG Dream! It's MyGO!!!!! S01E03.mp4
 ```
 
 #### 季度
@@ -78,8 +86,6 @@
 防止同时下载任务过多导致qb卡死
 
 强烈建议视性能设置, 推荐 1-2
-
-**正在做种也会视为在下载中**
 
 #### qb保存路径
 
@@ -112,12 +118,18 @@ RSS更新检查的间隔，单位 分钟
 如:
 
 ```md
-2024-09-01 13:29:06.865 [rss-task-thread] INFO  ani.rss.util.TorrentUtil - 添加下载 Wonderful 光之美少女！ S01E31
-2024-09-01 13:29:06.866 [rss-task-thread] INFO  ani.rss.util.TorrentUtil - 下载种子 Wonderful 光之美少女！ S01E31
-2024-09-01 13:29:46.352 [rename-task-thread] INFO  ani.rss.util.TorrentUtil - 重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].mkv ==> Wonderful 光之美少女！ S01E31.mkv
-2024-09-01 13:29:46.362 [rename-task-thread] INFO  ani.rss.util.TorrentUtil - 重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].cht.ass ==> Wonderful 光之美少女！ S01E31.cht.ass
-2024-09-01 13:29:46.365 [rename-task-thread] INFO  ani.rss.util.TorrentUtil - 重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].chs.ass ==> Wonderful 光之美少女！ S01E31.chs.ass
-2024-09-01 13:38:49.392 [rename-task-thread] INFO  ani.rss.util.TorrentUtil - 删除已完成任务 Wonderful 光之美少女！ S01E31
+2024-09-01 13:29:06.865 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 添加下载 Wonderful 光之美少女！ S01E31
+2024-09-01 13:29:06.866 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 下载种子 Wonderful 光之美少女！ S01E31
+2024-09-01 13:29:46.352 [rename-task-thread] INFO ani.rss.util.TorrentUtil -
+重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].mkv ==> Wonderful 光之美少女！
+S01E31.mkv
+2024-09-01 13:29:46.362 [rename-task-thread] INFO ani.rss.util.TorrentUtil -
+重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].cht.ass ==> Wonderful 光之美少女！
+S01E31.cht.ass
+2024-09-01 13:29:46.365 [rename-task-thread] INFO ani.rss.util.TorrentUtil -
+重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].chs.ass ==> Wonderful 光之美少女！
+S01E31.chs.ass
+2024-09-01 13:38:49.392 [rename-task-thread] INFO ani.rss.util.TorrentUtil - 删除已完成任务 Wonderful 光之美少女！ S01E31
 ```
 
 ##### 重命名影响做种吗？
@@ -136,19 +148,18 @@ RSS更新检查的间隔，单位 分钟
 
 ```md
 ├─A
-│  └─安达与岛村
-│      ├─S1
-│      │       安达与岛村 S1E1.mp4
-│      ├─S01
-│      │       安达与岛村 S01E02.mp4
-│      ├─Season 1
-│      │       S1E3.mp4
-│      └─Season 01
-│              S01E04.mp4
-│              安达与岛村(2020) S1E5.mp4
-│              安达与岛村(2020) S01E06.mp4
+│ └─安达与岛村
+│ ├─S1
+│ │ 安达与岛村 S1E1.mp4
+│ ├─S01
+│ │ 安达与岛村 S01E02.mp4
+│ ├─Season 1
+│ │ S1E3.mp4
+│ └─Season 01
+│ S01E04.mp4
+│ 安达与岛村(2020) S1E5.mp4
+│ 安达与岛村(2020) S01E06.mp4
 ```
-
 
 ::: warning
 此选项 **必须启用自动重命名**。确保 **下载工具** 与 **ani-rss** 的 docker 映射挂载路径 **保持一致**
@@ -194,7 +205,6 @@ linuxserver/qbittorrent
 ![Xnip2024-11-05_06-13-47.png](image/Xnip2024-11-05_06-13-47.png)
 
 ![Xnip2024-11-05_06-13-22.png](image/Xnip2024-11-05_06-13-22.png)
-
 
 ::: warning
 确保 下载工具 与 ani-rss 的 docker 映射挂载路径一致
@@ -293,7 +303,7 @@ http://[IP]:7789/api/web_hook?s=[ApiKey]
 2024-09-03 14:26:01 INFO ani.rss.util.TorrentUtil - 下载种子 深夜冲击 S01E01
 2024-09-03 14:26:02 DEBUG ani.rss.util.TorrentUtil - 本地文件已存在 深夜冲击 S01E01
 2024-09-03 14:26:02 DEBUG ani.rss.util.TorrentUtil - {
-"title": "[ANi] Mayonaka Punch /  深夜 Punch - 02 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]",
+"title": "[ANi] Mayonaka Punch / 深夜 Punch - 02 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]",
 "reName": "深夜冲击 S01E02",
 "torrent": "https://mikanani.me/Download/20240715/1ef6e3168b72cef9a30edb9b97490158629ba7d0.torrent",
 "episode": 2
@@ -302,7 +312,7 @@ http://[IP]:7789/api/web_hook?s=[ApiKey]
 2024-09-03 14:26:02 INFO ani.rss.util.TorrentUtil - 下载种子 深夜冲击 S01E02
 2024-09-03 14:26:03 DEBUG ani.rss.util.TorrentUtil - 本地文件已存在 深夜冲击 S01E02
 2024-09-03 14:26:03 DEBUG ani.rss.util.TorrentUtil - {
-"title": "[ANi] Mayonaka Punch /  深夜 Punch - 03 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]",
+"title": "[ANi] Mayonaka Punch / 深夜 Punch - 03 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]",
 "reName": "深夜冲击 S01E03",
 "torrent": "https://mikanani.me/Download/20240722/ec1ec2faf5356d4b363e42d99b799d31450bc34d.torrent",
 "episode": 3
