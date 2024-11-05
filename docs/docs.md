@@ -284,7 +284,7 @@ http://[IP]:7789/api/web_hook?s=[ApiKey]
 192.168.*.*
 ```
 
-#### DEBUG
+### DEBUG
 
 可以看到 debug 级别的日志
 
