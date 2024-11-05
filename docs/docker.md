@@ -10,7 +10,7 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/wushuo894/ani-rss)
 </div>
 
-[使用文档](https://docs.wushuo.top/docs)
+[设置解读](/config/download)
 
 ![Xnip2024-11-05_05-31-50.png](./image/Xnip2024-11-05_05-31-50.png)
 
@@ -31,9 +31,16 @@
 [阿里云盘](https://www.alipan.com/s/eqt2XLZJThu)
 
 <div style="overflow-x: auto;">
-<div style="width: 560px;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y9-mgvnSnxs?si=CCz_58LaZu3mbpr5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+<iframe 
+width="560" 
+height="315" 
+src="https://www.youtube.com/embed/y9-mgvnSnxs?si=CCz_58LaZu3mbpr5" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen>
+</iframe>
 </div>
 
 ## Docker 部署

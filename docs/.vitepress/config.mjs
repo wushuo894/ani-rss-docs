@@ -11,18 +11,28 @@ export default defineConfig({
         nav: [
             {text: '首页', link: '/'},
             {text: '快速开始', link: '/start'},
-            {text: '使用文档', link: '/docs'},
+            {text: '设置解读', link: '/config/download'},
             {text: '常见问题', link: '/faq'}
         ],
         sidebar: [
             {
+                text: '开始使用',
                 items: [
                     {text: '快速开始', link: '/start'},
                     {text: 'Docker部署', link: '/docker'},
-                    {text: '使用文档', link: '/docs'},
                     {text: '参与开发', link: '/dev'},
                     {text: '常见问题', link: '/faq'},
-                    {text: '相关文章', link: '/other'}
+                    {text: '其他', link: '/other'}
+                ]
+            },
+            {
+                text: '设置解读',
+                items: [
+                    {text: '下载设置', link: '/config/download'},
+                    {text: '基本设置', link: '/config/basic'},
+                    {text: '代理设置', link: '/config/proxy'},
+                    {text: '登录设置', link: '/config/login'},
+                    {text: '通知', link: '/config/message'}
                 ]
             }
         ],

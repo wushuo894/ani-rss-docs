@@ -1,6 +1,18 @@
-<img alt="mikan-pic.png" height="80" width="80" src="./image/mikan-pic.png"/>
+<!--@include: /head.md-->
 
-## 相关文章
+## 其他
+
+### 关于剧场版
+
+若 `剧场版保存位置` 为空则使用 `保存位置`
+
+由于剧场版命名与文件结构各异, 故并不会使用重命名功能
+
+::: info
+Emby 会自动根据文件夹名获取正确的剧场版原数据，因此不重命名也不影响刮削
+:::
+
+### 相关文章
 
 [猫猫博客 Docker 部署 ani-rss 实现自动追番](https://catcat.blog/docker-ani-rss.html)
 
