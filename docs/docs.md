@@ -248,7 +248,9 @@ linuxserver/qbittorrent
 你可以在 [https://next.bgm.tv/demo/access-token](https://next.bgm.tv/demo/access-token)
 生成一个 Access Token
 
-设置 BgmToken 后支持自动点格子
+::: info
+设置 BgmToken 与 emby-webhook 后支持自动点格子
+:::
 
 #### Emby-Webhook通知设置
 
@@ -375,4 +377,8 @@ QQ邮箱 - 常规 - 第三方服务 - IMAP/SMTP服务
 若 `剧场版保存位置` 为空则使用 `保存位置`
 
 由于剧场版命名与文件结构各异, 故并不会使用重命名功能
+
+::: info
+Emby 会自动根据文件夹名获取正确的剧场版原数据，因此不重命名也不影响刮削
+:::
 
