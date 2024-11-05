@@ -117,7 +117,7 @@ RSS更新检查的间隔，单位 分钟
 
 如:
 
-```md
+```log
 2024-09-01 13:29:06.865 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 添加下载 Wonderful 光之美少女！ S01E31
 2024-09-01 13:29:06.866 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 下载种子 Wonderful 光之美少女！ S01E31
 2024-09-01 13:29:46.352 [rename-task-thread] INFO ani.rss.util.TorrentUtil -
@@ -171,7 +171,7 @@ S01E31.chs.ass
 
 ani-rss:
 
-```md
+```bash
 docker run -d \
 --name ani-rss \
 -v /volume1/docker/ani-rss/config:/config \
@@ -186,7 +186,7 @@ wushuo894/ani-rss
 
 qbittorrent:
 
-```md
+```bash
 docker run -d --name qbittorrent \
 -v /volume1/docker/qbittorrent/config:/config \
 -v /volume2/downloads:/downloads \
@@ -298,7 +298,7 @@ http://[IP]:7789/api/web_hook?s=[ApiKey]
 
 可以看到 debug 级别的日志
 
-```md
+```log
 2024-09-03 14:26:01 INFO ani.rss.util.TorrentUtil - 已下载 深夜冲击 S01E01
 2024-09-03 14:26:01 INFO ani.rss.util.TorrentUtil - 下载种子 深夜冲击 S01E01
 2024-09-03 14:26:02 DEBUG ani.rss.util.TorrentUtil - 本地文件已存在 深夜冲击 S01E01
