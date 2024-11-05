@@ -11,21 +11,24 @@ export default defineConfig({
         nav: [
             {text: '首页', link: '/'},
             {text: '快速开始', link: '/start'},
-            {text: '设置解读', link: '/config/download'},
+            {text: '功能说明', link: '/add-rss'},
             {text: '常见问题', link: '/faq'}
         ],
         sidebar: [
             {
-                text: '开始使用',
+                text: '部署',
                 items: [
                     {text: '快速开始', link: '/start'},
-                    {text: 'Docker部署', link: '/docker'},
-                    {text: '添加订阅', link: '/add-rss'},
+                    {text: '部署程序', link: '/deploy/deploy'},
+                    {text: 'Docker部署', link: '/deploy/docker'},
+                    {text: 'Windows', link: '/deploy/windows'},
+                    {text: '群晖NAS', link: '/deploy/dsm'},
                 ]
             },
             {
-                text: '设置解读',
+                text: '功能说明',
                 items: [
+                    {text: '添加订阅', link: '/add-rss'},
                     {text: '下载设置', link: '/config/download'},
                     {text: '基本设置', link: '/config/basic'},
                     {text: '代理设置', link: '/config/proxy'},

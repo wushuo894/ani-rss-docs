@@ -45,11 +45,4 @@ ANI-RSS
 
 </div>
 
-```md
-请不要在B站发布视频宣传本项目
-在国内平台请尽量简称 ANI-RSS 为 ASS or 屁股
-```
-
-[投喂作者](https://afdian.com/a/wushuo894)
-
-
+<!--@include: ./other.md{2,}-->

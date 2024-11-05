@@ -1,6 +1,4 @@
-<img alt="mikan-pic.png" height="80" width="80" src="./image/mikan-pic.png"/>
-
-## ANI-RSS
+# Docker部署
 
 <div>
 
@@ -12,7 +10,7 @@
 
 [设置解读](/config/download)
 
-![Xnip2024-11-05_05-31-50.png](./image/Xnip2024-11-05_05-31-50.png)
+![Xnip2024-11-05_05-31-50.png](../image/Xnip2024-11-05_05-31-50.png)
 
 默认 用户名: admin 密码: admin
 
