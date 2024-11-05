@@ -62,19 +62,19 @@
 如:
 
 ```md
-├─A
-│ └─安达与岛村
-│ └─S01
-│ 安达与岛村 S01E01.mp4
-│ 安达与岛村 S01E02.mp4
-│ 安达与岛村 S01E03.mp4
-│
-├─B
-│ ├─BanG Dream! It's MyGO!!!!!
-│ │ └─S01
-│ │ BanG Dream! It's MyGO!!!!! S01E01.mp4
-│ │ BanG Dream! It's MyGO!!!!! S01E02.mp4
-│ │ BanG Dream! It's MyGO!!!!! S01E03.mp4
+├── A
+│   └── 安达与岛村
+│       └── S01
+│           ├── 安达与岛村 S01E01.mp4
+│           ├── 安达与岛村 S01E02.mp4
+│           ├── 安达与岛村 S01E03.mp4
+│           └── 安达与岛村 S01E04.mp4
+├── B
+│   └── BanG Dream! It's MyGO!!!!!
+│       └── S01
+│           ├── BanG Dream! It's MyGO!!!!! S01E01.mp4
+│           ├── BanG Dream! It's MyGO!!!!! S01E02.mp4
+│           ├── BanG Dream! It's MyGO!!!!! S01E03.mp4
 ```
 
 #### 季度
@@ -143,23 +143,6 @@ S01E31.chs.ass
 #### 自动跳过
 
 自动检测季度文件夹下是否已经下载某集
-
-支持的命名:
-
-```md
-├─A
-│ └─安达与岛村
-│ ├─S1
-│ │ 安达与岛村 S1E1.mp4
-│ ├─S01
-│ │ 安达与岛村 S01E02.mp4
-│ ├─Season 1
-│ │ S1E3.mp4
-│ └─Season 01
-│   S01E04.mp4
-│   安达与岛村(2020) S1E5.mp4
-│   安达与岛村(2020) S01E06.mp4
-```
 
 ::: warning
 此选项 **必须启用自动重命名**。确保 **下载工具** 与 **ani-rss** 的 docker 映射挂载路径 **保持一致**
