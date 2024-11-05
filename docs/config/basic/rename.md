@@ -37,7 +37,7 @@ S01E31.chs.ass
 
 设置为None则不会存在季文件夹
 
-### 重命名模版
+### 重命名模版 {#rename-template}
 
 ```md
 ${title} 标题 , ${subgroup} 字幕组

@@ -13,7 +13,7 @@
 设置 BgmToken 与 emby-webhook 后支持自动点格子
 :::
 
-#### Emby-Webhook通知设置
+#### Emby-Webhook通知设置 {#emby-webhook}
 
 ```md
 名称: bgm
