@@ -47,7 +47,7 @@ allowfullscreen>
 docker run -d \
 --name ani-rss \
 -v /volume1/docker/ani-rss/config:/config \
--v /volume2/Media/:/Media \
+-v /volume2/Media:/Media \
 -p 7789:7789 \
 -e PORT="7789" \
 -e CONFIG="/config" \
@@ -67,7 +67,7 @@ services:
     container_name: ani-rss
     volumes:
       - /volume1/docker/ani-rss/config:/config
-      - /volume2/Media/:/Media
+      - /volume2/Media:/Media
     ports:
       - 7789:7789
     environment:
@@ -133,7 +133,9 @@ services:
 |------|-------------------------|
 | 下载工具 | qBittorrent             |
 | 地址   | http://qBittorrent:8080 |
-| 保存位置 | /volume2/Media        |
+| 用户名  | admin                   |
+| 密码   |                         |
+| 保存位置 | /volume2/Media          |
 
 ::: info
 初次启动时 `qBittorrent` 会为 `admin` 用户生成一个随机密码，请查看日志获取初始密码。
@@ -142,18 +144,18 @@ services:
 ::: warning
 下载设置的地址url须与容器服务配置对应。如果采用了如下设置，请将地址改为`http://qb:8000`
 
-```yaml
+```md
 services:
-  ......
-  qb:
-    image: linuxserver/qbittorrent
-    container_name: qBittorrent
-    ports:
-      # 外部端口:内部端口
-      - 8000:8080
-    environment:
-      - WEBUIPORT=8080
-    ......
+......
+qb:
+image: linuxserver/qbittorrent
+container_name: qBittorrent
+ports:
+# 外部端口:内部端口
+- 8000:8080
+environment:
+- WEBUIPORT=8080
+......
 ```
 
 :::
