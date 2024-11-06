@@ -15,7 +15,7 @@ ANI-RSS
 |
 <a href="add-rss">使用文档</a>
 |
-<a href="docker">Docker部署</a>
+<a href="deploy/docker">Docker部署</a>
 |
 <a href="faq">常见问题</a>
 |
