@@ -107,7 +107,7 @@ services:
       - /volume1/docker/qb:/config
       - /volume2/downloads:/downloads
       - /volume2/Media:/Media #番剧挂载路径两侧须一致
-    restart: unless-stopped
+    restart: always
     networks:
       - ani-rss
   ani-rss:
@@ -122,7 +122,7 @@ services:
     volumes:
       - /volume1/docker/ani-rss:/config
       - /volume2/Media:/Media #番剧挂载路径两侧须一致
-    restart: unless-stopped
+    restart: always
     networks:
       - ani-rss
 ```

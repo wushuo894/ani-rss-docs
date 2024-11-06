@@ -35,7 +35,9 @@ S01E31.chs.ass
 
 设置季命名方式 如 **Season 1**、**Season 01**、**S1**、**S01**、**None**
 
-设置为None则不会存在季文件夹
+::: info
+设置为 **None** 则不会存在季文件夹
+:::
 
 ### 重命名模版 {#rename-template}
 
