@@ -129,13 +129,14 @@ services:
 
 如果使用了如上配置，请将[下载设置](../config/download#下载工具)修改为如下配置：
 
-| 条目   | 内容                      |
-|------|-------------------------|
-| 下载工具 | qBittorrent             |
-| 地址   | http://qBittorrent:8080 |
-| 用户名  | admin                   |
-| 密码   |                         |
-| 保存位置 | /volume2/Media          |
+| 条目      | 内容                      |
+|---------|-------------------------|
+| 下载工具    | qBittorrent             |
+| 地址      | http://qBittorrent:8080 |
+| 用户名     | admin                   |
+| 密码      |                         |
+| 保存位置    | /volume2/Media/番剧       |
+| 剧场版保存位置 | /volume2/Media/剧场版      |
 
 ::: info
 初次启动时 `qBittorrent` 会为 `admin` 用户生成一个随机密码，请查看日志获取初始密码。
@@ -151,11 +152,13 @@ qb:
 image: linuxserver/qbittorrent
 container_name: qBittorrent
 ports:
+
 # 外部端口:内部端口
+
 - 8000:8080
-environment:
+  environment:
 - WEBUIPORT=8080
-......
+  ......
 ```
 
 :::
