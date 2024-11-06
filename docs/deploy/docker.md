@@ -135,8 +135,8 @@ services:
 | 地址      | http://qBittorrent:8080 |
 | 用户名     | admin                   |
 | 密码      |                         |
-| 保存位置    | /volume2/Media/番剧       |
-| 剧场版保存位置 | /volume2/Media/剧场版      |
+| 保存位置    | /Media/番剧       |
+| 剧场版保存位置 | /Media/剧场版      |
 
 ::: info
 初次启动时 `qBittorrent` 会为 `admin` 用户生成一个随机密码，请查看日志获取初始密码。
