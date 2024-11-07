@@ -32,15 +32,15 @@
 
 1. 在设置面板中打开WebUI并设置用户名和密码。
 
-![qBittorrent设置](../image/qBittorrent_settings.png)
+![qBittorrent设置](/image/qBittorrent_settings.png)
 
-2. 在浏览器中打开[`http://localhost:8989`](http://localhost:8989)（注意将端口号改为与设置qBittorrent中一致）。不出意外的话应该能进入WebUI，登陆成功后应该能见到如下页面，说明`qBittorrent`端设置无误。（如果无法打开页面，请重新检查`qBittorrent`的设置）
+2. 在浏览器中打开 `http://localhost:8989`（注意将端口号改为与设置qBittorrent中一致）。不出意外的话应该能进入WebUI，登陆成功后应该能见到如下页面，说明`qBittorrent`端设置无误。（如果无法打开页面，请重新检查`qBittorrent`的设置）
 
-![qBittorrent页面](../image/qBittorrent_WebUI.png)
+![qBittorrent页面](/image/qBittorrent_WebUI.png)
 
 3. 在`ani-rss`中将上述的地址，用户名，密码填入后点击`测试`。
 
-![qBittorrent测试](../image/qBittorrent_test.png)
+![qBittorrent测试](/image/qBittorrent_test.png)
 
 如果出现`登陆成功`则说明设置成功。
 
