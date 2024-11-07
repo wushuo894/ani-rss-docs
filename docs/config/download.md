@@ -5,15 +5,14 @@
 ## 下载工具
 
 <div>
-<div>
 <img src="/image/tr.png" alt="transmission" width="60">
 <img src="/image/qb.png" alt="qbittorrent" width="60">
 <img src="/image/aria2.png" alt="qbittorrent" width="60">
 </div>
-<p>支持 <strong>Transmission</strong> <strong>qBittorrent</strong> <strong>Aria2</strong></p>
-</div>
 
-由于三种下载工具受 API 限制有各种不同的实现效果, 具体效果如下
+`ani-rss`支持`Transmission`、`qBittorrent`、`Aria2`三种下载工具。
+
+由于受 API 限制，`ani-rss`的支持情况如下
 
 <div style="overflow-x: auto;">
 <div style="width: 700px;">
@@ -26,9 +25,25 @@
 
 </div>
 </div>
+ 
+*（强烈推荐使用 **qBittorrent**）*
 
-::: info
-强烈推荐使用 **qBittorrent**
+::: details qBittorrent设置
+
+1. 在设置面板中打开WebUI并设置用户名和密码。
+
+![qBittorrent设置](../image/qBittorrent_settings.png)
+
+2. 在浏览器中打开[`http://localhost:8989`](http://localhost:8989)（注意将端口号改为与设置qBittorrent中一致）。不出意外的话应该能进入WebUI，登陆成功后应该能见到如下页面，说明`qBittorrent`端设置无误。（如果无法打开页面，请重新检查`qBittorrent`的设置）
+
+![qBittorrent页面](../image/qBittorrent_WebUI.png)
+
+3. 在`ani-rss`中将上述的地址，用户名，密码填入后点击`测试`。
+
+![qBittorrent测试](../image/qBittorrent_test.png)
+
+如果出现`登陆成功`则说明设置成功。
+
 :::
 
 ::: warning

@@ -30,9 +30,11 @@ ${image} 会自动替换为图片链接
 下载完成通知暂不支持 Aria2
 :::
 
-## 邮件通知
+## 通知方式
 
 ![Xnip2024-11-05_06-02-38.png](/image/Xnip2024-11-05_06-02-38.png)
+
+::: details 邮箱通知
 
 ### QQ邮箱设置示例
 
@@ -47,6 +49,28 @@ SSL: 开启
 
 ### QQ邮箱密码
 
-QQ邮箱 - 常规 - 第三方服务 - IMAP/SMTP服务
+（电脑网页端）
 
-开启并 生成授权码
+设置 - 账号 - POP3/IMAP/SMTP/Exchange/CardDAV/CalDAV服务
+
+开启服务并生成授权码
+
+:::
+
+::: details TG通知
+
+[Creating a new bot](https://core.telegram.org/bots/features#botfather:~:text=and%20managing%20bots.-,Creating%20a%20new%20bot,-Use%20the%20/newbot)
+
+:::
+
+::: details Server酱
+
+[Server酱³ 使用说明书](https://doc.sc3.ft07.com/)
+
+:::
+
+::: details 其他平台
+
+微信、钉钉、飞书请参考对应平台的webhook接口文档
+
+:::
