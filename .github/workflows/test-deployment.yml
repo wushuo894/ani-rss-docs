@@ -22,4 +22,4 @@ jobs:
       - name: Install dependencies
         run: pnpm i --no-frozen-lockfile --unsafe-perm --ignore-scripts
       - name: Test build website
-        run: pnpm build
+        run: pnpm run build
