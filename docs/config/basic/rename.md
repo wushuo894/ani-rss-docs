@@ -35,16 +35,26 @@ S01E31.chs.ass
 
 设置季命名方式 如 **Season 1**、**Season 01**、**S1**、**S01**、**None**
 
-设置为None则不会存在季文件夹
+::: info
+设置为 **None** 则不会存在季文件夹
+:::
 
 ### 重命名模版 {#rename-template}
 
-```md
-${title} 标题 , ${subgroup} 字幕组
-${seasonFormat} 季 01 , ${episodeFormat} 集 01
-${season} 季 1 , ${episode} 集 1
-${itemTitle} 原始标题
-```
+<div style="overflow-x: auto;">
+<div style="width: 900px;">
+
+| 数据   | 模版                 | 结果示例                                                                    |  
+|------|--------------------|-------------------------------------------------------------------------|
+| 标题   | `${title}`         | `Re：从零开始的异世界生活`                                                         |  
+| 字幕组  | `${subgroup}`      | `ANi`                                                                   |   
+| 季    | `${seasonFormat}`  | `01`                                                                    |   
+| 季    | `${season}`        | `1`                                                                     |  
+| 集    | `${episodeFormat}` | `01`                                                                    |  
+| 集    | `${episode}`       | `1`                                                                     |  
+| 原始标题 | `${itemTitle}`     | `[ANi] Re：从零开始的异世界生活 第三季 - 01 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]` |  
+</div>
+</div>
 
 ::: warning
 请务必保留: `${title} S${seasonFormat}E${episodeFormat}`。

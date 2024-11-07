@@ -1,0 +1,14 @@
+https://docs.wushuo.top/start.html
+https://docs.wushuo.top/deploy/deploy.html
+https://docs.wushuo.top/deploy/docker.html
+https://docs.wushuo.top/deploy/windows.html
+https://docs.wushuo.top/deploy/dsm.html
+https://docs.wushuo.top/add-rss.html
+https://docs.wushuo.top/config/download.html
+https://docs.wushuo.top/config/basic.html
+https://docs.wushuo.top/config/proxy.html
+https://docs.wushuo.top/config/login.html
+https://docs.wushuo.top/config/message.html
+https://docs.wushuo.top/dev.html
+https://docs.wushuo.top/faq.html
+https://docs.wushuo.top/other.html

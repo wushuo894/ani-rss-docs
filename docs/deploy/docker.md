@@ -47,7 +47,7 @@ allowfullscreen>
 docker run -d \
 --name ani-rss \
 -v /volume1/docker/ani-rss/config:/config \
--v /volume2/Media/:/Media \
+-v /volume2/Media:/Media \
 -p 7789:7789 \
 -e PORT="7789" \
 -e CONFIG="/config" \
@@ -67,7 +67,7 @@ services:
     container_name: ani-rss
     volumes:
       - /volume1/docker/ani-rss/config:/config
-      - /volume2/Media/:/Media
+      - /volume2/Media:/Media
     ports:
       - 7789:7789
     environment:
@@ -88,7 +88,6 @@ docker compose up -d
 如需对Docker内的`ani-rss`设置本机跳过身份验证，请留意登录日志内的IP信息。
 :::
 
-
 ## 附带qBittorrent的Docker Compose 部署
 
 ```yaml
@@ -105,9 +104,10 @@ services:
       - WEBUIPORT=8080
       - TZ=Asia/Shanghai
     volumes:
-      - ./qb:/config
-      - ./bangumi:/bangumi #番剧挂载路径两侧须一致
-    restart: unless-stopped
+      - /volume1/docker/qb:/config
+      - /volume2/downloads:/downloads
+      - /volume2/Media:/Media #番剧挂载路径两侧须一致
+    restart: always
     networks:
       - ani-rss
   ani-rss:
@@ -120,19 +120,23 @@ services:
       - CONFIG=/config
       - TZ=Asia/Shanghai
     volumes:
-      - ./ani-rss:/config
-      - ./bangumi:/bangumi #番剧挂载路径两侧须一致
-    restart: unless-stopped
+      - /volume1/docker/ani-rss:/config
+      - /volume2/Media:/Media #番剧挂载路径两侧须一致
+    restart: always
     networks:
       - ani-rss
 ```
 
 如果使用了如上配置，请将[下载设置](../config/download#下载工具)修改为如下配置：
 
-| 条目    | 内容 |
-|--------|------|
-| 下载工具 | qBittorrent |
-| 地址    | http://qBittorrent:8080  |
+| 条目      | 内容                      |
+|---------|-------------------------|
+| 下载工具    | qBittorrent             |
+| 地址      | http://qBittorrent:8080 |
+| 用户名     | admin                   |
+| 密码      |                         |
+| 保存位置    | /Media/番剧               |
+| 剧场版保存位置 | /Media/剧场版              |
 
 ::: info
 初次启动时 `qBittorrent` 会为 `admin` 用户生成一个随机密码，请查看日志获取初始密码。
@@ -140,17 +144,21 @@ services:
 
 ::: warning
 下载设置的地址url须与容器服务配置对应。如果采用了如下设置，请将地址改为`http://qb:8000`
-```yaml
+
+```md
 services:
+......
+qb:
+image: linuxserver/qbittorrent
+container_name: qBittorrent
+ports:
+
+# 外部端口:内部端口
+
+- 8000:8080
+  environment:
+- WEBUIPORT=8080
   ......
-  qb:
-    image: linuxserver/qbittorrent
-    container_name: qBittorrent
-    ports:
-      # 外部端口:内部端口
-      - 8000:8080
-    environment:
-      - WEBUIPORT=8080
-    ......
 ```
+
 :::
