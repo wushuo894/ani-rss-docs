@@ -4,9 +4,9 @@ layout: home
 
 <div align="center">
 <img alt="mikan-pic.png" height="80" width="80" src="./image/icon.svg"/>
-<p align="center" style="font-size: 2em;font-weight: 600;line-height: 1.25;margin-top: 0;word-wrap: break-word;">
+<h1>
 ANI-RSS
-</p>
+</h1>
 <p align="center">
 自动追番、订阅、下载 蜜柑RSS动漫
 </p>
