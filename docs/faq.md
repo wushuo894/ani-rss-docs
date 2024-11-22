@@ -2,21 +2,36 @@
 
 [[toc]]
 
-## 修改订阅标题后文件不会改名
+## 老番合集整理
 
-```md
-ANI-RSS 只负责订阅和下载, 不负责管理番剧的功能
-重命名可能会导致 做种/下载错误、洗版、重命名模版等的问题, 所以请自行处理
-```
+部分较老的番剧已经没人做种了, 只有合集才能下载的动。
+
+因为现有代码逻辑原因 `ani-rss` 并不打算支持合集整理功能
+
+推荐使用:
+
+[AutoBangumi](https://github.com/EstrellaXD/Auto_Bangumi)
+、
+[MoviePilot](https://github.com/jxxghp/MoviePilot)
+、
+[Episode-ReName](https://github.com/Nriver/Episode-ReName)
+、
+[BangumiRenamer](https://github.com/nuthx/bangumi-renamer)
+
+::: info
+排名不分前后
+:::
 
 ## qBittorrent 下载时出现错误
 
 ```md
 大概率为权限问题, 请使用命令赋予文件夹权限
 ```
+
 ```bash
 chmod -R 777 /downloads
 ```
+
 ```md
 如果还未解决请自行查看 qBittorrent 日志进行排查
 ```
