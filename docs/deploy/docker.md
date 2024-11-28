@@ -72,6 +72,8 @@ docker run -d \
 -v /volume2/Media:/Media \
 -p 8080:8080 \
 -p 6881:6881 \
+-e PUID=0 \
+-e PGID=0 \
 -e TZ=Asia/Shanghai \
 --restart always \
 linuxserver/qbittorrent
@@ -121,8 +123,8 @@ services:
     ports:
       - 8080:8080 #qb端口
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=0
+      - PGID=0
       - WEBUIPORT=8080
       - TZ=Asia/Shanghai
     volumes:
