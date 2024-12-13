@@ -38,9 +38,9 @@ chmod -R 777 /Media
 ```
 :::
 
-```md
+::: warning
 如果还未解决请自行查看 qBittorrent 日志进行排查
-```
+:::
 
 ## Windows 端口被占用
 
