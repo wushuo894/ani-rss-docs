@@ -24,7 +24,7 @@ brew install openjdk@11
 ```bash
 wget https://github.com/wushuo894/ani-rss/raw/master/docker/run.sh
 sudo chmod -R 777 ./run.sh
-sudo bash ./run.sh
+bash ./run.sh
 ```
 
 ## 默认配置
