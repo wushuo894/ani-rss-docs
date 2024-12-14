@@ -17,6 +17,8 @@
 
 - [ANI-RSS：自动追番新姿势！](https://www.himiku.com/archives/ani-rss.html)
 
+- [Bing 搜索更多](https://www.bing.com/search?q="ani-rss"+"部署")
+
 ## 贡献者
 
 <a href="https://github.com/wushuo894/ani-rss/graphs/contributors">
