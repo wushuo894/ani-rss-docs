@@ -15,8 +15,6 @@
 [MoviePilot](https://github.com/jxxghp/MoviePilot)
 、
 [Episode-ReName](https://github.com/Nriver/Episode-ReName)
-、
-[BangumiRenamer](https://github.com/nuthx/bangumi-renamer)
 
 ::: info
 排名不分前后
@@ -24,17 +22,25 @@
 
 ## qBittorrent 下载时出现错误
 
-```md
-大概率为权限问题, 请使用命令赋予文件夹权限
-```
+::: tip
+大概率为权限问题
 
+修改 qb 容器的 `PUID` 与 `GUID` 为 `0`
+
+或者
+
+使用命令赋予文件夹权限
+:::
+
+::: details 使用命令赋予文件夹权限
 ```bash
-chmod -R 777 /downloads
+chmod -R 777 /Media
 ```
+:::
 
-```md
+::: warning
 如果还未解决请自行查看 qBittorrent 日志进行排查
-```
+:::
 
 ## Windows 端口被占用
 
