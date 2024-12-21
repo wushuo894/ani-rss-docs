@@ -4,7 +4,7 @@
 **请提前安装 Java 17 OpenJdk 套件**
 :::
 
-离线安装 [ani-rss_v1.1.110_noarch-DSM7.spk](https://github.com/wushuo894/ani-rss/releases/download/v1.1.110/ANI-RSS_v1.1.110_noarch-DSM7.spk)
+离线安装 [ANI-RSS_v1.1.214_x86_64-DSM7.spk](https://github.com/wushuo894/ani-rss/releases/download/v1.1.214/ANI-RSS_v1.1.214_x86_64-DSM7.spk)
 
 或者
 
