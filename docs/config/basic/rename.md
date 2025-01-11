@@ -52,7 +52,9 @@ S01E31.chs.ass
 | 季    | `${season}`        | `1`                                                                     |  
 | 集    | `${episodeFormat}` | `01`                                                                    |  
 | 集    | `${episode}`       | `1`                                                                     |  
+| 分辨率  | `${resolution}`    | `720p`、`1080p`、`2160p`                                                  |
 | 原始标题 | `${itemTitle}`     | `[ANi] Re：从零开始的异世界生活 第三季 - 01 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]` |  
+
 </div>
 </div>
 
