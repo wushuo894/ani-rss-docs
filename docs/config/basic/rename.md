@@ -58,14 +58,6 @@ S01E31.chs.ass
 </div>
 </div>
 
-::: warning
-请务必保留: `${title} S${seasonFormat}E${episodeFormat}`。
-
-如果想使用洗版功能请不要在重命名模版添加 `${subgroup}、${itemTitle}`，
-
-否则可能会出现 备用rss 洗版到 主rss 时出现错误。
-:::
-
 ### 剔除年份
 
 重命名时 ${title} 剔除 年份, 如 `(2024)`
