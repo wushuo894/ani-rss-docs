@@ -181,7 +181,7 @@ ports:
 
 - 8000:8080
   environment:
-- WEBUIPORT=8080
+- WEBUI_PORT=8080
   ......
 ```
 
