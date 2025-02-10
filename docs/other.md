@@ -1,7 +1,7 @@
 # 其他
 
 <a href="https://afdian.com/a/wushuo894" target="_blank">
-    <img src="/support_aifadian.svg" alt="support_aifadian" />
+    <img src="./image/support_aifadian.svg" alt="support_aifadian" />
 </a>
 
 ## 推广须知
