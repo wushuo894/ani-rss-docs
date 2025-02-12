@@ -53,7 +53,7 @@ S01E31.chs.ass
 | 集       | `${episodeFormat}` | `01`                                                                    |  
 | 集       | `${episode}`       | `1`                                                                     |  
 | 原始标题    | `${itemTitle}`     | `[ANi] Re：从零开始的异世界生活 第三季 - 01 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]` |  
-| TMDB ID | ${tmdbid}          | 65942                                                                   |
+| TMDB ID | `${tmdbid}`          | `65942`                                                                   |
 
 </div>
 </div>
