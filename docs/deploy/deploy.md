@@ -2,21 +2,21 @@
 
 ## 安装 JDK
 
-推荐使用 jdk11 或 jdk17
+推荐使用 jdk17
 如果已经有了可以跳过
 
 #### Linux
 
 ```bash
 sudo apt update
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-17-jdk
 ```
 
 ### macOS
 
 ```bash
 brew update
-brew install openjdk@11
+brew install openjdk@17
 ```
 
 ## 运行

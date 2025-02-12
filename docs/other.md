@@ -1,7 +1,5 @@
 # 其他
 
-[投喂作者](https://afdian.com/a/wushuo894)
-
 ## 推广须知
 
 - 请不要在 ***B站*** 发布视频宣传本项目
@@ -21,6 +19,12 @@
 
 ## 贡献者
 
-<a href="https://github.com/wushuo894/ani-rss/graphs/contributors">
+<a href="https://github.com/wushuo894/ani-rss/graphs/contributors" target="_blank">
   <img src="https://contrib.rocks/image?repo=wushuo894/ani-rss" alt="contributors" />
+</a>
+
+## 爱发电
+
+<a href="https://afdian.com/a/wushuo894" target="_blank">
+    <img src="./image/support_aifadian.svg" alt="support_aifadian" />
 </a>

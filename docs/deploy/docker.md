@@ -125,7 +125,7 @@ services:
     environment:
       - PUID=0
       - PGID=0
-      - WEBUIPORT=8080
+      - WEBUI_PORT=8080
       - TZ=Asia/Shanghai
     volumes:
       - /volume1/docker/qbittorrent/config:/config
@@ -181,7 +181,7 @@ ports:
 
 - 8000:8080
   environment:
-- WEBUIPORT=8080
+- WEBUI_PORT=8080
   ......
 ```
 
