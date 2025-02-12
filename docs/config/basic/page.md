@@ -11,3 +11,7 @@
 ### 显示视频列表
 
 显示视频列表按钮
+
+### 自定义css
+
+你可以去 <https://github.com/wushuo894/ani-rss-css> 复制你想要的css
