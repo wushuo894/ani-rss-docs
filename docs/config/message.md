@@ -6,6 +6,7 @@
 标题: ${title}
 评分: ${score}
 TMDB: ${themoviedbName}
+TMDB_ID: ${tmdbid}
 BGM: ${bgmUrl}
 季: ${season}
 集: ${episode}
