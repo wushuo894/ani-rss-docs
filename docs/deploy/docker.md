@@ -8,7 +8,9 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/wushuo894/ani-rss)
 </div>
 
-docker镜像加速监控：<https://status.1panel.top/status/docker>
+::: info
+推荐docker镜像加速 <https://docker.1panel.live>
+:::
 
 [设置解读](/config/download)
 
@@ -78,6 +80,7 @@ docker run -d \
 --restart always \
 linuxserver/qbittorrent
 ```
+
 :::
 
 ## Docker Compose 部署 {id=docker-compose}
