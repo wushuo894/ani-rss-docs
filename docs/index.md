@@ -23,7 +23,7 @@ ANI-RSS
 
 <p></p>
 
-<img src="./image/Xnip2024-11-05_05-31-50.png" alt="截图" id="index-img">
+<img src="/screenshot.png" alt="screenshot" id="screenshot">
 
 <hr style="height: 1px;">
 

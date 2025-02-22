@@ -1,12 +1,16 @@
 /* .vitepress/theme/custom.css */
 
-img{
+img {
     display: inline;
     margin: 2px;
 }
 
 @media (min-width: 1000px) {
-    #index-img {
+    #screenshot {
         width: 900px;
     }
+}
+
+.dark #screenshot {
+    content: url('/screenshot-dark.png');
 }

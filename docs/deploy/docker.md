@@ -14,7 +14,7 @@
 
 [设置解读](/config/download)
 
-![Xnip2024-11-05_05-31-50.png](../image/Xnip2024-11-05_05-31-50.png)
+<img src="/screenshot.png" alt="screenshot" id="screenshot">
 
 默认 用户名: admin 密码: admin
 
