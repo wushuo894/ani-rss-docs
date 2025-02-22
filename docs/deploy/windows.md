@@ -11,7 +11,7 @@
 ## 安装 JDK {#install-jdk}
 
 ```bash
-winget install 'OpenJDK 17'
+winget install 'ojdkbuild OpenJDK JRE 17'
 ```
 
 ## 开机自启动
