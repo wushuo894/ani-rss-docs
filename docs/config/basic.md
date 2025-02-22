@@ -1,6 +1,6 @@
 # 基本设置
 
-![Xnip2024-11-05_06-01-57.png](/image/Xnip2024-11-05_06-01-57.png)
+<img src="/screenshot/6e25ed388cddb40cb2f2b58cbadd1a4a-basic-screenshot.png" alt="basic-screenshot" id="basic-screenshot">
 
 <!--@include: ./basic/page.md-->
 

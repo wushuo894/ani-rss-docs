@@ -33,7 +33,7 @@ ${image} 会自动替换为图片链接
 
 ## 通知方式
 
-![Xnip2024-11-05_06-02-38.png](/image/Xnip2024-11-05_06-02-38.png)
+<img src="/screenshot/286fd4f8eb5e70a8664b2f63ef5f18ef-msg-screenshot.png" alt="msg-screenshot" id="msg-screenshot">
 
 ::: details 邮箱通知
 

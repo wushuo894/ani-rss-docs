@@ -1,6 +1,6 @@
 # 下载设置
 
-![Xnip2024-11-05_06-01-41.png](/image/Xnip2024-11-05_06-01-41.png)
+<img src="/screenshot/73147386fca70f09e22aadac950f93a1-download-screenshot.png" alt="download-screenshot" id="download-screenshot">
 
 ## 下载工具
 
