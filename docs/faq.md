@@ -20,7 +20,7 @@
 排名不分前后
 :::
 
-## qBittorrent 下载时出现错误
+## qBittorrent 下载时出现错误 {id=qb-download-error}
 
 ::: tip
 大概率为权限问题
@@ -33,16 +33,18 @@
 :::
 
 ::: details 使用命令赋予文件夹权限
+
 ```bash
 chmod -R 777 /Media
 ```
+
 :::
 
 ::: warning
 如果还未解决请自行查看 qBittorrent 日志进行排查
 :::
 
-## Windows 端口被占用
+## Windows 端口被占用 {id=windows-port-error}
 
 ```log
 BindException: Address already in use: bind
@@ -64,7 +66,7 @@ BindException: Address already in use: bind
 是否已配置下载器的 地址、用户名、密码 和 下载位置
 ```
 
-## 为什么程序的自更新无法使用
+## 为什么程序的自更新无法使用 {id=update-error}
 
 ```md
 更新时使用的是 Github, 请检查你的网络条件
