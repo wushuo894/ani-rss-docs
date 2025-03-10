@@ -56,7 +56,7 @@
 ::: info
 大概率为权限问题
 
-修改 qb 容器的 `PUID` 与 `GUID` 为 `0`
+修改 **qBittorrent** 容器的 `PUID` 与 `GUID` 为 `0`
 
 或者
 
