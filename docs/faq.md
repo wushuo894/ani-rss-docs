@@ -2,6 +2,14 @@
 
 [[toc]]
 
+## SSL握手异常
+
+![ssl-error.png](image/ssl-error.png)
+
+::: info
+这个就是网络问题, 频率不频繁的话 **可以无视**。使用镜像站或者选择 `https://mikanani.me` 域名配合代理使用可以缓解
+:::
+
 ## 老番合集整理
 
 部分较老的番剧已经没人做种了, 只有合集才能下载的动。
@@ -52,6 +60,25 @@ BindException: Address already in use: bind
 
 可能是 Hyper-V 随机占用端口导致的
 
+具体原因可以Bing <https://www.bing.com/search?q=Hyper-V随机占用端口>
+
+**以下有两种解决方法**
+
+::: details 修改Hyper-V动态端口解决
+
+可以通过以下命令去调整 TCP 动态端口范围
+
+``` bat
+netsh int ipv4 set dynamic tcp start=55000 num=10536
+netsh int ipv6 set dynamic tcp start=55000 num=10536
+```
+
+此时重启电脑，Hyper-V 就会从 55000 - 65565 范围内选取一些端口进行占用，而不会占用日常开发的端口。
+
+:::
+
+::: details 修改程序端口解决
+
 可通过创建快捷方式并添加参数修改端口号
 
 ```md
@@ -59,55 +86,56 @@ BindException: Address already in use: bind
 ```
 
 <img src="./image/PixPin_2024-10-17_03-37-35.png" alt="PixPin_2024-10-17_03-37-35.png" width="300">
+:::
 
 ## qBittorrent 未配置完成
 
-```md
-是否已配置下载器的 地址、用户名、密码 和 下载位置
-```
+::: info
+是否已配置下载器的 **地址、用户名、密码 和 下载位置**
+:::
 
 ## 为什么程序的自更新无法使用 {id=update-error}
 
-```md
-更新时使用的是 Github, 请检查你的网络条件
-```
+::: info
+更新时使用的是 [Github](https://github.com), 请检查你的网络条件
+:::
 
 ## 自动跳过无法生效
 
-```md
-请确保ani-rss和qb的映射位置一致
-```
+::: info
+请确保 **ani-rss** 和 **qBittorrent** 的映射位置一致
+:::
 
 ## 开启备用RSS后自动洗版无法自动删除旧的视频
 
-```md
-请确保ani-rss和qb的映射位置一致
-请关闭 自动跳过
-请开启 修改任务标题、自动删除
-```
+::: info
+- 请确保 **ani-rss** 和 **qBittorrent** 的映射位置一致
+- 请关闭❌ [自动跳过](config/basic#auto-skip)
+- 请开启✅ [自动删除](config/download#auto-delete)
+:::
 
 ## 删除了视频 在预览中还是显示本地存在
 
-```md
+::: info
 在预览界面删除对应的种子缓存
-```
+:::
 
 ## 为什么没有第X集
 
-```md
-检查源rss是否包含该集
-检查排除规则
-```
+::: info
+- 检查源rss是否包含该集
+- 检查排除规则
+:::
 
 ## 不会自动下载某集的v2、v3版本, 并覆盖老版本
 
-```md
-请关闭 自动跳过
-请开启 自动删除任务、修改任务标题
-```
+::: info
+- 请关闭❌ [自动跳过](config/basic#auto-skip)
+- 请开启✅ [自动删除](config/download#auto-delete)
+:::
 
 ## 有些NSFW番剧无法解析
 
-```md
-请在设置中完善 BgmToken
-```
+::: info
+请在设置中完善 [BgmToken](config/basic#bgmtoken)
+:::
