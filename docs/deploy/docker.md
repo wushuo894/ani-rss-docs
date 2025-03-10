@@ -7,13 +7,16 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/wushuo894/ani-rss)
 </div>
 
-docker镜像加速监控：<https://status.1panel.top/status/docker>
-
-[设置解读](/config/download)
+::: info docker镜像加速监控
+<https://status.1panel.top/status/docker>
+:::
 
 <img src="/screenshot/62f73859bd2fb7063f7f1eff12545fec-screenshot.png" alt="screenshot" id="screenshot">
 
-默认 用户名: admin 密码: admin
+::: info 默认账号
+
+用户名: `admin` 密码: `admin`
+:::
 
 | 参数     | 作用       | 默认值           |
 |--------|----------|---------------|
@@ -77,6 +80,7 @@ docker run -d \
 --restart always \
 linuxserver/qbittorrent
 ```
+
 :::
 
 ## Docker Compose 部署 {id=docker-compose}
@@ -108,7 +112,7 @@ docker compose up -d
 ```
 
 ::: info
-如需对Docker内的`ani-rss`设置本机跳过身份验证，请留意登录日志内的IP信息。
+如需对 `docker` 内的 `ani-rss` 设置本机跳过身份验证，请留意登录日志内的IP信息。
 :::
 
 ## 附带qBittorrent的Docker Compose 部署 {id=all-docker-compose}

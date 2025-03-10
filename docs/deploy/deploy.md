@@ -27,13 +27,12 @@ sudo chmod -R 777 ./run.sh
 bash ./run.sh
 ```
 
-## 默认配置
+访问网页 `http://127.0.0.1:7789`
 
-| 名称  | 参数    |
-|-----|-------|
-| 端口  | 7789  |
-| 用户名 | admin |
-| 密码  | admin |
+::: info 默认账号
+
+用户名: `admin` 密码: `admin`
+:::
 
 ## 启动参数 {id=argument}
 

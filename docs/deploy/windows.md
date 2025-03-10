@@ -22,10 +22,7 @@ winget install --id Amazon.Corretto.17
 
 `ani-rss.win.x86_64.zip` 内已包含 `设置开机自启动.bat` 脚本, 双击即可执行
 
-## 默认配置
+::: info 默认账号
 
-| 名称  | 参数    |
-|-----|-------|
-| 端口  | 7789  |
-| 用户名 | admin |
-| 密码  | admin |
+用户名: `admin` 密码: `admin`
+:::

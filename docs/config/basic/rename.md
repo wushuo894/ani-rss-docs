@@ -2,8 +2,6 @@
 
 自动命名视频与字幕让其易于刮削
 
-如:
-
 ```log
 2024-09-01 13:29:06.865 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 添加下载 Wonderful 光之美少女！ S01E31
 2024-09-01 13:29:06.866 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 下载种子 Wonderful 光之美少女！ S01E31
@@ -23,9 +21,9 @@ S01E31.chs.ass
 
 开启自动重命名
 
-#### 重命名影响做种吗？
-
-不会影响
+::: info
+重命名不会影响做种
+:::
 
 ### 重命名间隔
 
@@ -33,10 +31,10 @@ S01E31.chs.ass
 
 ### 季命名方式
 
-设置季命名方式 如 **Season 1**、**Season 01**、**S1**、**S01**、**None**
+设置季命名方式 如 `Season 1、Season 01、S1、S01、None`
 
 ::: info
-设置为 **None** 则不会存在季文件夹
+设置为 `None` 则不会存在季文件夹
 :::
 
 ### 重命名模版 {#rename-template}
@@ -53,15 +51,15 @@ S01E31.chs.ass
 | 集       | `${episodeFormat}` | `01`                                                                    |  
 | 集       | `${episode}`       | `1`                                                                     |  
 | 原始标题    | `${itemTitle}`     | `[ANi] Re：从零开始的异世界生活 第三季 - 01 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]` |  
-| TMDB ID | `${tmdbid}`          | `65942`                                                                   |
+| TMDB ID | `${tmdbid}`        | `65942`                                                                 |
 
 </div>
 </div>
 
 ### 剔除年份
 
-重命名时 ${title} 剔除 年份, 如 `(2024)`
+重命名时将会从模板 `${title}` 中剔除年份, 如 `(2024)`
 
 ### 剔除TMDB ID
 
-重命名时 ${title} 剔除 tmdbid, 如 `[tmdbid=242143]`
+重命名时将会从模板 `${title}` 中剔除 tmdbid, 如 `[tmdbid=242143]`
