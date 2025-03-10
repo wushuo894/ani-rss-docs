@@ -5,15 +5,9 @@
 ```log:line-numbers
 2024-09-01 13:29:06.865 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 添加下载 Wonderful 光之美少女！ S01E31
 2024-09-01 13:29:06.866 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 下载种子 Wonderful 光之美少女！ S01E31
-2024-09-01 13:29:46.352 [rename-task-thread] INFO ani.rss.util.TorrentUtil -
-重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].mkv ==> Wonderful 光之美少女！
-S01E31.mkv
-2024-09-01 13:29:46.362 [rename-task-thread] INFO ani.rss.util.TorrentUtil -
-重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].cht.ass ==> Wonderful 光之美少女！
-S01E31.cht.ass
-2024-09-01 13:29:46.365 [rename-task-thread] INFO ani.rss.util.TorrentUtil -
-重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].chs.ass ==> Wonderful 光之美少女！
-S01E31.chs.ass
+2024-09-01 13:29:46.352 [rename-task-thread] INFO ani.rss.util.TorrentUtil - 重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].mkv ==> Wonderful 光之美少女！ S01E31.mkv
+2024-09-01 13:29:46.362 [rename-task-thread] INFO ani.rss.util.TorrentUtil - 重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].cht.ass ==> Wonderful 光之美少女！ S01E31.cht.ass
+2024-09-01 13:29:46.365 [rename-task-thread] INFO ani.rss.util.TorrentUtil - 重命名 [FLsnow][Wonderful_Precure！][31][1080P]/[FLsnow][Wonderful_Precure！][31][1080P].chs.ass ==> Wonderful 光之美少女！ S01E31.chs.ass
 2024-09-01 13:38:49.392 [rename-task-thread] INFO ani.rss.util.TorrentUtil - 删除已完成任务 Wonderful 光之美少女！ S01E31
 ```
 

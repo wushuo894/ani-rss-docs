@@ -31,15 +31,15 @@
 2025-03-11 02:20:26 ERROR ani.rss.task.RssTask - 暗杀女仆冥土小姐 SSL握手异常
 2025-03-11 02:20:26 ERROR ani.rss.task.RssTask - SSL握手异常
 cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host terminated the handshake
-at cn.hutool.http.HttpRequest.send(HttpRequest.java:1350)
-at cn.hutool.http.HttpRequest.doExecute(HttpRequest.java:1188)
-at cn.hutool.http.HttpRequest.execute(HttpRequest.java:1051)
-at ani.rss.util.HttpRequestPlus.execute(HttpRequestPlus.java:42)
-at cn.hutool.http.HttpRequest.thenFunction(HttpRequest.java:1077)
-at ani.rss.util.ItemsUtil.getItems(ItemsUtil.java:67)
-at ani.rss.util.TorrentUtil.downloadAni(TorrentUtil.java:54)
-at ani.rss.task.RssTask.download(RssTask.java:63)
-at ani.rss.task.RssTask.run(RssTask.java:104)
+        at cn.hutool.http.HttpRequest.send(HttpRequest.java:1350)
+        at cn.hutool.http.HttpRequest.doExecute(HttpRequest.java:1188)
+        at cn.hutool.http.HttpRequest.execute(HttpRequest.java:1051)
+        at ani.rss.util.HttpRequestPlus.execute(HttpRequestPlus.java:42)
+        at cn.hutool.http.HttpRequest.thenFunction(HttpRequest.java:1077)
+        at ani.rss.util.ItemsUtil.getItems(ItemsUtil.java:67)
+        at ani.rss.util.TorrentUtil.downloadAni(TorrentUtil.java:54)
+        at ani.rss.task.RssTask.download(RssTask.java:63)
+        at ani.rss.task.RssTask.run(RssTask.java:104)
 ```
 
 ::: info
