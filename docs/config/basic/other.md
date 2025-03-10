@@ -4,6 +4,12 @@
 
 自定义mikan的域名
 
+::: info
+可以设置为第三方蜜柑镜像站或者你自己搭建的
+
+镜像站推荐 `https://mikan.sakiko.de/`
+:::
+
 ### BgmToken
 
 你可以在 [https://next.bgm.tv/demo/access-token](https://next.bgm.tv/demo/access-token)
@@ -32,7 +38,7 @@ http://[IP]:7789/api/web_hook?s=[ApiKey]
 ```
 
 ::: info
-保持emby与ani-rss的映射路径一致可以有更好的效果
+保持 **emby** 与 **ani-rss** 的映射路径一致可以有更好的效果
 :::
 
 ### 禁止公网访问

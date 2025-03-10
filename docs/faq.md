@@ -29,6 +29,8 @@
 
 ::: info
 这个就是网络问题, 频率不频繁的话 **可以无视**。使用镜像站或者选择 `https://mikanani.me` 域名配合代理使用可以缓解
+
+镜像站推荐 `https://mikan.sakiko.de/`
 :::
 
 ## 老番合集整理 { id=collection }
@@ -51,7 +53,7 @@
 
 ## qBittorrent 下载时出现错误 { id=qb-download-error }
 
-::: tip
+::: info
 大概率为权限问题
 
 修改 qb 容器的 `PUID` 与 `GUID` 为 `0`
