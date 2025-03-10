@@ -2,7 +2,7 @@
 
 [[toc]]
 
-## SSL握手异常
+## SSL握手异常 { id=ssl-error }
 
 ![ssl-error.png](image/ssl-error.png)
 
@@ -10,7 +10,7 @@
 这个就是网络问题, 频率不频繁的话 **可以无视**。使用镜像站或者选择 `https://mikanani.me` 域名配合代理使用可以缓解
 :::
 
-## 老番合集整理
+## 老番合集整理 { id=collection }
 
 部分较老的番剧已经没人做种了, 只有合集才能下载的动。
 
@@ -28,7 +28,7 @@
 排名不分前后
 :::
 
-## qBittorrent 下载时出现错误 {id=qb-download-error}
+## qBittorrent 下载时出现错误 { id=qb-download-error }
 
 ::: tip
 大概率为权限问题
@@ -52,7 +52,7 @@ chmod -R 777 /Media
 如果还未解决请自行查看 qBittorrent 日志进行排查
 :::
 
-## Windows 端口被占用 {id=windows-port-error}
+## Windows 端口被占用 { id=windows-port-error }
 
 ```log
 BindException: Address already in use: bind
@@ -88,7 +88,7 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 <img src="./image/PixPin_2024-10-17_03-37-35.png" alt="PixPin_2024-10-17_03-37-35.png" width="300">
 :::
 
-## qBittorrent 未配置完成
+## qBittorrent 未配置完成 { id=qb-config }
 
 ::: info
 是否已配置下载器的 **地址、用户名、密码 和 下载位置**
@@ -100,7 +100,7 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 更新时使用的是 [Github](https://github.com), 请检查你的网络条件
 :::
 
-## 自动跳过无法生效
+## 自动跳过无法生效 { id=auto-skip }
 
 ::: info
 请确保 **ani-rss** 和 **qBittorrent** 的映射位置一致
@@ -109,12 +109,14 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 ## 开启备用RSS后自动洗版无法自动删除旧的视频
 
 ::: info
+
 - 请确保 **ani-rss** 和 **qBittorrent** 的映射位置一致
 - 请关闭❌ [自动跳过](config/basic#auto-skip)
 - 请开启✅ [自动删除](config/download#auto-delete)
+
 :::
 
-## 删除了视频 在预览中还是显示本地存在
+## 删除了视频 在预览中还是显示本地存在 { id=items-delete }
 
 ::: info
 在预览界面删除对应的种子缓存
@@ -123,18 +125,22 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 ## 为什么没有第X集
 
 ::: info
+
 - 检查源rss是否包含该集
 - 检查排除规则
+
 :::
 
-## 不会自动下载某集的v2、v3版本, 并覆盖老版本
+## 不会自动下载某集的v2、v3版本, 并覆盖老版本 { id=download-v2 }
 
 ::: info
+
 - 请关闭❌ [自动跳过](config/basic#auto-skip)
 - 请开启✅ [自动删除](config/download#auto-delete)
+
 :::
 
-## 有些NSFW番剧无法解析
+## 有些NSFW番剧无法解析 { id=nsfw }
 
 ::: info
 请在设置中完善 [BgmToken](config/basic#bgmtoken)
