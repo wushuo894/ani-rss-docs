@@ -26,3 +26,7 @@ img {
 .dark #msg-screenshot {
     content: url('/screenshot/2963b1c453d2031eca55475d4818e24c-msg-screenshot-dark.png');
 }
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
