@@ -7,11 +7,11 @@
 
 ### TMDB
 
-TMDB名称
+[TMDB](https://www.themoviedb.org/) 获取到的番剧名称
 
 ### BgmUrl
 
-BGM链接
+[Bangumi](https://bgm.tv/) 的番剧链接
 
 ### 主 RSS
 
@@ -64,7 +64,7 @@ BGM链接
 由于剧场版命名与文件结构各异, 故并不会使用重命名功能
 
 ::: info
-Emby 会自动根据文件夹名获取正确的剧场版原数据，因此不重命名也不影响刮削
+`Emby` 会自动根据文件夹名获取正确的剧场版原数据，因此不重命名也不影响刮削
 :::
 
 ### 自定义集数规则 { id=custom-episode }
