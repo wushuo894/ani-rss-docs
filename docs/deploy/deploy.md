@@ -1,23 +1,23 @@
 # 部署程序
 
-## 安装 JDK
+## 安装 JDK { id=install-jdk }
 
 推荐使用 jdk17
 如果已经有了可以跳过
 
-#### Linux
+::: code-group
 
-```bash
+```bash [macOS]
+brew update
+brew install openjdk@17
+```
+
+```bash [Linux]
 sudo apt update
 sudo apt install openjdk-17-jdk
 ```
 
-### macOS
-
-```bash
-brew update
-brew install openjdk@17
-```
+:::
 
 ## 运行
 

@@ -10,8 +10,8 @@
 
 ## 安装 JDK {#install-jdk}
 
-```bash
-winget install 'ojdkbuild OpenJDK JRE 17'
+```ps
+winget install --id Amazon.Corretto.17
 ```
 
 ## 开机自启动
