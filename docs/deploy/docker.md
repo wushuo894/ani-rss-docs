@@ -51,7 +51,7 @@ allowfullscreen>
 
 ## Docker 部署 {id=docker}
 
-```bash
+```bash:line-numbers
 docker run -d \
 --name ani-rss \
 -v /volume1/docker/ani-rss/config:/config \
@@ -66,7 +66,7 @@ wushuo894/ani-rss
 
 ::: details qBittorrent
 
-```bash
+```bash:line-numbers
 docker run -d \
 --name qbittorrent \
 -v /volume1/docker/qbittorrent/config:/config \
@@ -87,7 +87,7 @@ linuxserver/qbittorrent
 
 创建docker-compose.yml文件，内容如下
 
-```yaml
+```yaml:line-numbers
 version: "3"
 services:
   ani-rss:
@@ -117,7 +117,7 @@ docker compose up -d
 
 ## 附带qBittorrent的Docker Compose 部署 {id=all-docker-compose}
 
-```yaml
+```yaml:line-numbers
 version: "3"
 services:
   qBittorrent:

@@ -5,6 +5,7 @@
 ## 集数识别错误 { id=episode-error }
 
 ::: info
+
 - 开启 [自定义集数规则](add-rss#custom-episode)
 - 如果默认的集数规则也无法识别可以自己修改正则
 - 如果不会正则的可以让ai生成
@@ -25,7 +26,21 @@
 
 ## SSL握手异常 { id=ssl-error }
 
-![ssl-error.png](image/ssl-error.png)
+```log:line-numbers
+2025-03-11 02:20:26 ERROR ani.rss.util.HttpRequestPlus - url: https://mikanani.me/RSS/Bangumi?bangumiId=3428&subgroupid=583, error: SSL握手异常
+2025-03-11 02:20:26 ERROR ani.rss.task.RssTask - 暗杀女仆冥土小姐 SSL握手异常
+2025-03-11 02:20:26 ERROR ani.rss.task.RssTask - SSL握手异常
+cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host terminated the handshake
+at cn.hutool.http.HttpRequest.send(HttpRequest.java:1350)
+at cn.hutool.http.HttpRequest.doExecute(HttpRequest.java:1188)
+at cn.hutool.http.HttpRequest.execute(HttpRequest.java:1051)
+at ani.rss.util.HttpRequestPlus.execute(HttpRequestPlus.java:42)
+at cn.hutool.http.HttpRequest.thenFunction(HttpRequest.java:1077)
+at ani.rss.util.ItemsUtil.getItems(ItemsUtil.java:67)
+at ani.rss.util.TorrentUtil.downloadAni(TorrentUtil.java:54)
+at ani.rss.task.RssTask.download(RssTask.java:63)
+at ani.rss.task.RssTask.run(RssTask.java:104)
+```
 
 ::: info
 这个就是网络问题, 频率不频繁的话 **可以无视**。使用镜像站或者选择 `https://mikanani.me` 域名配合代理使用可以缓解
@@ -91,7 +106,7 @@ BindException: Address already in use: bind
 
 可以通过以下命令去调整 TCP 动态端口范围
 
-``` bat
+``` bat:line-numbers
 netsh int ipv4 set dynamic tcp start=55000 num=10536
 netsh int ipv6 set dynamic tcp start=55000 num=10536
 ```

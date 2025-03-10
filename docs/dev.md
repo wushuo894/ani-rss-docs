@@ -20,7 +20,7 @@
 
 ::: code-group
 
-```bash [macOS]
+```bash:line-numbers [macOS]
 # 安装 brew 包管理器
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -43,7 +43,7 @@ brew install node
 npm install -g pnpm
 ```
 
-```bash [Linux]
+```bash:line-numbers [Linux]
 # 适用于 Debian 系 Linux 发行版, 如 Debian、Ubuntu、Kali 等
 # 更新软件源
 sudo apt update
@@ -64,7 +64,7 @@ sudo apt install nodejs npm
 npm install -g pnpm
 ```
 
-```ps [Windows]
+```ps:line-numbers [Windows]
 # 安装 git
 winget install --id Git.Git
 
@@ -102,7 +102,7 @@ npm install -g pnpm
 
 ### 3. 启动前端开发环境
 
-```bash
+```bash:line-numbers
 # 进入前端目录
 cd ui
 
@@ -129,7 +129,7 @@ pnpm dev
 除本步骤外，其余步骤的命令均在根目录执行
 :::
 
-```bash
+```bash:line-numbers
 # 切换工作目录
 cd ui
 pnpm run build

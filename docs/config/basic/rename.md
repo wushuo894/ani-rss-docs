@@ -2,7 +2,7 @@
 
 自动命名视频与字幕让其易于刮削
 
-```log
+```log:line-numbers
 2024-09-01 13:29:06.865 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 添加下载 Wonderful 光之美少女！ S01E31
 2024-09-01 13:29:06.866 [rss-task-thread] INFO ani.rss.util.TorrentUtil - 下载种子 Wonderful 光之美少女！ S01E31
 2024-09-01 13:29:46.352 [rename-task-thread] INFO ani.rss.util.TorrentUtil -

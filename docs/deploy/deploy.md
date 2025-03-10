@@ -7,12 +7,12 @@
 
 ::: code-group
 
-```bash [macOS]
+```bash:line-numbers [macOS]
 brew update
 brew install openjdk@17
 ```
 
-```bash [Linux]
+```bash:line-numbers [Linux]
 sudo apt update
 sudo apt install openjdk-17-jdk
 ```
@@ -21,7 +21,7 @@ sudo apt install openjdk-17-jdk
 
 ## 运行
 
-```bash
+```bash:line-numbers
 wget https://github.com/wushuo894/ani-rss/raw/master/docker/run.sh
 sudo chmod -R 777 ./run.sh
 bash ./run.sh
