@@ -2,6 +2,27 @@
 
 [[toc]]
 
+## 集数识别错误 { id=episode-error }
+
+::: info
+- 开启 [自定义集数规则](add-rss#custom-episode)
+- 如果默认的集数规则也无法识别可以自己修改正则
+- 如果不会正则的可以让ai生成
+
+[菜鸟教程-正则表达式](https://www.runoob.com/regexp/regexp-tutorial.html)
+
+:::
+
+## 自动重命名不生效 { id=auto-rename }
+
+::: info
+
+- 如果使用的 **aria2**, 需要 **ani-rss** 与 **aria2** 的 **docker** 挂载路径一致
+- 确保 **qBittorrent** 版本在 **4.6.11** 以上
+- 确保 [重命名模版](config/basic#rename-template) 包含 `S${seasonFormat}E${episodeFormat}` 这样的格式
+
+:::
+
 ## SSL握手异常 { id=ssl-error }
 
 ![ssl-error.png](image/ssl-error.png)
