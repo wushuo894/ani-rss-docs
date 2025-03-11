@@ -48,7 +48,7 @@
 :::
 
 ::: warning
-**使用 Aria2 时，必须让 ani-rss 与 Aria2 路径保持一致才能自动重命名 详见** [docker映射挂载](/config/basic#docker-mount)
+**使用 Aria2 时，必须让 ani-rss 与 Aria2 路径保持一致才能自动重命名 详见**
 :::
 
 ::: info 不支持下载时重命名会导致的问题
@@ -129,4 +129,4 @@
 
 ## 检测是否死种
 
-RSS更新后添加下载任务时如果出现异常则会发送 [通知](/config/message.md)
+RSS更新后添加下载任务时如果出现异常则会发送 [通知](/config/message)
