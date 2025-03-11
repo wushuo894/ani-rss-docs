@@ -29,8 +29,25 @@ export default defineConfig({
                 text: '功能说明',
                 items: [
                     {text: '添加订阅', link: '/add-rss'},
-                    {text: '下载设置', link: '/config/download'},
-                    {text: '基本设置', link: '/config/basic'},
+                    {
+                        text: '下载设置',
+                        link: '/config/download',
+                        items: [
+                            {text: 'qBittorrent', link: '/config/download/qbittorrent'},
+                            {text: 'AList', link: '/config/download/alist'},
+                        ]
+                    },
+                    {
+                        text: '基本设置',
+                        items: [
+                            {text: '页面设置', link: '/config/basic/page'},
+                            {text: '添加订阅', link: '/config/basic/add'},
+                            {text: '重命名设置', link: '/config/basic/rename'},
+                            {text: 'RSS设置', link: '/config/basic/rss'},
+                            {text: 'Trackers', link: '/config/basic/trackers'},
+                            {text: '其他', link: '/config/basic/other'},
+                        ]
+                    },
                     {text: '代理设置', link: '/config/proxy'},
                     {text: '登录设置', link: '/config/login'},
                     {text: '通知', link: '/config/message'}
@@ -38,7 +55,15 @@ export default defineConfig({
             },
             {
                 items: [
-                    {text: '参与开发', link: '/dev'},
+                    {
+                        text: '参与开发',
+                        items: [
+                            {text: '基本流程', link: '/dev/basic'},
+                            {text: '环境配置', link: '/dev/env'},
+                            {text: '开始开发', link: '/dev/start'},
+                            {text: '本地编译', link: '/dev/build'},
+                        ]
+                    },
                     {text: '常见问题', link: '/faq'},
                     {text: '其他', link: '/other'}
                 ]

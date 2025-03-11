@@ -20,7 +20,7 @@
 
 - 如果使用的 **aria2**, 需要 **ani-rss** 与 **aria2** 的 **docker** 挂载路径一致
 - 确保 **qBittorrent** 版本在 **4.6.11** 以上
-- 确保 [重命名模版](config/basic#rename-template) 包含 `S${seasonFormat}E${episodeFormat}` 这样的格式
+- 确保 [重命名模版](config/basic/rename#rename-template) 包含 `S${seasonFormat}E${episodeFormat}` 这样的格式
 
 :::
 
@@ -149,7 +149,7 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 ::: info
 
 - 请确保 **ani-rss** 和 **qBittorrent** 的映射位置一致
-- 请关闭❌ [自动跳过](config/basic#auto-skip)
+- 请关闭❌ [自动跳过](config/basic/rss#auto-skip)
 - 请开启✅ [自动删除](config/download#auto-delete)
 
 :::
@@ -173,7 +173,7 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 
 ::: info
 
-- 请关闭❌ [自动跳过](config/basic#auto-skip)
+- 请关闭❌ [自动跳过](config/basic/rss#auto-skip)
 - 请开启✅ [自动删除](config/download#auto-delete)
 
 :::
@@ -181,5 +181,5 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 ## 有些NSFW番剧无法解析 { id=nsfw }
 
 ::: info
-请在设置中完善 [BgmToken](config/basic#bgmtoken)
+请在设置中完善 [BgmToken](config/basic/other#bgmtoken)
 :::

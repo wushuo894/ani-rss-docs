@@ -21,10 +21,10 @@
 
 可设置多个
 
-[详细说明](/config/basic#back-rss)
+[详细说明](/config/basic/rss#back-rss)
 
 ::: warning
-如需使用请前往设置开启 [备用RSS](/config/basic#back-rss)
+如需使用请前往设置开启 [备用RSS](/config/basic/rss#back-rss)
 :::
 
 ### 日期
@@ -37,7 +37,7 @@
 
 ### 集数偏移
 
-[详细说明](/config/basic#自动推断剧集偏移)
+[详细说明](/config/basic/add#自动推断剧集偏移)
 
 ### 总集数
 
