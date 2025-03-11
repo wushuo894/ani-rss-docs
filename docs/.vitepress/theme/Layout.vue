@@ -46,10 +46,13 @@ watch(isDark, (dark) => {
 });
 
 
-// 去除后缀 .html
-let pathname = location.pathname;
-if (pathname.endsWith(".html")) {
-  location.pathname = pathname.substring(0, pathname.length - 5);
+try {
+  // 去除后缀 .html
+  let pathname = location.pathname;
+  if (pathname.endsWith(".html")) {
+    location.pathname = pathname.substring(0, pathname.length - 5);
+  }
+} catch (_) {
 }
 
 </script>
