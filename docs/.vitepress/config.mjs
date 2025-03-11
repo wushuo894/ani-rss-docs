@@ -110,7 +110,7 @@ export default defineConfig({
         returnToTopLabel: '返回顶部',
         sidebarMenuLabel: '菜单',
         editLink: {
-            pattern: 'https://github.com/wushuo894/ani-rss-docs/edit/main/docs/:path',
+            pattern: 'https://github.com/wushuo894/ani-rss-docs/edit/master/docs/:path',
             text: '在 GitHub 上编辑此页面'
         },
         lastUpdated: {
