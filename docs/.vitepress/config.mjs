@@ -5,6 +5,7 @@ export default defineConfig({
     lang: "zh-CN",
     title: "ANI-RSS",
     description: "ANI-RSS",
+    cleanUrls: true,
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: '/icon.svg',
