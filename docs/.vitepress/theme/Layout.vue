@@ -11,7 +11,7 @@
             category-id="DIC_kwDONKaoJ84Cn0w0"
             mapping="url"
             strict="1"
-            reactions-enabled="1"
+            reactions-enabled="0"
             emit-metadata="0"
             input-position="bottom"
             :theme="isDark ? 'dark' : 'light'"
