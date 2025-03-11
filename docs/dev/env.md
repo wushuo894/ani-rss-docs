@@ -57,9 +57,6 @@ winget install --id Amazon.Corretto.17
 # winget 包管理器中没有 maven 💩
 # 下载解压并配置环境变量 -> https://phoenixnap.com/kb/install-maven-windows
 
-# 安装 git
-winget install --id Git.Git
-
 # 安装 nodejs
 winget install --id OpenJS.NodeJS
 
