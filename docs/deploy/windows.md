@@ -2,9 +2,9 @@
 
 分为两个版本
 
-[ani-rss.win.x86_64.zip](https://github.com/wushuo894/ani-rss/releases/latest) 自带jdk, 解压后即可运行
+[ani-rss.win.x86_64.zip](https://github.com/wushuo894/ani-rss/releases/latest/download/ani-rss.win.x86_64.zip) 自带jdk, 解压后即可运行
 
-[ani-rss-launcher.exe](https://github.com/wushuo894/ani-rss/releases/latest) 需要 [自行安装jdk](#install-jdk)
+[ani-rss-launcher.exe](https://github.com/wushuo894/ani-rss/releases/latest/download/ani-rss-launcher.exe) 需要 [自行安装jdk](#install-jdk)
 
 运行后 **右下角会出现托盘** 可通过其打开浏览器
 

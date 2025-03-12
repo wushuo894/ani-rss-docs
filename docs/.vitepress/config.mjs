@@ -13,6 +13,7 @@ export default defineConfig({
             {text: '首页', link: '/'},
             {text: '快速开始', link: '/start'},
             {text: '功能说明', link: '/add-rss'},
+            {text: '更新历史', link: '/history'},
             {text: '常见问题', link: '/faq'}
         ],
         sidebar: [
@@ -66,7 +67,7 @@ export default defineConfig({
                         ]
                     },
                     {text: '常见问题', link: '/faq'},
-                    {text: '历史版本', link: '/history'},
+                    {text: '更新历史', link: '/history'},
                     {text: '其他', link: '/other'}
                 ]
             }

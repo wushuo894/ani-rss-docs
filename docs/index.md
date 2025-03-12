@@ -19,6 +19,8 @@ ANI-RSS
 |
 <a href="faq">常见问题</a>
 |
+<a href="history">更新历史</a>
+|
 <a href="dev/basic">参与开发</a>
 
 <p></p>

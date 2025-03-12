@@ -30,7 +30,7 @@ let md = markdownit({
 </script>
 
 <template>
-  <h1>历史版本</h1>
+  <h1>更新历史</h1>
   <div v-if="releases.length === 0" style="margin-top: 50px;">
     正在获取中, 请坐和放宽
   </div>
