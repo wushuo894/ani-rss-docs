@@ -45,7 +45,7 @@ let md = markdownit({
       <div v-html="md.render(item['body'])"></div>
     </div>
     <div style="overflow-x: auto;">
-      <div style="width: 1000px;">
+      <div style="min-width: 500px;">
         <table>
           <thead>
           <tr>
