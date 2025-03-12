@@ -129,7 +129,7 @@ export default defineConfig({
     lastUpdated: true,
     markdown: {
         image: {
-            lazyLoading: true
+            lazyLoading: false
         }
     }
 })
