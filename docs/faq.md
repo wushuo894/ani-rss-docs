@@ -24,7 +24,7 @@
 
 :::
 
-## SSL握手异常 { id=ssl-error }
+## 网络超时、SSL握手异常 { id=ssl-error }
 
 ```log:line-numbers
 2025-03-11 02:20:26 ERROR ani.rss.util.HttpRequestPlus - url: https://mikanani.me/RSS/Bangumi?bangumiId=3428&subgroupid=583, error: SSL握手异常
@@ -43,7 +43,13 @@ cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host termina
 ```
 
 ::: info
-这个就是网络问题, 频率不频繁的话 **可以无视**。使用镜像站或者选择 `https://mikanani.me` 域名配合代理使用可以缓解
+这个就是网络问题, 如果不频繁且自己点击订阅预览没问题的话 **可以无视**。
+
+这个就是网络问题, 如果不频繁且自己点击订阅预览没问题的话 **可以无视**。
+
+这个就是网络问题, 如果不频繁且自己点击订阅预览没问题的话 **可以无视**。
+
+使用镜像站或者选择 `https://mikanani.me` 域名配合代理使用理论上可以缓解
 
 镜像站推荐 `https://mikan.sakiko.de/`
 :::
