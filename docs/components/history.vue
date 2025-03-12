@@ -44,24 +44,28 @@ let md = markdownit({
     <div>
       <div v-html="md.render(item['body'])"></div>
     </div>
-    <table>
-      <thead>
-      <tr>
-        <th scope="col">文件名</th>
-        <th scope="col">大小</th>
-        <th scope="col">下载次数</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr v-for="asset in item['assets'].filter(it => !it.name.endsWith('.md5'))">
-        <td>
-          <a :href="asset['browser_download_url']" target="_blank">{{ asset.name }}</a>
-        </td>
-        <td>{{ Number(asset.size / 1024 / 1024).toFixed(2) }}MB</td>
-        <td>{{ asset['download_count'] }}</td>
-      </tr>
-      </tbody>
-    </table>
+    <div style="overflow-x: auto;">
+      <div style="width: 1000px;">
+        <table>
+          <thead>
+          <tr>
+            <th scope="col">文件名</th>
+            <th scope="col">大小</th>
+            <th scope="col">下载次数</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr v-for="asset in item['assets'].filter(it => !it.name.endsWith('.md5'))">
+            <td>
+              <a :href="asset['browser_download_url']" target="_blank">{{ asset.name }}</a>
+            </td>
+            <td>{{ Number(asset.size / 1024 / 1024).toFixed(2) }}MB</td>
+            <td>{{ asset['download_count'] }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
     <p>{{ formatDate(item['created_at']) }} 共下载
       {{ item['assets'].filter(it => !it.name.endsWith('.md5')).reduce((sum, it) => sum + it['download_count'], 0) }}
       次</p>
