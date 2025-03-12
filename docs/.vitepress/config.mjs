@@ -66,7 +66,7 @@ export default defineConfig({
                         ]
                     },
                     {text: '常见问题', link: '/faq'},
-                    {text: '下载统计', link: '/statistics'},
+                    {text: '历史版本', link: '/history'},
                     {text: '其他', link: '/other'}
                 ]
             }

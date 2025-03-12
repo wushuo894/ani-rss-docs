@@ -1,5 +1,7 @@
 <script setup>
 import {ref} from "vue";
+import markdownit from 'markdown-it'
+import {VPBadge as Badge} from "vitepress/theme";
 
 let releases = ref([])
 
@@ -21,19 +23,27 @@ let formatDate = (dateString) => {
 
   return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 }
+
+let md = markdownit({
+  html: true,
+})
 </script>
 
 <template>
-  <h1>下载统计</h1>
-
-  <div v-if="releases.length === 0">
+  <h1>历史版本</h1>
+  <div v-if="releases.length === 0" style="margin-top: 50px;">
     正在获取中, 请坐和放宽
   </div>
-  <div v-for="item in releases" :key="item.id" v-else>
-    <a :href="item['html_url']" target="_blank"><h2>{{ item.name }}</h2></a>
-    <p>共下载
-      {{ item['assets'].filter(it => !it.name.endsWith('.md5')).reduce((sum, it) => sum + it['download_count'], 0) }}
-      次</p>
+  <div v-for="(item,index) in releases" :key="item.id" v-else>
+    <a :href="item['html_url']" target="_blank">
+      <h2>
+        {{ item.name }}
+        <Badge v-if="index === 0" type="tip" text="最新版本"/>
+      </h2>
+    </a>
+    <div>
+      <div v-html="md.render(item['body'])"></div>
+    </div>
     <table>
       <thead>
       <tr>
@@ -52,7 +62,9 @@ let formatDate = (dateString) => {
       </tr>
       </tbody>
     </table>
-    <p>{{ formatDate(item['created_at']) }}</p>
+    <p>{{ formatDate(item['created_at']) }} 共下载
+      {{ item['assets'].filter(it => !it.name.endsWith('.md5')).reduce((sum, it) => sum + it['download_count'], 0) }}
+      次</p>
   </div>
 </template>
 

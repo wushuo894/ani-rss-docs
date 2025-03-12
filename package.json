@@ -8,6 +8,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
-    "@giscus/vue": "^3.1.1"
+    "@giscus/vue": "^3.1.1",
+    "markdown-it": "^14.1.0"
   }
 }
