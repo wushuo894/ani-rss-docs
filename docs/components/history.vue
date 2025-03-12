@@ -21,7 +21,7 @@ let formatDate = (dateString) => {
   const minutes = String(date.getMinutes()).padStart(2, '0');
   const seconds = String(date.getSeconds()).padStart(2, '0');
 
-  return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+  return `${year}/${month}/${day} ${hours}:${minutes}:${seconds}`;
 }
 
 let md = markdownit({
@@ -66,7 +66,13 @@ let md = markdownit({
         </table>
       </div>
     </div>
-    <p>{{ formatDate(item['created_at']) }} 共下载
+    <p style="
+    color: var(--vp-c-text-2);
+    line-height: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    ">
+      {{ formatDate(item['created_at']) }} 共下载
       {{ item['assets'].filter(it => !it.name.endsWith('.md5')).reduce((sum, it) => sum + it['download_count'], 0) }}
       次</p>
   </div>
