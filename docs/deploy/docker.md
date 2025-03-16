@@ -25,7 +25,7 @@
 | TZ     | 时区       | Asia/Shanghai |
 
 ::: warning
-如果需要开启 **文件已下载自动跳过** 功能, 请确保 **下载工具**、**ani-rss** 的 docker 映射挂载路径 **保持一致**
+**使用docker部署时, 务必让 `ani-rss` 与 `下载器` 路径保持一致**
 
 你也可以参考 [附带qBittorrent的Docker Compose 部署](/deploy/docker#all-docker-compose)
 
