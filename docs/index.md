@@ -33,9 +33,10 @@ ANI-RSS
 <img src="./image/tr.png" alt="transmission" width="60">
 <img src="./image/qb.png" alt="qbittorrent" width="60">
 <img src="./image/aria2.png" alt="aria2" width="60">
+<img src="./image/alist.svg" alt="alist" width="60">
 </div>
 
-<p>支持 <strong>Transmission</strong> <strong>qBittorrent</strong> <strong>Aria2</strong></p>
+<p>支持 <strong>Transmission</strong> <strong>qBittorrent</strong> <strong>Aria2</strong> <strong>Alist</strong></p>
 
 </div>
 

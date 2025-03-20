@@ -7,10 +7,11 @@
 <div>
 <img src="/image/tr.png" alt="transmission" width="60">
 <img src="/image/qb.png" alt="qbittorrent" width="60">
-<img src="/image/aria2.png" alt="qbittorrent" width="60">
+<img src="/image/aria2.png" alt="aria2" width="60">
+<img src="/image/alist.svg" alt="alist" width="60">
 </div>
 
-- `ani-rss` 支持 **Transmission**、**qBittorrent**、**Aria2** 三种下载工具。
+- `ani-rss` 支持 **Transmission**、**qBittorrent**、**Aria2**、**Alist** 四种下载工具。
 - 受 `api` 限制 `ani-rss`的支持情况如下
 
 <div style="overflow-x: auto;">
