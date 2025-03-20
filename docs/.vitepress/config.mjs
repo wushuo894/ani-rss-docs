@@ -125,9 +125,11 @@ export default defineConfig({
         outline: {
             level: 'deep',
             label: '页面导航'
-        },
-        head: [['link', {rel: 'icon', href: '/favicon.ico'}]]
+        }
     },
+    head: [
+        ['link', {rel: 'icon', href: '/favicon.ico'}]
+    ],
     lastUpdated: true,
     markdown: {
         image: {
