@@ -52,7 +52,7 @@
 ::: warning Alist
 请在 alist -> 设置-> 其他 -> 配置临时目录
 
-支持使用alist离线下载到115、PikPak
+支持使用alist离线下载到115、PikPak、迅雷云盘
 :::
 
 ::: warning
