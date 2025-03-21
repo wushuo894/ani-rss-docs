@@ -18,21 +18,11 @@
 用户名: `admin` 密码: `admin`
 :::
 
-| 参数     | 作用       | 默认值           |
-|--------|----------|---------------|
-| PORT   | 端口号      | 7789          |
-| CONFIG | 配置文件存放位置 | /config       |
-| TZ     | 时区       | Asia/Shanghai |
-
 ::: warning
 **使用docker部署时, 务必让 `ani-rss` 与 `下载器` 路径保持一致**
-
-你也可以参考 [附带qBittorrent的Docker Compose 部署](/deploy/docker#all-docker-compose)
-
-或者观看 [视频教程](/deploy/docker#video)
 :::
 
-## 视频教程 {id=video}
+::: details 视频教程 {id=video}
 
 [阿里云盘](https://www.alipan.com/s/eqt2XLZJThu)
 
@@ -49,7 +39,7 @@ allowfullscreen>
 </iframe>
 </div>
 
-## Docker 部署 {id=docker}
+:::
 
 ::: code-group
 
@@ -90,8 +80,8 @@ docker run -d \
 --name ani-rss \
 -v /volume1/docker/ani-rss/config:/config \
 -v /volume2/wushuo/Media:/Media \
--e PORT="7789" \
--e CONFIG="/config" \
+-e PORT=7789 \
+-e CONFIG=/config \
 -e TZ=Asia/Shanghai \
 --network host \
 --restart always \
