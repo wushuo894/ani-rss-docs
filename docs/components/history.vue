@@ -1,7 +1,11 @@
 <script setup>
 import {ref} from "vue";
 import markdownit from 'markdown-it'
-import {VPBadge as Badge} from "vitepress/theme";
+import MarkdownItGitHubAlerts from 'markdown-it-github-alerts'
+import {VPBadge as Badge} from "vitepress/theme"
+import 'markdown-it-github-alerts/styles/github-colors-light.css'
+import 'markdown-it-github-alerts/styles/github-colors-dark-media.css'
+import 'markdown-it-github-alerts/styles/github-base.css'
 
 let releases = ref([])
 
@@ -27,6 +31,8 @@ let formatDate = (dateString) => {
 let md = markdownit({
   html: true,
 })
+
+md.use(MarkdownItGitHubAlerts)
 </script>
 
 <template>
@@ -42,7 +48,7 @@ let md = markdownit({
       </h2>
     </a>
     <div>
-      <div v-html="md.render(item['body'])"></div>
+      <div v-html="md.render(item['body'])" class="markdown-body"></div>
     </div>
     <div style="overflow-x: auto;">
       <div style="min-width: 500px;">
