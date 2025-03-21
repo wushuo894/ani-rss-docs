@@ -4,7 +4,7 @@ import {defineConfig} from 'vitepress'
 export default defineConfig({
     lang: "zh-CN",
     title: "ANI-RSS",
-    description: "ANI-RSS",
+    description: "ANI-RSS 自动追番、订阅、下载 蜜柑RSS动漫",
     cleanUrls: true,
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
