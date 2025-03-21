@@ -57,10 +57,6 @@
 
 ::: warning
 **使用docker部署时, 务必让 `ani-rss` 与 `下载器` 路径保持一致**
-
-你也可以参考 [附带qBittorrent的Docker Compose 部署](/deploy/docker#all-docker-compose)
-
-或者观看 [视频教程](/deploy/docker#video)
 :::
 
 ::: info 不支持下载时重命名会导致的问题

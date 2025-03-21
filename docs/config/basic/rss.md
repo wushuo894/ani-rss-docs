@@ -14,10 +14,6 @@ RSS间隔, 单位 分钟
 
 ::: warning
 此选项 **必须启用自动重命名**。确保 **下载工具**、**ani-rss** 的 docker 映射挂载路径 **保持一致**
-
-你也可以参考 [附带qBittorrent的Docker Compose 部署](/deploy/docker#all-docker-compose)
-
-或者观看 [视频教程](/deploy/docker#video)
 :::
 
 ### 自动禁用订阅
