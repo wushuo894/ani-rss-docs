@@ -51,141 +51,93 @@ allowfullscreen>
 
 ## Docker 部署 {id=docker}
 
-```bash:line-numbers
+::: code-group
+
+```yaml:line-numbers [docker-compose.yml]
+version: "3"
+services:
+  ani-rss:
+    image: wushuo894/ani-rss
+    container_name: ani-rss
+    environment:
+      - PORT=7789 # ani-rss 端口
+      - CONFIG=/config
+      - TZ=Asia/Shanghai
+    volumes:
+      - /volume1/docker/ani-rss/config:/config
+      - /volume2/wushuo/Media:/Media # 番剧挂载路径两侧须一致
+    restart: always
+    network_mode: host
+  qBittorrent:
+    image: linuxserver/qbittorrent
+    container_name: qBittorrent
+    environment:
+      - PUID=0
+      - PGID=0
+      - WEBUI_PORT=8080 # qBittorrent 端口
+      - TZ=Asia/Shanghai
+    volumes:
+      - /volume1/docker/qBittorrent/config:/config
+      - /volume2/wushuo/downloads:/downloads
+      - /volume2/wushuo/Media:/Media # 番剧挂载路径两侧须一致
+    restart: always
+    network_mode: host
+```
+
+```bash:line-numbers [docker run]
+# ani-rss
 docker run -d \
 --name ani-rss \
 -v /volume1/docker/ani-rss/config:/config \
--v /volume2/Media:/Media \
--p 7789:7789 \
+-v /volume2/wushuo/Media:/Media \
 -e PORT="7789" \
 -e CONFIG="/config" \
 -e TZ=Asia/Shanghai \
+--network host \
 --restart always \
 wushuo894/ani-rss
-```
 
-::: details qBittorrent
-
-```bash:line-numbers
+# qBittorrent
 docker run -d \
---name qbittorrent \
--v /volume1/docker/qbittorrent/config:/config \
--v /volume2/downloads:/downloads \
--v /volume2/Media:/Media \
--p 8080:8080 \
--p 6881:6881 \
+--name qBittorrent \
+-v /volume1/docker/qBittorrent/config:/config \
+-v /volume2/wushuo/downloads:/downloads \
+-v /volume2/wushuo/Media:/Media \
 -e PUID=0 \
 -e PGID=0 \
+-e WEBUI_PORT=8080 \
 -e TZ=Asia/Shanghai \
+--network host \
 --restart always \
 linuxserver/qbittorrent
 ```
 
 :::
 
-## Docker Compose 部署 {id=docker-compose}
-
-创建docker-compose.yml文件，内容如下
-
-```yaml:line-numbers
-version: "3"
-services:
-  ani-rss:
-    container_name: ani-rss
-    volumes:
-      - /volume1/docker/ani-rss/config:/config
-      - /volume2/Media:/Media
-    ports:
-      - 7789:7789
-    environment:
-      - PORT=7789
-      - CONFIG=/config
-      - TZ=Asia/Shanghai
-    restart: always
-    image: wushuo894/ani-rss
-```
-
-启动容器
+::: info 启动容器
 
 ```bash
 docker compose up -d
 ```
 
+:::
+
 ::: info
 如需对 `docker` 内的 `ani-rss` 设置本机跳过身份验证，请留意登录日志内的IP信息。
 :::
 
-## 附带qBittorrent的Docker Compose 部署 {id=all-docker-compose}
+如果使用了如上配置，请将 [下载设置](../config/download#下载工具) 修改为如下配置：
 
-```yaml:line-numbers
-version: "3"
-services:
-  qBittorrent:
-    image: linuxserver/qbittorrent
-    container_name: qBittorrent
-    ports:
-      - 8080:8080 #qb端口
-    environment:
-      - PUID=0
-      - PGID=0
-      - WEBUI_PORT=8080
-      - TZ=Asia/Shanghai
-    volumes:
-      - /volume1/docker/qbittorrent/config:/config
-      - /volume2/downloads:/downloads
-      - /volume2/Media:/Media #番剧挂载路径两侧须一致
-    restart: always
-    networks:
-      - ani-rss
-  ani-rss:
-    image: wushuo894/ani-rss
-    container_name: ani-rss
-    ports:
-      - 7789:7789
-    environment:
-      - PORT=7789
-      - CONFIG=/config
-      - TZ=Asia/Shanghai
-    volumes:
-      - /volume1/docker/ani-rss/config:/config
-      - /volume2/Media:/Media #番剧挂载路径两侧须一致
-    restart: always
-    networks:
-      - ani-rss
-```
-
-如果使用了如上配置，请将[下载设置](../config/download#下载工具)修改为如下配置：
-
-| 条目      | 内容                      |
-|---------|-------------------------|
-| 下载工具    | qBittorrent             |
-| 地址      | http://qBittorrent:8080 |
-| 用户名     | admin                   |
-| 密码      |                         |
-| 保存位置    | /Media/番剧               |
-| 剧场版保存位置 | /Media/剧场版              |
+| 条目      | 内容               |
+|---------|------------------|
+| 下载工具    | qBittorrent      |
+| 地址      | http://[ip]:8080 |
+| 用户名     | admin            |
+| 密码      |                  |
+| 保存位置    | /Media/番剧        |
+| 剧场版保存位置 | /Media/剧场版       |
 
 ::: info
 初次启动时 `qBittorrent` 会为 `admin` 用户生成一个随机密码，请查看日志获取初始密码。
 :::
 
-::: warning
-下载设置的地址url须与容器服务配置对应。如果采用了如下设置，请将地址改为`http://qb:8000`
-
-```md
-services:
-......
-qb:
-image: linuxserver/qbittorrent
-container_name: qBittorrent
-ports:
-
-# 外部端口:内部端口
-
-- 8000:8080
-  environment:
-- WEBUI_PORT=8080
-  ......
-```
-
-:::
