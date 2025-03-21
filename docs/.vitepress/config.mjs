@@ -8,7 +8,10 @@ export default defineConfig({
     cleanUrls: true,
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        logo: '/icon.svg',
+        logo: {
+            src: '/icon.svg',
+            alt: 'logo',
+        },
         nav: [
             {text: '首页', link: '/'},
             {text: '快速开始', link: '/start'},
