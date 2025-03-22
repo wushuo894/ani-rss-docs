@@ -77,29 +77,29 @@ services:
 ```bash:line-numbers [docker run]
 # ani-rss
 docker run -d \
---name ani-rss \
--v /volume1/docker/ani-rss/config:/config \
--v /volume2/wushuo/Media:/Media \
--e PORT=7789 \
--e CONFIG=/config \
--e TZ=Asia/Shanghai \
---network host \
---restart always \
-wushuo894/ani-rss
+    --name ani-rss \
+    -v /volume1/docker/ani-rss/config:/config \
+    -v /volume2/wushuo/Media:/Media \
+    -e PORT=7789 \
+    -e CONFIG=/config \
+    -e TZ=Asia/Shanghai \
+    --network host \
+    --restart always \
+    wushuo894/ani-rss
 
 # qBittorrent
 docker run -d \
---name qBittorrent \
--v /volume1/docker/qBittorrent/config:/config \
--v /volume2/wushuo/downloads:/downloads \
--v /volume2/wushuo/Media:/Media \
--e PUID=0 \
--e PGID=0 \
--e WEBUI_PORT=8080 \
--e TZ=Asia/Shanghai \
---network host \
---restart always \
-linuxserver/qbittorrent
+    --name qBittorrent \
+    -v /volume1/docker/qBittorrent/config:/config \
+    -v /volume2/wushuo/downloads:/downloads \
+    -v /volume2/wushuo/Media:/Media \
+    -e PUID=0 \
+    -e PGID=0 \
+    -e WEBUI_PORT=8080 \
+    -e TZ=Asia/Shanghai \
+    --network host \
+    --restart always \
+    linuxserver/qbittorrent
 ```
 
 :::
