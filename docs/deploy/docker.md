@@ -47,7 +47,7 @@ allowfullscreen>
 version: "3"
 services:
   ani-rss:
-    image: wushuo894/ani-rss
+    image: wushuo894/ani-rss:latest
     container_name: ani-rss
     environment:
       - PORT=7789 # ani-rss 端口
@@ -59,7 +59,7 @@ services:
     restart: always
     network_mode: host
   qBittorrent:
-    image: linuxserver/qbittorrent
+    image: linuxserver/qbittorrent:latest
     container_name: qBittorrent
     environment:
       - PUID=0
@@ -85,7 +85,7 @@ docker run -d \
     -e TZ=Asia/Shanghai \
     --network host \
     --restart always \
-    wushuo894/ani-rss
+    wushuo894/ani-rss:latest
 
 # qBittorrent
 docker run -d \
@@ -99,7 +99,7 @@ docker run -d \
     -e TZ=Asia/Shanghai \
     --network host \
     --restart always \
-    linuxserver/qbittorrent
+    linuxserver/qbittorrent:latest
 ```
 
 :::
