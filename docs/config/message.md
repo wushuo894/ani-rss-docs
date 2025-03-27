@@ -3,17 +3,18 @@
 ### 通知模版示例
 
 ```txt
+${emoji}${emoji}${emoji}
 标题: ${title}
 评分: ${score}
-TMDB: ${themoviedbName}
-TMDB_ID: ${tmdbid}
+TMDB: ${tmdbid}
 BGM: ${bgmUrl}
 季: ${season}
 集: ${episode}
 字幕组: ${subgroup}
 进度: ${currentEpisodeNumber}/${totalEpisodeNumber}
-首播: ${year}年${month}月${date}日
+首播:  ${year}年${month}月${date}日
 事件: ${text}
+${emoji}${emoji}${emoji}
 ```
 
 ::: info webhook
