@@ -4,6 +4,7 @@
 
 ```txt
 ${emoji}${emoji}${emoji}
+事件类型: ${action}
 标题: ${title}
 评分: ${score}
 TMDB: ${tmdbid}
