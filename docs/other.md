@@ -44,6 +44,13 @@
 
 感谢大家的支持！❤️
 
+## Sponsors
+
+<iframe frameborder=0
+src="https://support.nodeget.com/page/promotion?id={your_id}"
+style="border-radius:8px; height: 245px;
+transform: scale(1.0); transform-origin: top left;"></iframe>
+
 ## 依赖项目列表
 
 - [alist](https://github.com/AlistGo/alist)
@@ -60,3 +67,4 @@
 - [Vue.js](https://cn.vuejs.org/)
 - [VitePress](https://vitepress.dev/zh/)
 - [jsoup](https://github.com/jhy/jsoup)
+
