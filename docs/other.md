@@ -47,7 +47,7 @@
 ## Sponsors
 
 <iframe frameborder=0
-src="https://support.nodeget.com/page/promotion?id={your_id}"
+src="https://support.nodeget.com/page/promotion?id=88"
 style="border-radius:8px; height: 245px;
 transform: scale(1.0); transform-origin: top left;"></iframe>
 
