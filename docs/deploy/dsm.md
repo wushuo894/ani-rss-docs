@@ -6,7 +6,7 @@
 
 使用矿神套件源 `https://spk7.imnks.com` , 搜索 `ani-rss` 安装
 
-![Xnip2024-11-05_05-41-50.png](/image/Xnip2024-11-05_05-41-50.png)
+![Xnip2024-11-05_05-41-50.webp](/image/Xnip2024-11-05_05-41-50.webp)
 
 
 ::: info 默认账号

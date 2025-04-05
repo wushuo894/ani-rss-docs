@@ -30,9 +30,9 @@ ANI-RSS
 <hr style="height: 1px;">
 
 <div>
-<img src="./image/tr.png" alt="transmission" width="60">
-<img src="./image/qb.png" alt="qbittorrent" width="60">
-<img src="./image/aria2.png" alt="aria2" width="60">
+<img src="./image/tr.webp" alt="transmission" width="60">
+<img src="./image/qb.webp" alt="qbittorrent" width="60">
+<img src="./image/aria2.webp" alt="aria2" width="60">
 <img src="./image/alist.svg" alt="alist" width="60">
 </div>
 

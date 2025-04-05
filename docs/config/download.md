@@ -5,9 +5,9 @@
 ## 下载工具
 
 <div>
-<img src="/image/tr.png" alt="transmission" width="60">
-<img src="/image/qb.png" alt="qbittorrent" width="60">
-<img src="/image/aria2.png" alt="aria2" width="60">
+<img src="/image/tr.webp" alt="transmission" width="60">
+<img src="/image/qb.webp" alt="qbittorrent" width="60">
+<img src="/image/aria2.webp" alt="aria2" width="60">
 <img src="/image/alist.svg" alt="alist" width="60">
 </div>
 
@@ -33,17 +33,17 @@
 
 1. 在设置面板中打开WebUI并设置用户名和密码。
 
-![qBittorrent设置](/image/qBittorrent_settings.png)
+![qBittorrent设置](/image/qBittorrent_settings.webp)
 
 2. 在浏览器中打开 `http://localhost:8989`
    （注意将端口号改为与设置qBittorrent中一致）。不出意外的话应该能进入WebUI，登陆成功后应该能见到如下页面，说明`qBittorrent`
    端设置无误。（如果无法打开页面，请重新检查`qBittorrent`的设置）
 
-![qBittorrent页面](/image/qBittorrent_WebUI.png)
+![qBittorrent页面](/image/qBittorrent_WebUI.webp)
 
 3. 在`ani-rss`中将上述的地址，用户名，密码填入后点击`测试`。
 
-![qBittorrent测试](/image/qBittorrent_test.png)
+![qBittorrent测试](/image/qBittorrent_test.webp)
 
 如果出现`登陆成功`则说明设置成功。
 
