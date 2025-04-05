@@ -1,6 +1,6 @@
 # 下载设置
 
-<img src="/screenshot/73147386fca70f09e22aadac950f93a1-download-screenshot.png" alt="download-screenshot" id="download-screenshot">
+<img src="/screenshot/73147386fca70f09e22aadac950f93a1-download-screenshot.webp" alt="download-screenshot" id="download-screenshot">
 
 ## 下载工具
 
