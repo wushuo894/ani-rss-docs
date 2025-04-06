@@ -10,7 +10,7 @@
 
 年份默认是从 [Bangumi](https://bgm.tv/) 获取
 
-如果使用 `TMDB名称` 则会使用 `TMDB` 的年份
+如果使用 `TMDB名称` 则会使用 [TMDB](https://www.themoviedb.org/) 的年份
 
 ### 自动推断剧集偏移
 
@@ -26,11 +26,11 @@
 
 ### TMDB标题
 
-当添加订阅时会自动查询并使用 `TMDB` 获得的标题
+当添加订阅时会自动查询并使用 [TMDB](https://www.themoviedb.org/) 获得的标题
 
 ### TMDB台湾
 
-获取 `TMDB` 台湾地区的标题
+获取 [TMDB](https://www.themoviedb.org/) 台湾地区的标题
 
 ### 默认开启全局排除
 
