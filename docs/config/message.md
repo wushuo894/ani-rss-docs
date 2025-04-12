@@ -8,6 +8,7 @@ ${emoji}${emoji}${emoji}
 标题: ${title}
 评分: ${score}
 TMDB: ${tmdbid}
+TMDB链接: ${tmdburl}
 BGM: ${bgmUrl}
 季: ${season}
 集: ${episode}
