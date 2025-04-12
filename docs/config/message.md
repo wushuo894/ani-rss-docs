@@ -71,6 +71,22 @@ ${emoji}${emoji}${emoji}
 [Server酱³ 使用说明书](https://doc.sc3.ft07.com/)
 :::
 
-::: info WebHook
-[Discussions 简单的钉钉、飞书和企业微信的webhook通知模板，可以直接抄作业](https://github.com/wushuo894/ani-rss/discussions/182)
+::: details Emby媒体库刷新
+
+### EmbyHost
+
+填写emby的服务器地址, 例: `http://192.168.5.4:8096`
+
+### Emby密钥
+
+在 `emby` -> `设置` -> `高级` -> `API密钥` -> `创建一个密钥`
+
+### 媒体库
+
+选择刷新的媒体库
+
+### 延迟
+
+推迟刷新媒体库的时机
+
 :::
