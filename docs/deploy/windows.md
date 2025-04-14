@@ -20,7 +20,7 @@ winget install --id Amazon.Corretto.17
 
 ~~将快捷方式移动到 C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup~~
 
-`ani-rss.win.x86_64.zip` 内已包含 `设置开机自启动.bat` 脚本, 双击即可执行
+`ani-rss.win.x86_64.zip` 内已包含 `设置开机自启动.bat` 脚本, 右键 **以管理员身份运行**
 
 ::: info 默认账号
 
