@@ -61,7 +61,7 @@ md.use(MarkdownItGitHubAlerts)
           </tr>
           </thead>
           <tbody>
-          <tr v-for="asset in item['assets'].filter(it => !it.name.endsWith('.md5'))">
+          <tr v-for="asset in item['assets'].filter(it => !it.name.endsWith('.md5') && !it.name.endsWith('.json'))">
             <td>
               <a :href="asset['browser_download_url']" target="_blank">{{ asset.name }}</a>
             </td>
