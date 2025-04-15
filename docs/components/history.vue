@@ -12,6 +12,11 @@ let releases = ref([])
 fetch('https://api.github.com/repos/wushuo894/ani-rss/releases?page=1&per_page=20')
     .then(res => res.json())
     .then(data => {
+      for (let item of data) {
+        let {assets} = item
+        assets = assets.filter(it => !it.name.endsWith('.md5') && !it.name.endsWith('.json'))
+        item['assets'] = assets
+      }
       releases.value = data
     })
 
@@ -61,7 +66,7 @@ md.use(MarkdownItGitHubAlerts)
           </tr>
           </thead>
           <tbody>
-          <tr v-for="asset in item['assets'].filter(it => !it.name.endsWith('.md5') && !it.name.endsWith('.json'))">
+          <tr v-for="asset in item['assets']">
             <td>
               <a :href="asset['browser_download_url']" target="_blank">{{ asset.name }}</a>
             </td>
@@ -79,7 +84,7 @@ md.use(MarkdownItGitHubAlerts)
     font-weight: 500;
     ">
       {{ formatDate(item['created_at']) }} 共下载
-      {{ item['assets'].filter(it => !it.name.endsWith('.md5')).reduce((sum, it) => sum + it['download_count'], 0) }}
+      {{ item['assets'].reduce((sum, it) => sum + it['download_count'], 0) }}
       次</p>
   </div>
 </template>
