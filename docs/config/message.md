@@ -16,6 +16,7 @@ BGM: ${bgmUrl}
 进度: ${currentEpisodeNumber}/${totalEpisodeNumber}
 首播:  ${year}年${month}月${date}日
 事件: ${text}
+下载位置: ${downloadPath}
 ${emoji}${emoji}${emoji}
 ```
 
