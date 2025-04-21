@@ -54,24 +54,6 @@ cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host termina
 镜像站推荐 `https://mikan.sakiko.de/`
 :::
 
-## 老番合集整理 { id=collection }
-
-部分较老的番剧已经没人做种了, 只有合集才能下载的动。
-
-因为现有代码逻辑原因 `ani-rss` 并不打算支持合集整理功能
-
-推荐使用:
-
-[AutoBangumi](https://github.com/EstrellaXD/Auto_Bangumi)
-、
-[MoviePilot](https://github.com/jxxghp/MoviePilot)
-、
-[Episode-ReName](https://github.com/Nriver/Episode-ReName)
-
-::: info
-排名不分前后
-:::
-
 ## qBittorrent 下载时出现错误 { id=qb-download-error }
 
 ::: info
