@@ -14,7 +14,7 @@
           </template>
         </el-alert>
       </div>
-      <div style="margin-top: 24px">
+      <div style="margin-top: 24px;width: 100%;">
         <Giscus
             :key="page.filePath"
             repo="wushuo894/ani-rss-docs"

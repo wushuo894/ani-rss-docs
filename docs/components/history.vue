@@ -6,12 +6,17 @@ import {VPBadge as Badge} from "vitepress/theme"
 import 'markdown-it-github-alerts/styles/github-colors-light.css'
 import 'markdown-it-github-alerts/styles/github-colors-dark-media.css'
 import 'markdown-it-github-alerts/styles/github-base.css'
+import {ElMessage} from "element-plus";
 
 let releases = ref([])
 
-fetch('https://api.github.com/repos/wushuo894/ani-rss/releases?page=1&per_page=20')
+fetch('https://api.github.com/repos/wushuo894/ani-rss/releases?page=1&per_page=50')
     .then(res => res.json())
     .then(data => {
+      if (data.message) {
+        ElMessage.error(data.message)
+        return
+      }
       for (let item of data) {
         let {assets} = item
         assets = assets.filter(it => !it.name.endsWith('.md5') && !it.name.endsWith('.json'))
