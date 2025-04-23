@@ -2,6 +2,7 @@
 <template>
   <Layout>
     <template #doc-after>
+      <el-backtop :right="100" :bottom="100" />
       <div style="margin-top: 24px;">
         <el-alert type="info" show-icon center
                   :closable="false">
