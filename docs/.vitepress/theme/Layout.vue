@@ -2,6 +2,7 @@
 <template>
   <Layout>
     <template #doc-after>
+      <star-dialog/>
       <div style="margin-top: 24px">
         <Giscus
             :key="page.filePath"
@@ -27,6 +28,7 @@ import Giscus from "@giscus/vue";
 import DefaultTheme from "vitepress/theme";
 import {watch} from "vue";
 import {inBrowser, useData} from "vitepress";
+import StarDialog from "../../components/StarDialog.vue";
 
 const {isDark, page} = useData();
 
@@ -44,5 +46,4 @@ watch(isDark, (dark) => {
       "https://giscus.app"
   );
 });
-
 </script>
