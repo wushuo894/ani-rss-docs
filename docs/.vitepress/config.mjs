@@ -3,7 +3,7 @@ import {defineConfig} from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     lang: "zh-CN",
-    title: "ANI-RSS",
+    title: "ANI-RSS 自动追番、订阅、下载 蜜柑RSS动漫",
     description: "ANI-RSS 自动追番、订阅、下载 蜜柑RSS动漫",
     cleanUrls: true,
     themeConfig: {
