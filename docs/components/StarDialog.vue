@@ -1,6 +1,5 @@
 <template>
   <el-dialog v-model="dialogVisible" title="支持我们"
-             style="max-width: 500px;"
              center align-center :close-on-click-modal="false"
              @close="close">
     <div class="dialog-content">
