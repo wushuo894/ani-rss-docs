@@ -1,5 +1,7 @@
 <template>
-  <el-dialog v-model="dialogVisible" title="支持我们" width="400" center align-center :close-on-click-modal="false"
+  <el-dialog v-model="dialogVisible" title="支持我们"
+             style="max-width: 500px;"
+             center align-center :close-on-click-modal="false"
              @close="close">
     <div class="dialog-content">
       <p>如果您觉得这个项目有用，请考虑在 GitHub 上给我们点个 Star！</p>
