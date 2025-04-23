@@ -132,6 +132,7 @@ export default defineConfig({
     },
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}],
+        ['script', {src: 'https://www.googletagmanager.com/gtag/js?id=G-NDNNT54HQM', async: true}],
         ['script', {src: '/custom.js'}],
     ],
     lastUpdated: true,

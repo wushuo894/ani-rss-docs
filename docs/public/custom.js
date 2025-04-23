@@ -7,6 +7,16 @@ try {
 } catch (_) {
 }
 
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+gtag('js', new Date());
+gtag('config', 'G-NDNNT54HQM');
+
 // Clarity
 (function (c, l, a, r, i, t, y) {
     c[a] = c[a] || function () {
