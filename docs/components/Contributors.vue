@@ -10,13 +10,20 @@
 <script setup>
 
 import {onMounted, ref} from "vue";
+import {ElMessage} from "element-plus";
 
 let contributors = ref([])
 
 onMounted(() => {
   fetch('https://api.github.com/repos/wushuo894/ani-rss/contributors')
       .then(res => res.json())
-      .then(data => contributors.value = data)
+      .then(data => {
+        if (data.message) {
+          ElMessage.error(data.message)
+          return
+        }
+        contributors.value = data
+      })
 })
 
 </script>
