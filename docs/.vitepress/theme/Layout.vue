@@ -1,8 +1,10 @@
 <!-- Layout.vue -->
 <template>
   <Layout>
-    <template #doc-after>
+    <template #layout-bottom>
       <el-backtop :right="width > 600 ? 100 : 20" :bottom="100"/>
+    </template>
+    <template #doc-after>
       <div style="margin-top: 24px;">
         <el-alert type="info" show-icon center
                   :closable="false">
