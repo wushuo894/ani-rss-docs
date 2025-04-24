@@ -2,7 +2,7 @@
 <template>
   <Layout>
     <template #doc-after>
-      <el-backtop :right="100" :bottom="100" />
+      <el-backtop :right="width > 600 ? 100 : 20" :bottom="100"/>
       <div style="margin-top: 24px;">
         <el-alert type="info" show-icon center
                   :closable="false">
@@ -40,6 +40,7 @@ import Giscus from "@giscus/vue";
 import DefaultTheme from "vitepress/theme";
 import {watch} from "vue";
 import {inBrowser, useData} from "vitepress";
+import {useWindowSize} from "@vueuse/core";
 
 const {isDark, page} = useData();
 
@@ -57,4 +58,6 @@ watch(isDark, (dark) => {
       "https://giscus.app"
   );
 })
+
+let {width} = useWindowSize()
 </script>
