@@ -15,9 +15,11 @@
 
 ## 贡献者
 
-<a href="https://github.com/wushuo894/ani-rss/graphs/contributors" target="_blank">
-  <img src="https://contrib.rocks/image?repo=wushuo894/ani-rss" alt="contributors" />
-</a>
+<script setup>
+import Contributors from './components/Contributors.vue'
+</script>
+
+<Contributors/>
 
 ## 爱发电
 
