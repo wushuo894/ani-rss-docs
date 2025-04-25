@@ -51,12 +51,12 @@ md.use(MarkdownItGitHubAlerts)
     正在获取中, 请坐和放宽
   </div>
   <div v-for="(item,index) in releases" :key="item.id" v-else>
-    <a :href="item['html_url']" target="_blank">
-      <h2>
+    <h2>
+      <a :href="item['html_url']" target="_blank">
         {{ item.name }}
-        <Badge v-if="index === 0" type="tip" text="最新版本"/>
-      </h2>
-    </a>
+      </a>
+      <Badge v-if="index === 0" type="tip" text="最新版本"/>
+    </h2>
     <div>
       <div v-html="md.render(item['body'])" class="markdown-body"></div>
     </div>
