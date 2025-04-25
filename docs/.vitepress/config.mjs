@@ -132,6 +132,10 @@ export default defineConfig({
         }
     },
     head: [
+        [
+            "meta",
+            {name: "author", content: "wushuo894, wushuo894@outlook.com"},
+        ],
         ['link', {rel: 'icon', href: '/favicon.ico'}],
         ['script', {src: 'https://www.googletagmanager.com/gtag/js?id=G-NDNNT54HQM', async: true}],
         ['script', {src: '/custom.js'}],
@@ -141,5 +145,8 @@ export default defineConfig({
         image: {
             lazyLoading: false
         }
+    },
+    sitemap: {
+        hostname: 'https://docs.wushuo.top'
     }
 })
