@@ -2,6 +2,14 @@
 
 [[toc]]
 
+## 无法调用 VLC、MPV 播放器
+
+需安装以下项目
+
+[northsea4/vlc-protocol](https://github.com/northsea4/vlc-protocol)
+
+[northsea4/mpvplay-protocol](https://github.com/northsea4/mpvplay-protocol)
+
 ## 集数识别错误 { id=episode-error }
 
 ::: info
