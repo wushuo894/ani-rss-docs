@@ -56,10 +56,6 @@
 </div>
 </div>
 
-::: info
-`${episodeTitle}` 无法与 `${bgmEpisodeTitle}` 同时使用
-:::
-
 ### 剔除年份
 
 重命名时将会从模板 `${title}` 中剔除年份, 如 `(2024)`
