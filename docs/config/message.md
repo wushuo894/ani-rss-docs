@@ -6,6 +6,7 @@
 ${emoji}${emoji}${emoji}
 事件类型: ${action}
 标题: ${title}
+BGM日文标题: ${jpTitle}
 评分: ${score}
 TMDB: ${tmdbid}
 TMDB链接: ${tmdburl}
@@ -17,6 +18,9 @@ BGM: ${bgmUrl}
 首播:  ${year}年${month}月${date}日
 事件: ${text}
 下载位置: ${downloadPath}
+TMDB集标题: ${episodeTitle}
+BGM集标题: ${bgmEpisodeTitle}
+BGM日文集标题: ${bgmJpEpisodeTitle}
 ${emoji}${emoji}${emoji}
 ```
 
