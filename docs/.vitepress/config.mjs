@@ -139,6 +139,11 @@ export default defineConfig({
         ['link', {rel: 'icon', href: '/favicon.ico'}],
         ['script', {src: 'https://www.googletagmanager.com/gtag/js?id=G-NDNNT54HQM', async: true}],
         ['script', {src: '/custom.js'}],
+        ['script', {
+            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7691882622629586',
+            async: true,
+            crossOrigin: 'anonymous',
+        }],
     ],
     lastUpdated: true,
     markdown: {
