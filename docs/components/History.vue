@@ -60,7 +60,7 @@ md.use(MarkdownItGitHubAlerts)
     <div>
       <div v-html="md.render(item['body'])" class="markdown-body"></div>
     </div>
-    <div style="overflow-x: auto;">
+    <div style="overflow-x: auto;" v-if="item['assets'].length">
       <div style="min-width: 500px;">
         <table>
           <thead>
@@ -82,7 +82,9 @@ md.use(MarkdownItGitHubAlerts)
         </table>
       </div>
     </div>
-    <p style="
+    <p
+        v-if="item['assets'].length"
+        style="
     color: var(--vp-c-text-2);
     line-height: 32px;
     font-size: 14px;
