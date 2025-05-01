@@ -12,13 +12,27 @@ import 'element-plus/theme-chalk/dark/css-vars.css'
 
 import './custom.css';
 
+import {NProgress} from 'nprogress-v2'
+import 'nprogress-v2/dist/index.css'
+import {inBrowser} from "vitepress"
+
 /** @type {import('vitepress').Theme} */
 export default {
     Layout,
     extends: DefaultTheme,
-    enhanceApp({app}) {
+    enhanceApp({app, router}) {
         app.use(ElementPlus, {
             locale: zhCn,
         })
+
+        if (inBrowser) {
+            NProgress.configure({showSpinner: false})
+            router.onBeforeRouteChange = () => {
+                NProgress.start()
+            }
+            router.onAfterRouteChanged = () => {
+                NProgress.done()
+            }
+        }
     }
 };
