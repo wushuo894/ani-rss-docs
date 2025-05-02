@@ -129,6 +129,10 @@ export default defineConfig({
         outline: {
             level: 'deep',
             label: '页面导航'
+        },
+        footer: {
+            message: '基于 GPL-2.0 许可发布',
+            copyright: 'Copyright © 2024-present wushuo894'
         }
     },
     head: [
