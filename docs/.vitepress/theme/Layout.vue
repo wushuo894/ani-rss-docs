@@ -2,7 +2,7 @@
 <template>
   <Layout>
     <template #layout-bottom>
-      <el-backtop :right="width > 600 ? 100 : 20" :bottom="100"/>
+      <el-backtop :right="width > 600 ? 100 : 20" :bottom="100" style="z-index: 20"/>
     </template>
     <template #doc-after>
       <div style="margin-top: 24px;">
