@@ -28,9 +28,9 @@
 
 当添加订阅时会自动查询并使用 [TMDB](https://www.themoviedb.org/) 获得的标题
 
-### TMDB台湾
+### TMDB语言
 
-获取 [TMDB](https://www.themoviedb.org/) 台湾地区的标题
+获取指定地区的标题
 
 ### 默认开启全局排除
 
