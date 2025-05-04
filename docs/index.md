@@ -31,10 +31,10 @@ ANI-RSS
 <hr style="height: 1px;">
 
 <div>
-<img src="./image/tr.webp" alt="transmission" width="60">
-<img src="./image/qb.webp" alt="qbittorrent" width="60">
-<img src="./image/aria2.webp" alt="aria2" width="60">
-<img src="./image/alist.svg" alt="alist" width="60">
+<img src="./image/Transmission.webp" alt="transmission" width="60">
+<img src="./image/Qbittorrent.webp" alt="qbittorrent" width="60">
+<img src="./image/Aria2.webp" alt="aria2" width="60">
+<img src="./image/Alist.webp" alt="alist" width="60">
 </div>
 
 <p>支持 <strong>Transmission</strong> <strong>qBittorrent</strong> <strong>Aria2</strong> <strong>Alist</strong></p>
