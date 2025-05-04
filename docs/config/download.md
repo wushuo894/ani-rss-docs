@@ -5,10 +5,10 @@
 ## 下载工具
 
 <div>
-<img src="/image/tr.webp" alt="transmission" width="60">
-<img src="/image/qb.webp" alt="qbittorrent" width="60">
-<img src="/image/aria2.webp" alt="aria2" width="60">
-<img src="/image/alist.svg" alt="alist" width="60">
+<img src="/image/Transmission.webp" alt="transmission" width="60">
+<img src="/image/Qbittorrent.webp" alt="qbittorrent" width="60">
+<img src="/image/Aria2.webp" alt="aria2" width="60">
+<img src="/image/Alist.webp" alt="alist" width="60">
 </div>
 
 - `ani-rss` 支持 **Transmission**、**qBittorrent**、**Aria2**、**Alist** 四种下载工具。
