@@ -33,6 +33,16 @@
 
 ### 重命名模版 {#rename-template}
 
+::: info 默认模板
+```txt
+[${subgroup}] ${title} S${seasonFormat}E${episodeFormat}
+```
+:::
+
+::: warning
+模板内至少需要保留 `S${seasonFormat}E${episodeFormat}` or `S${season}E${episode}` 否则会导致无法正常重命名
+:::
+
 <div style="overflow-x: auto;">
 <div style="width: 1200px;">
 
