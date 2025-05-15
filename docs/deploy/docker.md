@@ -50,6 +50,9 @@ services:
     image: wushuo894/ani-rss:latest
     container_name: ani-rss
     environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
       - PORT=7789 # ani-rss 端口
       - CONFIG=/config
       - TZ=Asia/Shanghai
@@ -80,6 +83,9 @@ docker run -d \
     --name ani-rss \
     -v /volume1/docker/ani-rss/config:/config \
     -v /volume2/wushuo/Media:/Media \
+    -e PUID=0 \
+    -e PGID=0 \
+    -e UMASK=022 \
     -e PORT=7789 \
     -e CONFIG=/config \
     -e TZ=Asia/Shanghai \
