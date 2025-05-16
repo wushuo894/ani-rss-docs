@@ -8,7 +8,8 @@ ${emoji}${emoji}${emoji}
 标题: ${title}
 BGM日文标题: ${jpTitle}
 评分: ${score}
-TMDB: ${tmdbid}
+TMDB标题: ${themoviedbName}
+TMDB_ID: ${tmdbid}
 TMDB链接: ${tmdburl}
 BGM: ${bgmUrl}
 季: ${season}
