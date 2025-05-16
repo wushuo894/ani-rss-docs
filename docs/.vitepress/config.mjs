@@ -72,6 +72,7 @@ export default defineConfig({
                     },
                     {text: '常见问题', link: '/faq'},
                     {text: '更新历史', link: '/history'},
+                    {text: '忘记密码', link: '/change-the-password'},
                     {text: '其他', link: '/other'}
                 ]
             }
