@@ -19,7 +19,15 @@ sudo apt install openjdk-17-jdk
 
 :::
 
-## 运行
+## 安装到 linux
+
+```bash:line-numbers
+# 适用系统: Ubuntu/Debian/CentOS/RHEL
+
+sudo bash -c "$(curl -fsSL https://github.com/wushuo894/ani-rss/raw/master/linux/install-ani-rss.sh)"
+```
+
+## 直接运行
 
 ```bash:line-numbers
 wget https://github.com/wushuo894/ani-rss/raw/master/docker/run.sh
