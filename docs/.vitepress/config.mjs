@@ -150,13 +150,27 @@ export default defineConfig({
                 content: "ani-rss,ass,rss,动漫,动漫下载,qBittorrent"
             },
         ],
+        // Open Graph
+        ["meta", {property: "og:type", content: "website"}],
+        ["meta", {property: "og:title", content: "ANI-RSS - 自动追番、订阅、下载 蜜柑RSS动漫"}],
+        ["meta", {property: "og:description", content: "ANI-RSS 自动追番、订阅、下载 蜜柑RSS动漫"}],
+        ["meta", {property: "og:url", content: "https://docs.wushuo.top"}],
+        ["meta", {property: "og:site_name", content: "ANI-RSS"}],
         [
             "meta",
             {
-                name: "og:image",
+                property: "og:image",
                 content: "https://socialify.git.ci/wushuo894/ani-rss/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fdocs.wushuo.top%2Fassets%2Ficon.CAvw8N2m.svg&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Light"
             },
         ],
+        ["meta", {property: "og:image:width", content: "1280"}],
+        ["meta", {property: "og:image:height", content: "640"}],
+        ["meta", {property: "og:locale", content: "zh_CN"}],
+
+        // Twitter Cards
+        ["meta", {name: "twitter:card", content: "summary_large_image"}],
+        ["meta", {name: "twitter:title", content: "ANI-RSS - 自动追番、订阅、下载 蜜柑RSS动漫"}],
+        ["meta", {name: "twitter:description", content: "ANI-RSS 自动追番、订阅、下载 蜜柑RSS动漫"}],
         [
             "meta",
             {
