@@ -139,7 +139,11 @@ export default defineConfig({
     head: [
         [
             "meta",
-            {name: "author", content: "wushuo894, wushuo894@outlook.com"},
+            {name: "author", content: "wushuo894,wushuo894@outlook.com"},
+        ],
+        [
+            "meta",
+            {name: "keywords", content: "ani-rss,ass,rss,动漫,动漫下载,qBittorrent"},
         ],
         ['link', {rel: 'icon', href: '/favicon.ico'}],
         ['script', {src: 'https://www.googletagmanager.com/gtag/js?id=G-NDNNT54HQM', async: true}],
