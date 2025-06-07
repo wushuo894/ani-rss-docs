@@ -29,7 +29,7 @@ export default defineConfig({
                 items: [
                     {text: '添加订阅', link: '/add-rss'},
                     {text: '下载设置', link: '/config/download'},
-                    {text: '基本设置', link: '/config/basic'},
+                    {text: '基本设置', link: '/config/basic/page'},
                     {text: '代理设置', link: '/config/proxy'},
                     {text: '登录设置', link: '/config/login'},
                     {text: '通知', link: '/config/message'},
