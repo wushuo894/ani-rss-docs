@@ -15,8 +15,35 @@ export default defineConfig({
         },
         nav: [
             {text: '首页', link: '/'},
-            {text: '快速开始', link: '/start'},
-            {text: '功能说明', link: '/add-rss'},
+            {
+                text: '部署',
+                items: [
+                    {text: '部署程序', link: '/deploy/deploy'},
+                    {text: 'Docker部署', link: '/deploy/docker'},
+                    {text: 'Windows', link: '/deploy/windows'},
+                    {text: '群晖NAS', link: '/deploy/dsm'},
+                ]
+            },
+            {
+                text: '功能说明',
+                items: [
+                    {text: '添加订阅', link: '/add-rss'},
+                    {text: '下载设置', link: '/config/download'},
+                    {text: '基本设置', link: '/config/basic'},
+                    {text: '代理设置', link: '/config/proxy'},
+                    {text: '登录设置', link: '/config/login'},
+                    {text: '通知', link: '/config/message'},
+                ]
+            },
+            {
+                text: '参与开发',
+                items: [
+                    {text: '基本流程', link: '/dev/basic'},
+                    {text: '环境配置', link: '/dev/env'},
+                    {text: '开始开发', link: '/dev/start'},
+                    {text: '本地编译', link: '/dev/build'},
+                ]
+            },
             {text: '更新历史', link: '/history'},
             {text: '常见问题', link: '/faq'}
         ],
@@ -24,7 +51,6 @@ export default defineConfig({
             {
                 text: '部署',
                 items: [
-                    {text: '快速开始', link: '/start'},
                     {text: '部署程序', link: '/deploy/deploy'},
                     {text: 'Docker部署', link: '/deploy/docker'},
                     {text: 'Windows', link: '/deploy/windows'},
@@ -133,7 +159,7 @@ export default defineConfig({
         },
         footer: {
             message: '基于 GPL-2.0 许可发布',
-            copyright: 'Copyright © 2024-present wushuo894'
+            copyright: 'Copyright © 2024-2025 wushuo894'
         }
     },
     head: [
