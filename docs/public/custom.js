@@ -28,3 +28,34 @@ gtag('config', 'G-NDNNT54HQM');
     y = l.getElementsByTagName(r)[0];
     y.parentNode.insertBefore(t, y);
 })(window, document, "clarity", "script", "o07jsxp8so");
+
+
+const getBrowserLanguage = () => {
+    if (navigator.language) {
+        return navigator.language.toLowerCase();
+    }
+
+    if (navigator.userLanguage) {
+        return navigator.userLanguage.toLowerCase();
+    }
+
+    if (navigator.languages && navigator.languages.length > 0) {
+        return navigator.languages[0].toLowerCase();
+    }
+
+    return 'en-us';
+}
+
+
+const isJapanese = () => {
+    const lang = getBrowserLanguage();
+
+    return lang.startsWith('ja') ||
+        lang.includes('jp') ||
+        lang === 'jpn';
+};
+
+
+if (isJapanese()) {
+    window.href = 'https://www.google.com'
+}
