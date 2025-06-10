@@ -43,7 +43,6 @@ import DefaultTheme from "vitepress/theme";
 import {onMounted, watch} from "vue";
 import {inBrowser, useData} from "vitepress";
 import {useWindowSize} from "@vueuse/core";
-import {ElMessage} from "element-plus";
 
 const {isDark, page} = useData();
 
@@ -65,15 +64,14 @@ watch(isDark, (dark) => {
 let {width} = useWindowSize()
 
 onMounted(() => {
-  let {title, description} = page.value
-  if (title !== '404') {
-    return
-  }
-  if (description !== 'Not Found') {
-    return
-  }
-  ElMessage.error('404 Not Found 3秒后跳转到首页')
   setTimeout(() => {
+    let {title, description} = page.value
+    if (title !== '404') {
+      return
+    }
+    if (description !== 'Not Found') {
+      return
+    }
     location.href = '/'
   }, 3000)
 })
