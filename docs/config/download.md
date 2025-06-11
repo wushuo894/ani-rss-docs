@@ -73,13 +73,44 @@
 
 下载器的保存位置
 
-::: warning
-如果为空则 `不会进行下载`
+::: info 默认保存位置
+
+```txt
+/Media/番剧/${letter}/${title}/Season ${season}
+```
+
 :::
+
+<div style="overflow-x: auto;">
+<div style="width: 1200px;">
+
+| 数据      | 模版                  | 结果示例                    |  
+|---------|---------------------|-------------------------|
+| 拼音首字母   | `${letter}`         | `0、#、A、B、C、D...Z`     ｜ 
+| 年份      | `${year}`           | `2024、2025`             |
+| 月份      | `${month}`          | `1、2、3、4...12`          |
+| 月份      | `${monthFormat}`    | `1、2、3、4...12`          |
+| 季度      | `${quarter}`        | `1、4、7、10`              |
+| 季度      | `${quarterFormat}`  | `01、04、07、10`           |
+| 标题      | `${title}`          | `Re：从零开始的异世界生活`         |  
+| TMDB标题  | `${themoviedbName}` | `Re：从零开始的异世界生活`         |  
+| bgm日文标题 | `${jpTitle}`        | `Re:ゼロから始める異世界生活`       |  
+| 字幕组     | `${subgroup}`       | `ANi`                   |
+| 季       | `${season}`         | `1`                     |
+| 季       | `${seasonFormat}`   | `01`                    |   
+
+</div>
+</div>
 
 ## 剧场版保存位置
 
-如果为空则使用 [保存位置](#save-path)
+::: info 默认剧场版保存位置
+
+```txt
+/Media/剧场版/${letter}/${title}
+```
+
+:::
 
 ## 自动删除 { id=auto-delete }
 
