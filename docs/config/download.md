@@ -92,6 +92,7 @@
 | 月份      | `${monthFormat}`    | `01、02、03、04...12` |
 | 季度      | `${quarter}`        | `1、4、7、10`         |
 | 季度      | `${quarterFormat}`  | `01、04、07、10`      |
+| 季度      | `${quarterName}`    | `冬、春、夏、秋`          |
 | 标题      | `${title}`          | `Re：从零开始的异世界生活`    |  
 | TMDB标题  | `${themoviedbName}` | `Re：从零开始的异世界生活`    |  
 | bgm日文标题 | `${jpTitle}`        | `Re:ゼロから始める異世界生活`  |  
