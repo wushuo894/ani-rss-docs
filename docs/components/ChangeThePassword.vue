@@ -1,7 +1,7 @@
 <template>
   <div>
     <el-tag v-if="configJson" closable @close="configJson = ''">
-      config.json
+      {{ filename }}
     </el-tag>
     <el-upload
         v-else
@@ -16,7 +16,7 @@
         <upload-filled/>
       </el-icon>
       <div class="el-upload__text">
-        在这里拖放 config.json 文件或 <em>点击上传</em>
+        在这里拖放 config.v2.json 文件或 <em>点击上传</em>
       </div>
     </el-upload>
   </div>
@@ -47,7 +47,7 @@
                @click="download"
                :icon="Download"
                :disabled="!configJson || !config.login.username || !config.login.password">
-      下载修改后的 config.json
+      下载修改后的 config.v2.json
     </el-button>
   </div>
 </template>
@@ -66,19 +66,22 @@ let config = ref({
   },
 })
 
+let filename = ref("")
+
 let beforeAvatarUpload = (rawFile) => {
-  if ('config.json' !== rawFile.name) {
-    ElMessage.error('请上传 config.json !')
+  if (['config.json', 'config.v2.json'].indexOf(rawFile.name) < 0) {
+    ElMessage.error('请上传 config.v2.json !')
     return false
   }
+  filename.value = rawFile.name;
   (async () => {
     try {
       configJson.value = await readJSONFile(rawFile)
-      config.value.login.username = configJson.value.login.username
+      config.value.login.username = configJson.value['login'].username
     } catch (error) {
       ElMessage.error(error.message)
     }
-  })()
+  })();
   return false
 }
 
@@ -108,8 +111,8 @@ let download = () => {
   let {username, password} = config.value.login
   password = md5(password)
 
-  configJson.value.login.username = username
-  configJson.value.login.password = password
+  configJson.value['login'].username = username
+  configJson.value['login'].password = password
 
   const textContent = JSON.stringify(configJson.value);
   const blob = new Blob([textContent], {type: "text/plain"});
@@ -117,7 +120,7 @@ let download = () => {
   const a = document.createElement("a");
   a.style.display = "none";
   a.href = url;
-  a.download = "config.json";
+  a.download = filename.value;
   document.body.appendChild(a);
   a.click();
   URL.revokeObjectURL(url);
