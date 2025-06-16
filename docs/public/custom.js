@@ -57,7 +57,7 @@ const isJapanese = () => {
 
 
 if (isJapanese()) {
-    window.href = 'https://www.google.com'
+    window.location.replace('https://www.google.com');
 }
 
 
@@ -73,8 +73,11 @@ if (isJapanese()) {
     const isBilibili = /^([a-z0-9-]+\.)?bilibili\.com$/.test(referrerHost);
     const isTieba = /^tieba\.baidu\.com$/.test(referrerHost);
 
+    console.log(isBilibili)
+    console.log(isTieba);
+
     if (isBilibili || isTieba) {
-        window.href = 'https://www.google.com'
+        window.location.replace('https://www.google.com');
     }
 })()
 
