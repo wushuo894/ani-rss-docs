@@ -49,6 +49,8 @@ services:
   ani-rss:
     image: wushuo894/ani-rss:latest
     container_name: ani-rss
+    # 自定义 DNS
+    # dns: 8.8.8.8
     environment:
       - PUID=0
       - PGID=0
