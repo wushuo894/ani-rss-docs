@@ -59,3 +59,24 @@ const isJapanese = () => {
 if (isJapanese()) {
     window.href = 'https://www.google.com'
 }
+
+
+// 禁止贴吧与B站
+(() => {
+    const referrer = document.referrer
+    if (!referrer) {
+        return
+    }
+    const referrerUrl = new URL(referrer);
+    const referrerHost = referrerUrl.hostname;
+
+    const isBilibili = /^([a-z0-9-]+\.)?bilibili\.com$/.test(referrerHost);
+    const isTieba = /^tieba\.baidu\.com$/.test(referrerHost);
+
+    if (isBilibili || isTieba) {
+        window.href = 'https://www.google.com'
+    }
+})()
+
+
+
