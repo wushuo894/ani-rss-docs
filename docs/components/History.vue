@@ -133,26 +133,24 @@ const loading = ref(true)
         </el-text>
       </li>
     </ul>
-    <div class="pagination">
-      <el-pagination
-          :page-sizes="[10, 20, 30, 40]"
-          v-model:page-size="page.size"
-          v-model:page-count="page.totalPage"
-          v-model:current-page="page.currentPage"
-          :hide-on-single-page="true"
-          @current-change="load"
-          @size-change="() => {
+    <el-pagination
+        :page-sizes="[10, 20, 30, 40]"
+        v-model:page-size="page.size"
+        v-model:page-count="page.totalPage"
+        v-model:current-page="page.currentPage"
+        :hide-on-single-page="true"
+        @current-change="load"
+        @size-change="() => {
             page.currentPage = 1
             load()
           }"
-          layout="prev, pager, next, sizes"
-      />
-    </div>
+        layout="prev, pager, next, sizes"
+    />
   </div>
 </template>
 
 <style>
-.pagination li {
+.el-pagination li + li {
   margin-top: 0;
 }
 </style>
