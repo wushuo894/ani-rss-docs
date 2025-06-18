@@ -141,19 +141,21 @@ const isLatest = (it) => {
         </el-text>
       </li>
     </ul>
-    <el-pagination
-        :page-sizes="[10, 20, 30, 40]"
-        v-model:page-size="page.size"
-        v-model:page-count="page.totalPage"
-        v-model:current-page="page.currentPage"
-        :hide-on-single-page="true"
-        @current-change="load"
-        @size-change="() => {
+    <div style="display: flex;justify-content: center;">
+      <el-pagination
+          :page-sizes="[10, 20, 30, 40]"
+          v-model:page-size="page.size"
+          v-model:page-count="page.totalPage"
+          v-model:current-page="page.currentPage"
+          :hide-on-single-page="true"
+          @current-change="load"
+          @size-change="() => {
             page.currentPage = 1
             load()
           }"
-        layout="prev, pager, next, sizes"
-    />
+          layout="prev, pager, next, sizes"
+      />
+    </div>
   </div>
 </template>
 
