@@ -88,6 +88,13 @@ const page = ref({
 })
 
 const loading = ref(true)
+
+const isLatest = (it) => {
+  if (page.value.currentPage !== 1) {
+    return false
+  }
+  return releases.value.indexOf(it) === 0;
+}
 </script>
 
 <template>
@@ -99,13 +106,14 @@ const loading = ref(true)
           <a :href="item['html_url']" target="_blank">
             {{ item.name }}
           </a>
-          <Badge v-if="index === 0" type="tip" text="最新版本"/>
+          <Badge v-if="isLatest(item)" type="tip" text="最新版本"/>
         </h2>
         <div>
           <div v-html="md.render(item['body'])" class="markdown-body"></div>
         </div>
-        <div style="overflow-x: auto;" v-if="item['assets'].length">
-          <div style="min-width: 500px;">
+        <el-collapse v-if="item['assets'].length" expand-icon-position="left"
+                     :model-value="isLatest(item) ? 'assets' : ''">
+          <el-collapse-item title="Assets" name="assets">
             <table>
               <thead>
               <tr>
@@ -124,8 +132,8 @@ const loading = ref(true)
               </tr>
               </tbody>
             </table>
-          </div>
-        </div>
+          </el-collapse-item>
+        </el-collapse>
         <el-text size="small" v-if="item['assets'].length">
           {{ formatDate(item['created_at']) }} 共下载
           {{ item['assets'].reduce((sum, it) => sum + it['download_count'], 0) }}
@@ -152,5 +160,13 @@ const loading = ref(true)
 <style>
 .el-pagination li + li {
   margin-top: 0;
+}
+
+.el-collapse, .el-collapse-item__header, .el-collapse-item__wrap {
+  border: none;
+}
+
+.el-collapse table {
+  margin: 0;
 }
 </style>
