@@ -26,12 +26,12 @@ ${emoji}${emoji}${emoji}
 ```
 
 ::: info webhook
-`${message}` 会自动替换为信息
+`${notification}` 会自动替换为信息
 
 `${image}` 会自动替换为图片链接
 :::
 
-### 通知类型
+### 通知状态
 
 开始下载、下载完成、缺集、错误、订阅完结
 
