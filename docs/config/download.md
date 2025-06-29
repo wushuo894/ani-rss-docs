@@ -82,7 +82,7 @@
 :::
 
 <div style="overflow-x: auto;">
-<div style="width: 1200px;">
+<div style="width: 500px;">
 
 | 数据      | 模版                  | 结果示例               |  
 |---------|---------------------|--------------------|

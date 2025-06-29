@@ -1,61 +1,104 @@
-try {
-    // 去除后缀 .html
-    let pathname = location.pathname;
-    if (pathname.endsWith(".html")) {
-        location.pathname = pathname.substring(0, pathname.length - 5);
+/**
+ * 禁止日语浏览器
+ */
+const japaneseHandle = () => {
+    const getBrowserLanguage = () => {
+        if (navigator.language) {
+            return navigator.language.toLowerCase();
+        }
+
+        if (navigator.userLanguage) {
+            return navigator.userLanguage.toLowerCase();
+        }
+
+        if (navigator.languages && navigator.languages.length > 0) {
+            return navigator.languages[0].toLowerCase();
+        }
+
+        return 'en-us';
     }
-} catch (_) {
-}
 
-// Google Analytics
-window.dataLayer = window.dataLayer || [];
 
-function gtag() {
-    dataLayer.push(arguments);
-}
+    const isJapanese = () => {
+        const lang = getBrowserLanguage();
 
-gtag('js', new Date());
-gtag('config', 'G-NDNNT54HQM');
-
-// Clarity
-(function (c, l, a, r, i, t, y) {
-    c[a] = c[a] || function () {
-        (c[a].q = c[a].q || []).push(arguments)
+        return lang.startsWith('ja') ||
+            lang.includes('jp') ||
+            lang === 'jpn';
     };
-    t = l.createElement(r);
-    t.async = 1;
-    t.src = "https://www.clarity.ms/tag/" + i;
-    y = l.getElementsByTagName(r)[0];
-    y.parentNode.insertBefore(t, y);
-})(window, document, "clarity", "script", "o07jsxp8so");
 
-
-const getBrowserLanguage = () => {
-    if (navigator.language) {
-        return navigator.language.toLowerCase();
+    if (isJapanese()) {
+        window.location.replace('https://www.google.com');
     }
-
-    if (navigator.userLanguage) {
-        return navigator.userLanguage.toLowerCase();
-    }
-
-    if (navigator.languages && navigator.languages.length > 0) {
-        return navigator.languages[0].toLowerCase();
-    }
-
-    return 'en-us';
 }
 
+/**
+ * 禁止贴吧与B站
+ */
+const referrerHandle = () => {
+    const referrer = document.referrer
+    if (!referrer) {
+        return
+    }
+    const referrerUrl = new URL(referrer);
+    const referrerHost = referrerUrl.hostname;
 
-const isJapanese = () => {
-    const lang = getBrowserLanguage();
+    const isBilibili = /^([a-z0-9-]+\.)?bilibili\.com$/.test(referrerHost);
+    const isTieba = /^tieba\.baidu\.com$/.test(referrerHost);
 
-    return lang.startsWith('ja') ||
-        lang.includes('jp') ||
-        lang === 'jpn';
-};
+    console.log(isBilibili)
+    console.log(isTieba);
 
-
-if (isJapanese()) {
-    window.href = 'https://www.google.com'
+    if (isBilibili || isTieba) {
+        window.location.replace('https://www.google.com');
+    }
 }
+
+/**
+ * Google Analytics
+ */
+const googleAnalyticsHandle = () => {
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-NDNNT54HQM');
+}
+
+/**
+ * Clarity
+ */
+const clarityHandle = () => {
+    ((c, l, a, r, i, t, y) => {
+        c[a] = c[a] || function () {
+            (c[a].q = c[a].q || []).push(arguments)
+        };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "o07jsxp8so");
+}
+
+/**
+ * init
+ */
+(() => {
+    try {
+        // 去除后缀 .html
+        let pathname = location.pathname;
+        if (pathname.endsWith(".html")) {
+            location.pathname = pathname.substring(0, pathname.length - 5);
+            return
+        }
+    } catch (_) {
+    }
+    japaneseHandle()
+    referrerHandle()
+    clarityHandle()
+    googleAnalyticsHandle()
+})()
