@@ -109,10 +109,16 @@ let readJSONFile = (file) => {
 
 let download = () => {
   let {username, password} = config.value.login
-  password = md5(password)
+  username = username.trim()
+  password = password.trim()
+
+  if (!username || !password) {
+    ElMessage.error('请输入修改后的账号与密码')
+    return
+  }
 
   configJson.value['login'].username = username
-  configJson.value['login'].password = password
+  configJson.value['login'].password = md5(password)
 
   const textContent = JSON.stringify(configJson.value);
   const blob = new Blob([textContent], {type: "text/plain"});
