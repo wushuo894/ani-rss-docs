@@ -10,6 +10,16 @@
 镜像站推荐 `https://mikan.sakiko.de/`
 :::
 
+### TmdbApi
+
+tmdb的api调用地址
+
+可以替换为镜像地址
+
+### TmdbApiKey
+
+tmdb密钥
+
 ### BgmToken
 
 你可以在 [https://next.bgm.tv/demo/access-token](https://next.bgm.tv/demo/access-token)
@@ -38,10 +48,6 @@
 ::: info
 保持 **emby** 与 **ani-rss** 的映射路径一致可以有更好的效果
 :::
-
-### 禁止公网访问
-
-禁止公网访问
 
 ### 最大日志条数
 
