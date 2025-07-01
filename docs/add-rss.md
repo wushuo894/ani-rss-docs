@@ -1,4 +1,3 @@
-
 # 添加订阅
 
 ### 标题
@@ -8,6 +7,14 @@
 ### TMDB
 
 [TMDB](https://www.themoviedb.org/) 获取到的番剧名称
+
+### 剧集组
+
+使用剧集组后集标题将根据剧集组获取
+
+::: info
+剧集组与 [tvshow.nfo](/config/basic/add#tvshow-nfo) 也有联动效果
+::::
 
 ### BgmUrl
 
