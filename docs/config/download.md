@@ -151,4 +151,4 @@
 
 ## 检测是否死种
 
-RSS更新后添加下载任务时如果出现异常则会发送 [通知](/config/message)
+RSS更新后添加下载任务时如果出现异常则会发送 [通知](/config/notification)

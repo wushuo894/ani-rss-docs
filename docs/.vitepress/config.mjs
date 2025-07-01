@@ -32,7 +32,7 @@ export default defineConfig({
                     {text: '基本设置', link: '/config/basic/page'},
                     {text: '代理设置', link: '/config/proxy'},
                     {text: '登录设置', link: '/config/login'},
-                    {text: '通知', link: '/config/message'},
+                    {text: '通知', link: '/config/notification'},
                 ]
             },
             {
@@ -82,7 +82,7 @@ export default defineConfig({
                     },
                     {text: '代理设置', link: '/config/proxy'},
                     {text: '登录设置', link: '/config/login'},
-                    {text: '通知', link: '/config/message'}
+                    {text: '通知', link: '/config/notification'}
                 ]
             },
             {
