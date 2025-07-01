@@ -79,7 +79,7 @@ onMounted(() => {
   ElNotification({
     offset: 50,
     duration: 0,
-    message: '账号已被标记，访问主页与项目404。已发工单，恢复时间未知',
+    message: 'Github账号已被标记，访问主页与项目404。已发工单，恢复时间未知',
     type: 'primary',
   })
 })
