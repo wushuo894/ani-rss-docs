@@ -162,6 +162,10 @@ export default defineConfig({
         footer: {
             message: '基于 GPL-2.0 许可发布',
             copyright: 'Copyright © 2024-2025 wushuo894'
+        },
+        notFound: {
+            quote: '页面不存在, 将在3秒后自动跳转到首页',
+            linkText: '回到首页'
         }
     },
     head: [
