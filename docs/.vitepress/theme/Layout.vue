@@ -43,7 +43,6 @@ import DefaultTheme from "vitepress/theme";
 import {onMounted, watch} from "vue";
 import {inBrowser, useData} from "vitepress";
 import {useWindowSize} from "@vueuse/core";
-import {ElNotification} from "element-plus";
 
 const {isDark, page} = useData();
 
@@ -75,13 +74,6 @@ onMounted(() => {
     }
     location.href = '/'
   }, 3000)
-
-  ElNotification({
-    offset: 50,
-    duration: 0,
-    message: 'Github账号已被标记，访问主页与项目404。已发工单，恢复时间未知',
-    type: 'primary',
-  })
 })
 
 </script>
