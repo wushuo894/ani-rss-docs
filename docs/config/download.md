@@ -94,6 +94,7 @@
 | 季度      | `${quarterFormat}`  | `01、04、07、10`      |
 | 季度      | `${quarterName}`    | `冬、春、夏、秋`          |
 | 标题      | `${title}`          | `Re：从零开始的异世界生活`    |  
+| TMDB_ID | `${tmdbid}`         | `65942`            |  
 | TMDB标题  | `${themoviedbName}` | `Re：从零开始的异世界生活`    |  
 | bgm日文标题 | `${jpTitle}`        | `Re:ゼロから始める異世界生活`  |  
 | 字幕组     | `${subgroup}`       | `ANi`              |
