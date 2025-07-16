@@ -51,6 +51,8 @@ const {Layout} = DefaultTheme;
 watch(isDark, (dark) => {
   if (!inBrowser) return;
 
+  changeBarColor(dark);
+
   const iframe = document
       .querySelector("giscus-widget")
       ?.shadowRoot?.querySelector("iframe");
@@ -63,7 +65,16 @@ watch(isDark, (dark) => {
 
 let {width} = useWindowSize()
 
+let changeBarColor = (isDark) => {
+  if (!inBrowser) return;
+
+  const meta = document.getElementById('themeColorMeta');
+  meta.content = isDark ? '#000000' : '#ffffff';
+}
+
 onMounted(() => {
+  changeBarColor(isDark.value)
+
   setTimeout(() => {
     let {title, description} = page.value
     if (title !== '404') {
