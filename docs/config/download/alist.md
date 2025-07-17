@@ -12,9 +12,15 @@
 
 ## 上传位置 / 剧场版上传位置
 
-如: `/115网盘/Media/番剧`
+如:
+
+`/115/Media/番剧/${letter}/${title}/Season ${season}`
+
+`/115/Media/剧场版/${letter}/${title}`
 
 若 `剧场版上传位置` 为空则默认使用 `上传位置`
+
+位置模版可参考 [保存位置](/config/download#save-path)
 
 ## 失败重试次数
 
