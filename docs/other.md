@@ -16,7 +16,6 @@
 ## 贡献者
 
 <script setup>
-import Contributors from './components/Contributors.vue'
 </script>
 
 <Contributors/>
@@ -25,12 +24,14 @@ import Contributors from './components/Contributors.vue'
 
 <img alt="sharon-networks.webp" src="/image/sharon-networks.webp" width="300"/>
 
-**本站由 Sharon Networks 友情赞助**
+[Sharon Networks](https://sharon.io/) 赞助了本项目
 
 <iframe frameborder=0
 src="https://support.nodeget.com/page/promotion?id=88"
 style="border-radius:8px; height: 245px;
 transform: scale(1.0); transform-origin: top left;"></iframe>
+
+[NodeSupport](https://github.com/NodeSeekDev/NodeSupport) 赞助了本项目
 
 ## 爱发电
 
