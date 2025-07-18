@@ -16,6 +16,7 @@
 ## 贡献者
 
 <script setup>
+import Contributors from './components/Contributors.vue'
 </script>
 
 <Contributors/>
