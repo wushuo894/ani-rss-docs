@@ -23,6 +23,10 @@ import Contributors from './components/Contributors.vue'
 
 ## Sponsors
 
+<img alt="sharon-networks.webp" src="/image/sharon-networks.webp" width="300"/>
+
+**本站由 Sharon Networks 友情赞助**
+
 <iframe frameborder=0
 src="https://support.nodeget.com/page/promotion?id=88"
 style="border-radius:8px; height: 245px;
