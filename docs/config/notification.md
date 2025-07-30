@@ -29,6 +29,8 @@ ${emoji}${emoji}${emoji}
 `${notification}` 会自动替换为信息
 
 `${image}` 会自动替换为图片链接
+
+`${imageBase64}` 会自动替换为图片的base64编码，默认不带前缀，如果你需要带前缀的base64图片，请在模板中自行添加，例如：`data:image/png;base64,${imageBase64}`, 或者有些bot支持`base64://${imageBase64}`
 :::
 
 ::: details 具体解释
