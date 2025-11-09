@@ -1,0 +1,32 @@
+/* .vitepress/theme/custom.css */
+
+img {
+    display: inline;
+    margin: 2px;
+}
+
+@media (min-width: 1000px) {
+    #screenshot {
+        width: 900px;
+    }
+}
+
+.dark #screenshot {
+    content: url('/screenshot/a841727ca804f7bfc9c6152d463cf566-screenshot-dark.webp');
+}
+
+.dark #download-screenshot {
+    content: url('/screenshot/2963b1c453d2031eca55475d4818e24c-download-screenshot-dark.webp');
+}
+
+.dark #basic-screenshot {
+    content: url('/screenshot/ee772d3c7aa23212b2e9debe4e67a4d8-basic-screenshot-dark.webp');
+}
+
+.dark #msg-screenshot {
+    content: url('/screenshot/2963b1c453d2031eca55475d4818e24c-msg-screenshot-dark.webp');
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
