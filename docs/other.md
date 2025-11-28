@@ -39,7 +39,9 @@ SharonNetworks 为您的业务起飞保驾护航！
 
 想体验同款构建环境？欢迎 [访问 Sharon 官网](https://sharon.io) 或 [加入 Telegram 群组](https://t.me/SharonNetwork) 了解更多并申请赞助。
 
-<iframe frameborder=0
+<iframe
+scrolling="no"
+frameborder=0
 src="https://support.nodeget.com/page/promotion?id=88"
 style="border-radius:8px; height: 245px;
 transform: scale(1.0); transform-origin: top left;"></iframe>
