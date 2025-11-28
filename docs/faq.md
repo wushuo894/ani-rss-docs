@@ -2,7 +2,29 @@
 
 [[toc]]
 
-## 无法调用 VLC、MPV 播放器
+## 网络超时、SSL握手异常、DNS 解析出错 { id=ssl-error }
+
+```log:line-numbers
+2025-03-11 02:20:26 ERROR ani.rss.util.HttpRequestPlus - url: https://mikanani.me/RSS/Bangumi?bangumiId=3428&subgroupid=583, error: SSL握手异常
+2025-03-11 02:20:26 ERROR ani.rss.task.RssTask - 暗杀女仆冥土小姐 SSL握手异常
+2025-03-11 02:20:26 ERROR ani.rss.task.RssTask - SSL握手异常
+cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host terminated the handshake
+        at cn.hutool.http.HttpRequest.send(HttpRequest.java:1350)
+        at cn.hutool.http.HttpRequest.doExecute(HttpRequest.java:1188)
+        at cn.hutool.http.HttpRequest.execute(HttpRequest.java:1051)
+        at ani.rss.util.HttpRequestPlus.execute(HttpRequestPlus.java:42)
+        at cn.hutool.http.HttpRequest.thenFunction(HttpRequest.java:1077)
+        at ani.rss.util.ItemsUtil.getItems(ItemsUtil.java:67)
+        at ani.rss.util.TorrentUtil.downloadAni(TorrentUtil.java:54)
+        at ani.rss.task.RssTask.download(RssTask.java:63)
+        at ani.rss.task.RssTask.run(RssTask.java:104)
+```
+
+::: info 解决方案
+请使用代理网络，不要使用运营商默认的DNS
+:::
+
+## 无法调用 VLC、MPV 播放器 { id=player }
 
 需要安装以下项目：
 
@@ -29,32 +51,6 @@
 - 确保 **qBittorrent** 版本在 **4.6.11** 以上
 - 确保 [重命名模版](config/basic/rename#rename-template) 包含 `S${seasonFormat}E${episodeFormat}` 这样的格式
 
-:::
-
-## 网络超时、SSL握手异常 { id=ssl-error }
-
-```log:line-numbers
-2025-03-11 02:20:26 ERROR ani.rss.util.HttpRequestPlus - url: https://mikanani.me/RSS/Bangumi?bangumiId=3428&subgroupid=583, error: SSL握手异常
-2025-03-11 02:20:26 ERROR ani.rss.task.RssTask - 暗杀女仆冥土小姐 SSL握手异常
-2025-03-11 02:20:26 ERROR ani.rss.task.RssTask - SSL握手异常
-cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host terminated the handshake
-        at cn.hutool.http.HttpRequest.send(HttpRequest.java:1350)
-        at cn.hutool.http.HttpRequest.doExecute(HttpRequest.java:1188)
-        at cn.hutool.http.HttpRequest.execute(HttpRequest.java:1051)
-        at ani.rss.util.HttpRequestPlus.execute(HttpRequestPlus.java:42)
-        at cn.hutool.http.HttpRequest.thenFunction(HttpRequest.java:1077)
-        at ani.rss.util.ItemsUtil.getItems(ItemsUtil.java:67)
-        at ani.rss.util.TorrentUtil.downloadAni(TorrentUtil.java:54)
-        at ani.rss.task.RssTask.download(RssTask.java:63)
-        at ani.rss.task.RssTask.run(RssTask.java:104)
-```
-
-::: info 解决方案
-这是网络问题，如果不频繁且自己点击订阅预览没问题的话 **可以无视**。
-
-使用镜像站或者选择 `https://mikanani.me` 域名配合代理使用理论上可以缓解
-
-镜像站推荐：`https://mikan.sakiko.de/`
 :::
 
 ## qBittorrent 下载时出现错误 { id=qb-download-error }
@@ -133,7 +129,7 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 请确保 **ani-rss** 和 **qBittorrent** 的映射位置一致
 :::
 
-## 开启备用RSS后自动洗版无法自动删除旧的视频
+## 开启备用RSS后自动洗版无法自动删除旧的视频 { id=standby-rss-error }
 
 ::: info 配置检查
 
