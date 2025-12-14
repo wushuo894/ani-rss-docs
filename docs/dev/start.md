@@ -9,7 +9,7 @@
 ### 2. 启动后端服务
 
 - 使用 [IntelliJ IDEA](https://www.jetbrains.com/idea/) 打开本项目
-- 找到 `/src/main/java/ani/rss/Main.java` 文件
+- 找到 `ani-rss-application/src/main/java/ani/rss/ApplicationMain.java` 文件
 - 点击右上角的绿色调试按钮启动服务
 
 ### 3. 启动前端开发环境
@@ -26,7 +26,7 @@ pnpm dev
 ```
 
 ::: info 访问地址
-浏览器访问 <http://127.0.0.1:30000> 即可开始开发
+浏览器访问 <http://127.0.0.1:37789> 即可开始开发
 :::
 
 ### 4. 开始开发
