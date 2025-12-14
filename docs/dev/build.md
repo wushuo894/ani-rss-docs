@@ -29,5 +29,5 @@ mvn -B package -DskipTests --file pom.xml
 ## 其他操作
 
 如需了解更多打包脚本，请参考：
-- [package.sh](https://github.com/wushuo894/ani-rss/blob/master/package.sh)（Linux/macOS）
+- [package.sh](https://github.com/wushuo894/ani-rss/blob/master/package.sh)（macOS/Linux）
 - [package-win.sh](https://github.com/wushuo894/ani-rss/blob/master/package-win.sh)（Windows）
