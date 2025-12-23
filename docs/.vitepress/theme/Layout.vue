@@ -70,34 +70,35 @@ let changeBarColor = (isDark) => {
   if (!inBrowser) return;
 
   if (isDark) {
-    startSnowflakes()
+    snowfall.startSnowflakes()
   } else {
-    stopSnowflakes()
+    snowfall.stopSnowflakes()
   }
 
   const meta = document.getElementById('themeColorMeta');
   meta.content = isDark ? '#000000' : '#ffffff';
 }
 
-
-let snowflakesContent = document.createElement('div');
-snowflakesContent.classList.add('snowflakes-content');
-document.body.appendChild(snowflakesContent);
-
-const {startSnowflakes, stopSnowflakes} = useSnowfall({
-  interval: 300,           // Create snowflake every 300ms
-  minSpeed: 15,           // Minimum falling speed (seconds)
-  maxSpeed: 25,           // Maximum falling speed (seconds)
-  minSize: 5,            // Minimum size in pixels
-  maxSize: 20,            // Maximum size in pixels
-  color: '#ffffff',       // Snowflake color
-  zIndex: 999,            // Z-index for snowflakes
-  maxFlakes: 100,         // Maximum number of snowflakes (optional)
-  chaos: 50,              // Chaos level for random movement (0-100)
-  container: snowflakesContent // Container element or selector
-})
+let snowfall = null
 
 onMounted(() => {
+  let snowflakesContent = document.createElement('div');
+  snowflakesContent.classList.add('snowflakes-content');
+  document.body.appendChild(snowflakesContent);
+
+  snowfall = useSnowfall({
+    interval: 300,           // Create snowflake every 300ms
+    minSpeed: 15,           // Minimum falling speed (seconds)
+    maxSpeed: 25,           // Maximum falling speed (seconds)
+    minSize: 5,            // Minimum size in pixels
+    maxSize: 20,            // Maximum size in pixels
+    color: '#ffffff',       // Snowflake color
+    zIndex: 999,            // Z-index for snowflakes
+    maxFlakes: 100,         // Maximum number of snowflakes (optional)
+    chaos: 50,              // Chaos level for random movement (0-100)
+    container: snowflakesContent // Container element or selector
+  })
+
   changeBarColor(isDark.value)
 
   setTimeout(() => {
@@ -113,7 +114,7 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
-  stopSnowflakes()
+  snowfall.stopSnowflakes()
 })
 
 </script>
