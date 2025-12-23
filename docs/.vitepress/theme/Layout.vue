@@ -40,7 +40,8 @@
 <script setup>
 import Giscus from "@giscus/vue";
 import DefaultTheme from "vitepress/theme";
-import {onMounted, watch} from "vue";
+import {useSnowfall} from 'vue-snowfall'
+import {onBeforeUnmount, onMounted, watch} from "vue";
 import {inBrowser, useData} from "vitepress";
 import {useWindowSize} from "@vueuse/core";
 
@@ -68,9 +69,33 @@ let {width} = useWindowSize()
 let changeBarColor = (isDark) => {
   if (!inBrowser) return;
 
+  if (isDark) {
+    startSnowflakes()
+  } else {
+    stopSnowflakes()
+  }
+
   const meta = document.getElementById('themeColorMeta');
   meta.content = isDark ? '#000000' : '#ffffff';
 }
+
+
+let snowflakesContent = document.createElement('div');
+snowflakesContent.classList.add('snowflakes-content');
+document.body.appendChild(snowflakesContent);
+
+const {startSnowflakes, stopSnowflakes} = useSnowfall({
+  interval: 300,           // Create snowflake every 300ms
+  minSpeed: 15,           // Minimum falling speed (seconds)
+  maxSpeed: 25,           // Maximum falling speed (seconds)
+  minSize: 5,            // Minimum size in pixels
+  maxSize: 20,            // Maximum size in pixels
+  color: '#ffffff',       // Snowflake color
+  zIndex: 999,            // Z-index for snowflakes
+  maxFlakes: 100,         // Maximum number of snowflakes (optional)
+  chaos: 50,              // Chaos level for random movement (0-100)
+  container: snowflakesContent // Container element or selector
+})
 
 onMounted(() => {
   changeBarColor(isDark.value)
@@ -87,4 +112,19 @@ onMounted(() => {
   }, 3000)
 })
 
+onBeforeUnmount(() => {
+  stopSnowflakes()
+})
+
 </script>
+<style>
+.snowflakes-content {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+}
+</style>
