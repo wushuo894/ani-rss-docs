@@ -46,9 +46,6 @@ const referrerHandle = () => {
     const isBilibili = /^([a-z0-9-]+\.)?bilibili\.com$/.test(referrerHost);
     const isTieba = /^tieba\.baidu\.com$/.test(referrerHost);
 
-    console.log(isBilibili)
-    console.log(isTieba);
-
     if (isBilibili || isTieba) {
         window.location.replace('https://www.google.com');
     }

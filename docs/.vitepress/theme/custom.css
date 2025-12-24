@@ -47,3 +47,7 @@ html.dark {
 .el-collapse-item__content {
     padding-top: 4px;
 }
+
+.vp-doc a {
+    text-decoration: none;
+}
