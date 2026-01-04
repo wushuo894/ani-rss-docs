@@ -7,7 +7,8 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github)](https://github.com/wushuo894/ani-rss)
 </div>
 
-<img src="/screenshot/62f73859bd2fb7063f7f1eff12545fec-screenshot.webp" alt="screenshot" id="screenshot">
+<img src="/image/screenshot/screenshot.webp" alt="screenshot" class="light-only">
+<img src="/image/screenshot/screenshot-dark.webp" alt="screenshot-dark" class="dark-only">
 
 ::: info 默认账号
 

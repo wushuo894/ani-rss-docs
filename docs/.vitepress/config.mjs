@@ -1,4 +1,5 @@
 import {defineConfig} from 'vitepress'
+import compression from 'vite-plugin-compression'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -232,5 +233,21 @@ export default defineConfig({
     },
     sitemap: {
         hostname: 'https://docs.wushuo.top'
+    },
+    vite: {
+        plugins: [
+            compression({
+                // 输出压缩日志
+                verbose: true,
+                // 是否禁用压缩
+                disable: false,
+                // 对超过10KB的文件进行压缩
+                threshold: 10240,
+                // 使用gzip压缩
+                algorithm: 'gzip',
+                // 压缩后文件的扩展名
+                ext: '.gz'
+            }),
+        ]
     }
 })

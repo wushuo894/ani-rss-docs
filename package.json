@@ -17,6 +17,7 @@
     "markdown-it": "^14.1.0",
     "markdown-it-github-alerts": "^1.0.0",
     "md5": "^2.3.0",
+    "vite-plugin-compression": "^0.5.1",
     "vue-snowfall": "^1.1.8"
   }
 }

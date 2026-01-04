@@ -1,6 +1,7 @@
 # 下载设置
 
-<img src="/screenshot/73147386fca70f09e22aadac950f93a1-download-screenshot.webp" alt="download-screenshot" id="download-screenshot">
+<img src="/image/screenshot/download-screenshot.webp" alt="download-screenshot" class="light-only">
+<img src="/image/screenshot/download-screenshot-dark.webp" alt="download-screenshot" class="dark-only">
 
 ## 下载工具
 
