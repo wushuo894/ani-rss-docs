@@ -60,7 +60,16 @@ export default defineConfig({
             {
                 text: '功能说明',
                 items: [
-                    {text: '添加订阅', link: '/add-rss'},
+                    {
+                        text: '添加订阅',
+                        link: '/add-rss',
+                        items: [
+                            {
+                                text: '自定义集数匹配规则',
+                                link: '/custom-episode'
+                            }
+                        ]
+                    },
                     {
                         text: '下载设置',
                         link: '/config/download',
