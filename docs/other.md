@@ -22,7 +22,8 @@ import Contributors from './components/Contributors.vue'
 
 ## Sponsors
 
-<img alt="sharon-networks.webp" src="/image/sharon-networks.webp" width="300"/>
+<img alt="sharon-networks.webp" src="/image/sharon-networks.webp" width="300" class="light-only"/>
+<img alt="sharon-networks.webp" src="/image/sharon-networks-dark.webp" width="300" class="dark-only"/>
 
 ### 🚀 Sponsored by SharonNetworks
 
