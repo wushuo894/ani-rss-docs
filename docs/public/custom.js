@@ -28,26 +28,38 @@ const japaneseHandle = () => {
     };
 
     if (isJapanese()) {
-        window.location.replace('https://www.google.com');
+        gotoGoogle()
     }
 }
 
 /**
- * 禁止贴吧与B站
+ * 转到Google
+ */
+let gotoGoogle = () => {
+    window.location.replace('https://www.google.com')
+}
+
+/**
+ * 黑名单
  */
 const referrerHandle = () => {
-    const referrer = document.referrer
+    let referrer = document.referrer
     if (!referrer) {
         return
     }
     const referrerUrl = new URL(referrer);
-    const referrerHost = referrerUrl.hostname;
+    const referrerHost = referrerUrl.hostname
 
-    const isBilibili = /^([a-z0-9-]+\.)?bilibili\.com$/.test(referrerHost);
-    const isTieba = /^tieba\.baidu\.com$/.test(referrerHost);
+    const blacklist = ['bilibili.com', 'baidu.com', 'csdn.net']
 
-    if (isBilibili || isTieba) {
-        window.location.replace('https://www.google.com');
+    for (let host of blacklist) {
+        if (referrerHost === host) {
+            gotoGoogle()
+        }
+
+        if (referrerHost.endsWith('.' + host)) {
+            gotoGoogle()
+        }
     }
 }
 
