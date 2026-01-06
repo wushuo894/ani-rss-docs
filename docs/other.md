@@ -11,6 +11,7 @@
 - [猫猫博客 Docker 部署 ani-rss 实现自动追番](https://catcat.blog/docker-ani-rss.html)
 - [自动化追番计划](http://jinghuashang.cn/posts/8f622332.html)
 - [ANI-RSS：自动追番新姿势！](https://www.himiku.com/archives/ani-rss.html)
+- [📺 彻底解放双手！2025年最新 Ani-RSS + qBittorrent 全自动追番保姆级教程](http://www.nuan1145.eu.cc/archives/wei-ming-ming-wen-zhang-75sNBWk0)
 
 ## 贡献者
 
