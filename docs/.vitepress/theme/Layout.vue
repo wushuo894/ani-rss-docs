@@ -29,7 +29,7 @@
             reactions-enabled="0"
             emit-metadata="0"
             input-position="bottom"
-            :theme="isDark ? 'dark' : 'light'"
+            :theme="isDark ? 'noborder_dark' : 'light'"
             lang="zh-CN"
         />
       </div>
@@ -59,7 +59,7 @@ watch(isDark, (dark) => {
       ?.shadowRoot?.querySelector("iframe");
 
   iframe?.contentWindow?.postMessage(
-      {giscus: {setConfig: {theme: dark ? "dark" : "light"}}},
+      {giscus: {setConfig: {theme: dark ? "noborder_dark" : "light"}}},
       "https://giscus.app"
   );
 })
