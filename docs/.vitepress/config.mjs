@@ -192,39 +192,47 @@ export default defineConfig({
                 content: "ani-rss,ass,rss,动漫,动漫下载,qBittorrent"
             },
         ],
-        // Open Graph
-        ["meta", {property: "og:type", content: "website"}],
-        ["meta", {property: "og:title", content: "ANI-RSS - 基于RSS自动追番、订阅、下载、刮削"}],
-        ["meta", {property: "og:description", content: "ANI-RSS 基于RSS自动追番、订阅、下载、刮削"}],
-        ["meta", {property: "og:url", content: "https://docs.wushuo.top"}],
-        ["meta", {property: "og:site_name", content: "ANI-RSS"}],
-        [
-            "meta",
-            {
-                property: "og:image",
-                content: "https://docs.wushuo.top/ani-rss.webp"
-            },
-        ],
-        ["meta", {property: "og:image:width", content: "1280"}],
-        ["meta", {property: "og:image:height", content: "640"}],
-        ["meta", {property: "og:locale", content: "zh_CN"}],
-
-        // Twitter Cards
-        ["meta", {name: "twitter:card", content: "summary_large_image"}],
-        ["meta", {name: "twitter:title", content: "ANI-RSS - 基于RSS自动追番、订阅、下载、刮削"}],
-        ["meta", {name: "twitter:description", content: "ANI-RSS 基于RSS自动追番、订阅、下载、刮削"}],
-        [
-            "meta",
-            {
-                name: "twitter:image",
-                content: "https://docs.wushuo.top/ani-rss.webp"
-            },
-        ],
         ['link', {rel: 'icon', href: '/favicon.ico'}],
         ['script', {src: 'https://www.googletagmanager.com/gtag/js?id=G-NDNNT54HQM', async: true}],
         ['script', {src: '/custom.js'}],
         ['meta', {name: "theme-color", id: "themeColorMeta", content: "#ffffff"}],
     ],
+    transformHead(context) {
+        const {title, description, head} = context;
+
+        const newHead = [
+            // Open Graph
+            ["meta", {property: "og:type", content: "website"}],
+            ["meta", {property: "og:title", content: title}],
+            ["meta", {property: "og:description", content: description}],
+            ["meta", {property: "og:url", content: "https://docs.wushuo.top"}],
+            ["meta", {property: "og:site_name", content: "ANI-RSS"}],
+            [
+                "meta",
+                {
+                    property: "og:image",
+                    content: "https://docs.wushuo.top/ani-rss.webp"
+                },
+            ],
+            ["meta", {property: "og:image:width", content: "1280"}],
+            ["meta", {property: "og:image:height", content: "640"}],
+            ["meta", {property: "og:locale", content: "zh_CN"}],
+
+            // Twitter Cards
+            ["meta", {name: "twitter:card", content: "summary_large_image"}],
+            ["meta", {name: "twitter:title", content: title}],
+            ["meta", {name: "twitter:description", content: description}],
+            [
+                "meta",
+                {
+                    name: "twitter:image",
+                    content: "https://docs.wushuo.top/ani-rss.webp"
+                },
+            ],
+        ]
+
+        head.push(...newHead)
+    },
     lastUpdated: true,
     markdown: {
         image: {
