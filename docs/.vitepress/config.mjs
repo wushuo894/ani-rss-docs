@@ -200,20 +200,17 @@ export default defineConfig({
     transformHead(context) {
         const {title, description, head} = context;
 
+        const site_name = "ANI-RSS"
+        const image = 'https://docs.wushuo.top/ani-rss.webp?t=1'
+
         const newHead = [
             // Open Graph
             ["meta", {property: "og:type", content: "website"}],
             ["meta", {property: "og:title", content: title}],
             ["meta", {property: "og:description", content: description}],
             ["meta", {property: "og:url", content: "https://docs.wushuo.top"}],
-            ["meta", {property: "og:site_name", content: "ANI-RSS"}],
-            [
-                "meta",
-                {
-                    property: "og:image",
-                    content: "https://docs.wushuo.top/ani-rss.webp"
-                },
-            ],
+            ["meta", {property: "og:site_name", content: site_name}],
+            ["meta", {property: "og:image", content: image}],
             ["meta", {property: "og:image:width", content: "1280"}],
             ["meta", {property: "og:image:height", content: "640"}],
             ["meta", {property: "og:locale", content: "zh_CN"}],
@@ -222,13 +219,7 @@ export default defineConfig({
             ["meta", {name: "twitter:card", content: "summary_large_image"}],
             ["meta", {name: "twitter:title", content: title}],
             ["meta", {name: "twitter:description", content: description}],
-            [
-                "meta",
-                {
-                    name: "twitter:image",
-                    content: "https://docs.wushuo.top/ani-rss.webp"
-                },
-            ],
+            ["meta", {name: "twitter:image", content: image}],
         ]
 
         head.push(...newHead)
