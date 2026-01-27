@@ -14,9 +14,9 @@
 
 如：
 
-`/115/Media/番剧/${letter}/${title}/Season ${season}`
+`/115/Media/番剧/${title}/Season ${season}`
 
-`/115/Media/剧场版/${letter}/${title}`
+`/115/Media/剧场版/${title}`
 
 若 `剧场版上传位置` 为空则默认使用 `上传位置`
 

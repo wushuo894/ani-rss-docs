@@ -122,14 +122,14 @@ docker compose up -d
 
 如果使用了上述配置，请将 [下载设置](../config/download#下载工具) 修改为如下配置：
 
-| 条目      | 内容                                              |
-|---------|-------------------------------------------------|
-| 下载工具    | qBittorrent                                     |
-| 地址      | http://[ip]:8080                                |
-| 用户名     | admin                                           |
-| 密码      |                                                 |
-| 保存位置    | `/Media/番剧/${letter}/${title}/Season ${season}` |
-| 剧场版保存位置 | `/Media/剧场版/${letter}/${title}`                 |
+| 条目      | 内容                                    |
+|---------|---------------------------------------|
+| 下载工具    | qBittorrent                           |
+| 地址      | http://[ip]:8080                      |
+| 用户名     | admin                                 |
+| 密码      |                                       |
+| 保存位置    | `/Media/番剧/${title}/Season ${season}` |
+| 剧场版保存位置 | `/Media/剧场版/${title}`                 |
 
 ::: info
 初次启动时 `qBittorrent` 会为 `admin` 用户生成一个随机密码，请查看容器日志获取初始密码。

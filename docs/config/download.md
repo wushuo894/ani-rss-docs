@@ -77,7 +77,7 @@ Emby 无法触发 Webhook 通知。
 ::: info 默认保存位置
 
 ```txt
-/Media/番剧/${letter}/${title}/Season ${season}
+/Media/番剧/${title}/Season ${season}
 ```
 
 :::
@@ -110,7 +110,7 @@ Emby 无法触发 Webhook 通知。
 ::: info 默认剧场版保存位置
 
 ```txt
-/Media/剧场版/${letter}/${title}
+/Media/剧场版/${title}
 ```
 
 :::
