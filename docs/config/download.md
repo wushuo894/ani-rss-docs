@@ -53,7 +53,7 @@
 ::: warning OpenList
 请在 OpenList -> 设置 -> 其他 -> 配置临时目录
 
-支持使用 OpenList 离线下载到 115、PikPak、迅雷云盘
+支持使用 OpenList 离线下载到 115、123、PikPak、迅雷云盘
 :::
 
 ::: warning
