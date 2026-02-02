@@ -163,6 +163,14 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 
 :::
 
+## 套件版qbittorrent和ani-ass的兼容问题
+
+::: info 解决方案
+灵活使用映射, 脑子不要太死板
+
+参照: <https://github.com/wushuo894/ani-rss/issues/611>
+:::
+
 ## 有些NSFW番剧无法解析 { id=nsfw }
 
 ::: info 解决方案
