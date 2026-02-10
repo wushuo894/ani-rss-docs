@@ -75,8 +75,7 @@ export default defineConfig({
                         text: '下载设置',
                         link: '/config/download',
                         items: [
-                            {text: 'qBittorrent', link: '/config/download/qbittorrent'},
-                            {text: 'OpenList', link: '/config/download/openlist'},
+                            {text: 'qBittorrent', link: '/config/download/qbittorrent'}
                         ]
                     },
                     {

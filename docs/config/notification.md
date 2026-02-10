@@ -30,7 +30,8 @@ ${emoji}${emoji}${emoji}
 
 `${image}` 会自动替换为图片链接
 
-`${imageBase64}` 会自动替换为图片的 base64 编码，默认不带前缀，如果你需要带前缀的 base64 图片，请在模板中自行添加，例如：`data:image/png;base64,${imageBase64}`，或者有些 bot 支持 `base64://${imageBase64}`
+`${imageBase64}` 会自动替换为图片的 base64 编码，默认不带前缀，如果你需要带前缀的 base64 图片，请在模板中自行添加，例如：
+`data:image/png;base64,${imageBase64}`，或者有些 bot 支持 `base64://${imageBase64}`
 :::
 
 ::: details 具体解释
@@ -110,20 +111,29 @@ ${emoji}${emoji}${emoji}
 
 ::: details Emby媒体库刷新
 
-### EmbyHost
+**EmbyHost:** 填写emby的服务器地址, 例: `http://192.168.5.4:8096`
 
-填写emby的服务器地址, 例: `http://192.168.5.4:8096`
+**Emby密钥:** 在 `emby` -> `设置` -> `高级` -> `API密钥` -> `创建一个密钥`
 
-### Emby密钥
+**媒体库:** 选择刷新的媒体库
 
-在 `emby` -> `设置` -> `高级` -> `API密钥` -> `创建一个密钥`
+**延迟:** 推迟刷新媒体库的时机
 
-### 媒体库
+:::
 
-选择刷新的媒体库
+::: details 文件移动
 
-### 延迟
+**作用:** 文件移动仅支持下载完成通知, 开发目的是为了配合CD2网盘挂载。自动将下载完成的视频移动到挂载目录以达到上传的目的
 
-推迟刷新媒体库的时机
+**注意:** 使用QB下载器请勾选设置中的选项 `为不完整的文件添加扩展名 "!.QB"`
 
+:::
+
+::: details OpenList上传
+
+自动将下载完成的文件上传至 `OpenList`
+
+**Host:** `OpenList` 的 `HTTP` 地址
+
+**ApiKey:** 令牌，可在 `OpenList 网页 -> 管理 -> 设置 -> 其他 -> 令牌` 找到
 :::
