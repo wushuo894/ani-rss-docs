@@ -72,8 +72,6 @@ let changeBarColor = (isDark) => {
   meta.content = isDark ? '#000000' : '#ffffff';
 }
 
-let snowfall = null
-
 onMounted(() => {
   changeBarColor(isDark.value)
 
@@ -89,14 +87,3 @@ onMounted(() => {
   }, 3000)
 })
 </script>
-<style>
-.snowflakes-content {
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 999;
-}
-</style>
