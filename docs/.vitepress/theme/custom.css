@@ -40,3 +40,7 @@ html.dark .light-only {
 html:not(.dark) .dark-only {
     display: none !important;
 }
+
+.item > .text {
+    color: var(--vp-c-text-1) !important;
+}
