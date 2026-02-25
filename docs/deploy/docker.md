@@ -51,7 +51,7 @@ services:
       - PUID=0
       - PGID=0
       - UMASK=022
-      - PORT=7789 # ani-rss 端口
+      - SERVER_PORT=7789 # ani-rss 端口
       - CONFIG=/config
       - TZ=Asia/Shanghai
     volumes:
@@ -84,7 +84,7 @@ docker run -d \
     -e PUID=0 \
     -e PGID=0 \
     -e UMASK=022 \
-    -e PORT=7789 \
+    -e SERVER_PORT=7789 \
     -e CONFIG=/config \
     -e TZ=Asia/Shanghai \
     --network host \
