@@ -105,10 +105,10 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 可通过创建快捷方式并添加参数修改端口号
 
 ```md
---port [端口号 如 13888]
+--server.port=17789
 ```
 
-<img src="./image/PixPin_2024-10-17_03-37-35.webp" alt="PixPin_2024-10-17_03-37-35.webp" width="300">
+<img src="./image/PixPin_2026-02-26_01-20-56.webp" alt="PixPin_2026-02-26_01-20-56.webp" width="300">
 :::
 
 ## qBittorrent 未配置完成 { id=qb-config }
