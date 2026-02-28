@@ -85,7 +85,7 @@ Emby 无法触发 Webhook 通知。
 <div style="overflow-x: auto;">
 <div style="width: 500px;">
 
-| 数据      | 模版                  | 结果示例               |  
+| 数据      | 模版                  | 结果示例               |
 |---------|---------------------|--------------------|
 | 拼音首字母   | `${letter}`         | `0、#、A、B、C、D...Z`  |
 | 年份      | `${year}`           | `2024、2025`        |
@@ -95,12 +95,13 @@ Emby 无法触发 Webhook 通知。
 | 季度      | `${quarterFormat}`  | `01、04、07、10`      |
 | 季度      | `${quarterName}`    | `冬、春、夏、秋`          |
 | 标题      | `${title}`          | `Re：从零开始的异世界生活`    |  
-| TMDB_ID | `${tmdbid}`         | `65942`            |  
-| TMDB标题  | `${themoviedbName}` | `Re：从零开始的异世界生活`    |  
-| bgm日文标题 | `${jpTitle}`        | `Re:ゼロから始める異世界生活`  |  
+| TMDB_ID | `${tmdbid}`         | `65942`            |
+| TMDB标题  | `${themoviedbName}` | `Re：从零开始的异世界生活`    |
+| BGM ID  | `${bgmId}`          | `140001`           |
+| BGM日文标题 | `${jpTitle}`        | `Re:ゼロから始める異世界生活`  |
 | 字幕组     | `${subgroup}`       | `ANi`              |
 | 季       | `${season}`         | `1`                |
-| 季       | `${seasonFormat}`   | `01`               |   
+| 季       | `${seasonFormat}`   | `01`               |
 
 </div>
 </div>
