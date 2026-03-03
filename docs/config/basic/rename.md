@@ -59,6 +59,7 @@
 | 原始标题                                           | `${itemTitle}`         | `[ANi] Re：从零开始的异世界生活 第三季 - 01 [1080P][Baha][WEB-DL][AAC AVC][CHT][MP4]` |  
 | 分辨率                                            | `${resolution}`        | `720p`、`1080p`、`2160p`                                                  |
 | TMDB ID                                        | `${tmdbid}`            | `65942`                                                                 |
+| BGM ID                                         | `${bgmId}`             | `140001`                                                                |
 | 集标题（通过 [TMDB](https://www.themoviedb.org/) 获取） | `${episodeTitle}`      | `起始的终结与终结的起始`、`再会的魔女`、`从零开始的异世界生活`                                      |
 | 集标题（通过 [Bangumi](https://bgm.tv/) 获取）          | `${bgmEpisodeTitle}`   | `起始的终结与终结的起始`、`再会的魔女`、`从零开始的异世界生活`                                      |
 | 日文集标题（通过 [Bangumi](https://bgm.tv/) 获取）        | `${bgmJpEpisodeTitle}` | `始まりの終わりと終わりの始まり`、`再会の魔女`、`ゼロから始まる異世界生活`                                |
