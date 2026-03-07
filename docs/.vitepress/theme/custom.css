@@ -44,3 +44,7 @@ html:not(.dark) .dark-only {
 .item > .text {
     color: var(--vp-c-text-1) !important;
 }
+
+.el-link {
+    vertical-align: baseline;
+}
