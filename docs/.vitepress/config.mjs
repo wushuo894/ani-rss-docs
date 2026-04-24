@@ -6,8 +6,8 @@ import pinyin from 'tiny-pinyin'
 export default defineConfig({
     lang: "zh-CN",
     title: "ANI-RSS",
-    titleTemplate: ":title - ANI-RSS 基于RSS自动追番、订阅、下载、刮削",
-    description: "ANI-RSS 基于RSS自动追番、订阅、下载、刮削",
+    titleTemplate: ":title - ANI-RSS 基于RSS自动追番、订阅、下载、刮削、洗版",
+    description: "ANI-RSS 基于RSS自动追番、订阅、下载、刮削、洗版",
     cleanUrls: true,
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config

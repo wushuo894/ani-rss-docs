@@ -9,7 +9,7 @@ title: 首页
 ANI-RSS
 </h1>
 <p align="center">
-基于RSS自动追番、订阅、下载、刮削
+基于RSS自动追番、订阅、下载、刮削、洗版
 </p>
 
 <a href="start">快速开始</a>
