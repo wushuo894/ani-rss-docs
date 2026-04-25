@@ -14,6 +14,8 @@ import {NProgress} from 'nprogress-v2'
 import 'nprogress-v2/dist/index.css'
 import {inBrowser} from "vitepress"
 
+import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+
 import './custom.css';
 
 /** @type {import('vitepress').Theme} */
@@ -26,6 +28,11 @@ export default {
         })
         app.provide(ID_INJECTION_KEY, {prefix: 1024, current: 0})
         app.provide(ZINDEX_INJECTION_KEY, {current: 0})
+
+        // 引入图标
+        for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+            app.component(key, component)
+        }
 
         if (inBrowser) {
             NProgress.configure({showSpinner: false})

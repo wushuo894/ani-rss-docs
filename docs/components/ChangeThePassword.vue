@@ -45,14 +45,14 @@
   <div style="display: flex;width: 100%;justify-content: end;">
     <el-button bg text type="primary"
                @click="download"
-               :icon="Download"
+               icon="Download"
                :disabled="!configJson || !config.login.username || !config.login.password">
       下载修改后的 config.v2.json
     </el-button>
   </div>
 </template>
 <script setup>
-import {Download, Key, UploadFilled, User} from "@element-plus/icons-vue"
+import {Key, UploadFilled, User} from "@element-plus/icons-vue"
 import {ref} from "vue"
 import {ElMessage} from "element-plus"
 import md5 from "md5"
