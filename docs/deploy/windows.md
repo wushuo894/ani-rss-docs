@@ -18,9 +18,14 @@ winget install --id EclipseAdoptium.Temurin.25.JDK
 
 可下载脚本至程序同级目录下, 右键 **以管理员身份运行** 即可设置开机自启动。
 
-[设置开机自启动.bat](https://github.com/wushuo894/ani-rss/raw/master/windows/设置开机自启动.bat)
-
-[删除开机自启动.bat](https://github.com/wushuo894/ani-rss/raw/master/windows/删除开机自启动.bat)
+<el-space :size="4">
+    <a href="https://github.com/wushuo894/ani-rss/raw/master/windows/设置开机自启动.bat" target="_blank" download>
+        <el-button type="primary" icon="Download" bg text>设置开机自启动.bat</el-button>
+    </a>
+    <a href="https://github.com/wushuo894/ani-rss/raw/master/windows/删除开机自启动.bat" target="_blank" download>
+        <el-button type="primary" icon="Download" bg text>删除开机自启动.bat</el-button>
+    </a>
+</el-space>
 
 ::: info 默认账号
 
