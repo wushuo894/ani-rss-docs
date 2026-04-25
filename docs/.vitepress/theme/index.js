@@ -4,7 +4,7 @@ import DefaultTheme from 'vitepress/theme';
 import Layout from './Layout.vue';
 
 // 引入 Element Plus
-import ElementPlus from 'element-plus';
+import plugin, {ID_INJECTION_KEY, ZINDEX_INJECTION_KEY} from 'element-plus'
 import "element-plus/dist/index.css";
 import {zhCn} from "element-plus/es/locale/index";
 // if you just want to import css
@@ -21,9 +21,11 @@ export default {
     Layout,
     extends: DefaultTheme,
     enhanceApp({app, router}) {
-        app.use(ElementPlus, {
-            locale: zhCn,
+        app.use(plugin, {
+            locale: zhCn
         })
+        app.provide(ID_INJECTION_KEY, {prefix: 1024, current: 0})
+        app.provide(ZINDEX_INJECTION_KEY, {current: 0})
 
         if (inBrowser) {
             NProgress.configure({showSpinner: false})
