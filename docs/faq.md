@@ -2,6 +2,33 @@
 
 [[toc]]
 
+## qBittorrent 设置注意项 { #qb-options }
+
+::: details 下载设置
+
+勾选 `为不完整的文件添加扩展名 .!qB`
+
+设置 `保存未完成的 torrent 到`
+
+![qb-options-downloads.webp](image/qb-options-downloads.webp)
+:::
+
+::: details 设置做种限制需注意
+
+**不要在qb内设置做种后删除任务！**
+
+**不要在qb内设置做种后删除任务！**
+
+**不要在qb内设置做种后删除任务！**
+
+设置为停止任务即可。
+
+否则会导致 `ani-rss` 未处理完成, `qBittorrent` 自己提前把任务删除导致一些问题
+
+![qb-options-seeding-limits.webp](image/qb-options-seeding-limits.webp)
+
+:::
+
 ## macOS无法进行更新 Read-only file system { id=macos-update }
 
 将程序移动至 `Applications`
