@@ -2,28 +2,23 @@
 
 [[toc]]
 
-## qBittorrent 设置注意项 { #qb-options }
+## qBittorrent 设置注意事项 { #qb-options }
 
 ::: details 下载设置
 
-勾选 `为不完整的文件添加扩展名 .!qB`
-
-设置 `保存未完成的 torrent 到`
+- 勾选 `为不完整的文件添加扩展名 .!qB`
+- 设置 `保存未完成的 torrent 到`
 
 ![qb-options-downloads.webp](image/qb-options-downloads.webp)
 :::
 
-::: details 设置做种限制需注意
+::: details 做种限制设置
 
-**不要在qb内设置做种后删除任务！**
+<el-alert title="请勿在 qBittorrent 中设置「做种后删除任务」！" type="warning" :closable="false"/>
 
-**不要在qb内设置做种后删除任务！**
+建议设置为「停止任务」即可。
 
-**不要在qb内设置做种后删除任务！**
-
-设置为停止任务即可。
-
-否则会导致 `ani-rss` 未处理完成, `qBittorrent` 自己提前把任务删除导致一些问题
+如果设置删除任务，可能导致 `ani-rss` 还未处理完成，qBittorrent 就已提前将任务删除，从而引发各种问题。
 
 ![qb-options-seeding-limits.webp](image/qb-options-seeding-limits.webp)
 
