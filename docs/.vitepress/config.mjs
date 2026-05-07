@@ -2,6 +2,8 @@ import {defineConfig} from 'vitepress'
 import compression from 'vite-plugin-compression'
 import pinyin from 'tiny-pinyin'
 
+const ts = Date.now().valueOf()
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     lang: "zh-CN",
@@ -203,9 +205,8 @@ export default defineConfig({
     ],
     transformHead(context) {
         const {title, description, head} = context;
-
         const site_name = "ANI-RSS"
-        const image = 'https://docs.wushuo.top/ani-rss.webp?t=1'
+        const image = `https://docs.wushuo.top/ani-rss.webp?ts=${ts}`
 
         const newHead = [
             // Open Graph
