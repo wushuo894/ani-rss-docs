@@ -12,7 +12,7 @@ img {
 }
 
 * {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "PingFang SC", "Noto Sans SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
 }
 
 html.dark {
