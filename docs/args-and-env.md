@@ -22,7 +22,7 @@
 - **启用Swagger:** `SWAGGER_ENABLED=true` (设置环境变量)
 - **通过链接访问:** `/swagger-ui/index.html`
 
-### MCP 使用方式
+## MCP 使用方式
 
 - **启用MCP:** `MCP_ENABLED=true` (设置环境变量)
 - **接入类型:** `streamable`
