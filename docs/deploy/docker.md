@@ -54,6 +54,8 @@ services:
       - SERVER_PORT=7789 # ani-rss 端口
       - CONFIG=/config
       - TZ=Asia/Shanghai
+      - SWAGGER_ENABLED=false
+      - MCP_ENABLED=false
     volumes:
       - /volume1/docker/ani-rss/config:/config
       - /volume2/wushuo/Media:/Media # 番剧挂载路径，两侧须保持一致
@@ -87,6 +89,8 @@ docker run -d \
     -e SERVER_PORT=7789 \
     -e CONFIG=/config \
     -e TZ=Asia/Shanghai \
+    -e SWAGGER_ENABLED=false \
+    -e MCP_ENABLED=false \
     --network host \
     --restart always \
     wushuo894/ani-rss:latest

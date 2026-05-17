@@ -33,6 +33,7 @@ export default defineConfig({
             {
                 text: '功能说明',
                 items: [
+                    {text: '参数与变量', link: '/args-and-env'},
                     {text: '添加订阅', link: '/add-rss'},
                     {text: '下载设置', link: '/config/download'},
                     {text: '基本设置', link: '/config/basic/page'},
@@ -68,6 +69,7 @@ export default defineConfig({
             {
                 text: '功能说明',
                 items: [
+                    {text: '参数与变量', link: '/args-and-env'},
                     {
                         text: '添加订阅',
                         link: '/add-rss',
