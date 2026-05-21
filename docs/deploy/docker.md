@@ -56,6 +56,7 @@ services:
       - TZ=Asia/Shanghai
       - SWAGGER_ENABLED=false
       - MCP_ENABLED=false
+      - JAVA_OPTS=-Xms64m -Xmx512m -Xss256k -XX:+UseG1GC
     volumes:
       - /volume1/docker/ani-rss/config:/config
       - /volume2/wushuo/Media:/Media # 番剧挂载路径，两侧须保持一致
@@ -91,6 +92,7 @@ docker run -d \
     -e TZ=Asia/Shanghai \
     -e SWAGGER_ENABLED=false \
     -e MCP_ENABLED=false \
+    -e JAVA_OPTS=-Xms64m -Xmx512m -Xss256k -XX:+UseG1GC \
     --network host \
     --restart always \
     wushuo894/ani-rss:latest
