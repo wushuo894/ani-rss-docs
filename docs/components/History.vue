@@ -106,6 +106,7 @@ const isLatest = (it) => {
             {{ item.name }}
           </a>
           <Badge v-if="isLatest(item)" type="tip" text="最新版本"/>
+          <Badge v-if="item.prerelease" type="warning" text="测试版本"/>
         </h2>
         <div>
           <div v-html="md.render(item['body'])" class="markdown-body"></div>
