@@ -113,7 +113,7 @@ const isLatest = (it) => {
         </div>
         <el-collapse v-if="item['assets'].length" expand-icon-position="left"
                      :model-value="isLatest(item) ? 'assets' : ''">
-          <el-collapse-item title="Assets" name="assets">
+          <el-collapse-item title="Assets" name="assyets">
             <table>
               <thead>
               <tr>
@@ -127,7 +127,7 @@ const isLatest = (it) => {
                 <td>
                   <a :href="asset['browser_download_url']" target="_blank">{{ asset.name }}</a>
                 </td>
-                <td>{{ Number(asset.size / 1024 / 1024).toFixed(2) }}MB</td>
+                <td>{{ Number(asset.size / 1024 / 1024).toFixed(2) }}&nbsp;MiB</td>
                 <td>{{ asset['download_count'] }}</td>
               </tr>
               </tbody>

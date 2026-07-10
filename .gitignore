@@ -47,3 +47,4 @@ logs
 .git
 cache
 node_modules
+pnpm-workspace.yaml
