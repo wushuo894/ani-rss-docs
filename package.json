@@ -11,7 +11,6 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.2",
     "@giscus/vue": "^3.1.1",
-    "@protobufjs/base64": "^1.1.2",
     "@vicons/fa": "^0.13.0",
     "@vueuse/core": "^14.3.0",
     "element-plus": "^2.14.3",
