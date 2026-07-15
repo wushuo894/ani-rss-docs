@@ -1,6 +1,5 @@
 import {defineConfig} from 'vitepress'
 import compression from 'vite-plugin-compression'
-import pinyin from 'tiny-pinyin'
 
 const ts = Date.now().valueOf()
 
@@ -238,7 +237,7 @@ export default defineConfig({
         },
         anchor: {
             slugify: (str) => {
-                return pinyin.convertToPinyin(str, '', true);
+                return Buffer.from(str).toString('base64');
             }
         }
     },

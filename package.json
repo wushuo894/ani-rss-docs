@@ -11,13 +11,13 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.2",
     "@giscus/vue": "^3.1.1",
+    "@protobufjs/base64": "^1.1.2",
     "@vicons/fa": "^0.13.0",
     "@vueuse/core": "^14.3.0",
-    "element-plus": "^2.14.2",
+    "element-plus": "^2.14.3",
     "markdown-it": "^14.3.0",
     "markdown-it-github-alerts": "^1.0.1",
     "md5": "^2.3.0",
-    "tiny-pinyin": "^1.3.2",
     "vite-plugin-compression": "^0.5.1"
   }
 }
