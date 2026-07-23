@@ -12,18 +12,18 @@
 <img src="/image/OpenList.webp" alt="OpenList" width="60">
 </div>
 
-- `ani-rss` 支持 **Transmission**、**qBittorrent**、**Aria2**、**OpenList** 四种下载工具
+- `ani-rss` 支持 **Transmission**、 **qBittorrent**、 **Aria2**、 **OpenList** 四种下载工具
 - 由于各下载工具的 API 限制，`ani-rss` 对各工具的功能支持情况如下
 
 <div style="overflow-x: auto;">
 <div style="width: 1400px;">
 
-| 名称           | 版本       | 自动下载 | 下载时重命名 | 下载时复杂解构重命名 | 下载完成后重命名 | 做种时修改下载位置 | 下载完成通知 | OpenList自动上传 | 自动刮削 |
-|--------------|----------|------|--------|------------|----------|-----------|--------|--------------|------|
-| qBittorrent  | `5.2.3`  | ✅    | ✅      | ✅          | ✅        | ✅         | ✅      | ✅            | ✅    |
-| Transmission | `4.1.3`  | ✅    | ✅      | ❌          | ✅        | ✅         | ✅      | ✅            | ✅    |
-| Aria2        | `1.37.0` | ✅    | ❌      | ❌          | ✅        | ❌         | ❌      | ❌            | ❌    |
-| OpenList     | `4.2.1`  | ✅    | ❌      | ❌          | ✅        | ❌         | ✅      | ❌            | ❌    |
+| 名称         | 版本     | 自动下载 | 下载时重命名 | 下载时复杂解构重命名 | 下载完成后重命名 | 做种时修改下载位置 | 下载完成通知 | OpenList自动上传 | 自动刮削 |
+|--------------|----------|----------|--------------|----------------------|------------------|--------------------|--------------|------------------|----------|
+| qBittorrent  | `5.2.3`  | ✅       | ✅           | ✅                   | ✅               | ✅                 | ✅           | ✅               | ✅       |
+| Transmission | `4.1.3`  | ✅       | ✅           | ❌                   | ✅               | ✅                 | ✅           | ✅               | ✅       |
+| Aria2        | `1.37.0` | ✅       | ❌           | ❌                   | ✅               | ❌                 | ❌           | ❌               | ❌       |
+| OpenList     | `4.2.1`  | ✅       | ❌           | ❌                   | ✅               | ❌                 | ✅           | ❌               | ❌       |
 
 </div>
 </div>
@@ -32,17 +32,17 @@
 
 ::: details qBittorrent 设置
 
-1. 在设置面板中打开 WebUI 并设置用户名和密码
+1. 在设置面板中打开 WebUI 并生成 API 密钥
 
 ![qBittorrent设置](/image/qBittorrent_settings.webp)
 
-2. 在浏览器中打开 `http://localhost:8989`
+2. 在浏览器中打开 `http://127.0.0.1:18888`
    （注意将端口号改为与 qBittorrent 设置中一致）。正常情况下应该能进入 WebUI，登录成功后应该能看到如下页面，说明 qBittorrent
    端设置无误（如果无法打开页面，请重新检查 qBittorrent 的设置）
 
 ![qBittorrent页面](/image/qBittorrent_WebUI.webp)
 
-3. 在 `ani-rss` 中将上述的地址、用户名、密码填入后点击 `测试`
+3. 在 `ani-rss` 中将上述的地址、API 密钥填入后点击 `测试`
 
 ![qBittorrent测试](/image/qBittorrent_test.webp)
 
@@ -50,14 +50,12 @@
 
 :::
 
-::: warning OpenList
-请在 OpenList -> 设置 -> 其他 -> 配置临时目录
+::: warning OpenList 请在 OpenList -> 设置 -> 其他 -> 配置临时目录
 
 支持使用 OpenList 离线下载到 115、123、PikPak、迅雷云盘
 :::
 
-::: warning
-**使用 Docker 部署时，务必让 `ani-rss` 与 `下载器` 路径保持一致**
+::: warning **使用 Docker 部署时，务必让 `ani-rss` 与 `下载器` 路径保持一致**
 :::
 
 ::: info 不支持下载时重命名会导致的问题
@@ -85,23 +83,23 @@ Emby 无法触发 Webhook 通知。
 <div style="overflow-x: auto;">
 <div style="width: 500px;">
 
-| 数据      | 模版                  | 结果示例               |
-|---------|---------------------|--------------------|
-| 拼音首字母   | `${letter}`         | `0、#、A、B、C、D...Z`  |
-| 年份      | `${year}`           | `2024、2025`        |
-| 月份      | `${month}`          | `1、2、3、4...12`     |
-| 月份      | `${monthFormat}`    | `01、02、03、04...12` |
-| 季度      | `${quarter}`        | `1、4、7、10`         |
-| 季度      | `${quarterFormat}`  | `01、04、07、10`      |
-| 季度      | `${quarterName}`    | `冬、春、夏、秋`          |
-| 标题      | `${title}`          | `Re：从零开始的异世界生活`    |  
-| TMDB_ID | `${tmdbid}`         | `65942`            |
-| TMDB标题  | `${themoviedbName}` | `Re：从零开始的异世界生活`    |
-| BGM ID  | `${bgmId}`          | `140001`           |
-| BGM日文标题 | `${jpTitle}`        | `Re:ゼロから始める異世界生活`  |
-| 字幕组     | `${subgroup}`       | `ANi`              |
-| 季       | `${season}`         | `1`                |
-| 季       | `${seasonFormat}`   | `01`               |
+| 数据        | 模版                | 结果示例                      |
+|-------------|---------------------|-------------------------------|
+| 拼音首字母  | `${letter}`         | `0、#、A、B、C、D...Z`        |
+| 年份        | `${year}`           | `2024、2025`                  |
+| 月份        | `${month}`          | `1、2、3、4...12`             |
+| 月份        | `${monthFormat}`    | `01、02、03、04...12`         |
+| 季度        | `${quarter}`        | `1、4、7、10`                 |
+| 季度        | `${quarterFormat}`  | `01、04、07、10`              |
+| 季度        | `${quarterName}`    | `冬、春、夏、秋`              |
+| 标题        | `${title}`          | `Re：从零开始的异世界生活`    |  
+| TMDB_ID     | `${tmdbid}`         | `65942`                       |
+| TMDB标题    | `${themoviedbName}` | `Re：从零开始的异世界生活`    |
+| BGM ID      | `${bgmId}`          | `140001`                      |
+| BGM日文标题 | `${jpTitle}`        | `Re:ゼロから始める異世界生活` |
+| 字幕组      | `${subgroup}`       | `ANi`                         |
+| 季          | `${season}`         | `1`                           |
+| 季          | `${seasonFormat}`   | `01`                          |
 
 </div>
 </div>
@@ -126,8 +124,7 @@ Emby 无法触发 Webhook 通知。
 
 等待做种完成后才会删除任务
 
-::: warning
-推荐等待做种，否则可能被 [PeerBanHelper](https://github.com/PBH-BTN/PeerBanHelper) 标记为吸血
+::: warning 推荐等待做种，否则可能被 [PeerBanHelper](https://github.com/PBH-BTN/PeerBanHelper) 标记为吸血
 :::
 
 ### 仅在主 RSS 更新后删除备用 RSS
