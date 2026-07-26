@@ -74,8 +74,8 @@ ${emoji}${emoji}${emoji}
 
 ## 通知方式
 
-<img src="/image/screenshot/notification-screenshot.webp" alt="notification-screenshot" class="light-only">
-<img src="/image/screenshot/notification-screenshot-dark.webp" alt="notification-screenshot" class="dark-only">
+<img src="/image/screenshot/notification-screenshot.webp" alt="notification-screenshot" class="light-only dialog-screenshot">
+<img src="/image/screenshot/notification-screenshot-dark.webp" alt="notification-screenshot" class="dark-only dialog-screenshot">
 
 ::: info TG通知
 [Creating a new bot](https://core.telegram.org/bots/features#botfather:~:text=and%20managing%20bots.-,Creating%20a%20new%20bot,-Use%20the%20/newbot)
