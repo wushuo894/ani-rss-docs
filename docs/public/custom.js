@@ -106,7 +106,7 @@ const clarityHandle = () => {
         }
     } catch (_) {
     }
-    japaneseHandle()
+    // japaneseHandle()
     referrerHandle()
     clarityHandle()
     googleAnalyticsHandle()
