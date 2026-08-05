@@ -30,7 +30,8 @@
 - 隐藏不常用按钮
 - 自定义亮色/暗色主题效果
 
-你可以前往 <https://github.com/wushuo894/ani-rss-css> 复制现成的 `CSS` 模板后再按需修改。
+你可以前往 <https://github.com/wushuo894/ani-rss-css> 或 <https://zzzwannasleep.github.io/ani-rss-themes> 复制现成的
+`CSS` 模板后再按需修改。
 
 ::: tip 使用建议
 自定义 CSS 只会影响页面显示效果，不会影响订阅、下载、重命名等实际功能逻辑。
