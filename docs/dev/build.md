@@ -33,4 +33,4 @@ mvn -B package -DskipTests --file pom.xml
 
 如需了解更多打包脚本，请参考：
 
-- [package.sh](https://github.com/wushuo894/ani-rss/blob/master/package.sh)
+- [package.sh](https://github.com/wushuo894/ani-rss/blob/main/package.sh)

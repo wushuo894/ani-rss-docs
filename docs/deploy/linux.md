@@ -11,7 +11,7 @@ Ubuntu / Debian / CentOS / RHEL
 sudo apt install openjdk-25-jdk
 
 # 安装主程序
-sudo bash -c "$(curl -fsSL https://github.com/wushuo894/ani-rss/raw/master/linux/install-ani-rss.sh)"
+sudo bash -c "$(curl -fsSL https://github.com/wushuo894/ani-rss/raw/main/linux/install-ani-rss.sh)"
 ```
 
 ## 或: 直接运行
@@ -21,7 +21,7 @@ sudo bash -c "$(curl -fsSL https://github.com/wushuo894/ani-rss/raw/master/linux
 mkdir /opt/ani-rss && cd /opt/ani-rss
 
 # 下载运行脚本
-wget https://github.com/wushuo894/ani-rss/raw/master/docker/run.sh
+wget https://github.com/wushuo894/ani-rss/raw/main/docker/run.sh
 
 # 启动
 bash ./run.sh
