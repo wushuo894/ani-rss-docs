@@ -12,13 +12,13 @@
 
 不同部署方式适合的人群不同，可以先按使用场景选择：
 
-| 场景             | 推荐方式                          | 适合人群                       |
-|----------------|-------------------------------|----------------------------|
-| 日常主力机是 Linux   | [Linux 部署](/deploy/linux)     | Linux 用户                   |
-| 想快速开始、后续也方便升级  | [Docker 部署](/deploy/docker)   | 已安装 Docker / NAS / 家庭服务器用户 |
-| 日常主力机是 macOS   | [macOS 部署](/deploy/macos)     | macOS 用户                   |
-| 日常主力机是 Windows | [Windows 部署](/deploy/windows) | Windows 用户                 |
-| 使用群晖 NAS       | [群晖 NAS](/deploy/dsm)         | DSM 用户                     |
+| 场景                       | 推荐方式                        | 适合人群                             |
+|----------------------------|---------------------------------|--------------------------------------|
+| 日常主力机是 Linux         | [Linux 部署](/deploy/linux)     | Linux 用户                           |
+| 想快速开始、后续也方便升级 | [Docker 部署](/deploy/docker)   | 已安装 Docker / NAS / 家庭服务器用户 |
+| 日常主力机是 macOS         | [macOS 部署](/deploy/macos)     | macOS 用户                           |
+| 日常主力机是 Windows       | [Windows 部署](/deploy/windows) | Windows 用户                         |
+| 使用群晖 NAS               | [群晖 NAS](/deploy/dsm)         | DSM 用户                             |
 
 ::: tip 推荐选择
 大多数用户优先推荐 [Docker 部署](/deploy/docker)，环境隔离更清晰，后续升级和迁移也更方便。

@@ -12,7 +12,7 @@ winget install --id EclipseAdoptium.Temurin.25.JDK
     <el-button type="primary" icon="Download" bg text>ani-rss.exe</el-button>
 </a>
 
-运行后，**右下角系统托盘会出现程序图标**，可通过其打开浏览器
+运行后， **右下角系统托盘会出现程序图标**，可通过其打开浏览器
 
 ::: info 默认账号
 

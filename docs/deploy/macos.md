@@ -16,7 +16,7 @@ brew install --cask wushuo894/tap/ani-rss
     <el-button type="primary" icon="Download" bg text>ani-rss.dmg</el-button>
 </a>
 
-运行后，**菜单栏会出现程序图标**，可通过其打开浏览器
+运行后， **菜单栏会出现程序图标**，可通过其打开浏览器
 
 ::: details 遇到程序无法打开的提示
 

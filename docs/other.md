@@ -4,7 +4,7 @@
 
 请不要在 **B站** 或 **中国大陆社交平台** 发布视频/文章宣传本项目
 
-如确实有需要请尽量使用简称：**ASS**
+如确实有需要请尽量使用简称： **ASS**
 
 ## 相关文章
 
@@ -48,7 +48,7 @@ scrolling="no"
 frameborder=0
 src="https://support.nodeget.com/page/promotion?id=88"
 style="border-radius:8px; height: 245px;
-transform: scale(1.0); transform-origin: top left;"></iframe>
+transform: scale (1.0); transform-origin: top left;"></iframe>
 
 [NodeSupport](https://github.com/NodeSeekDev/NodeSupport) 赞助了本项目
 

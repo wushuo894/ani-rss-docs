@@ -41,6 +41,8 @@
 
 可上传第三方 WebUI，将覆盖内置的默认前端加载。
 
+开发自己的前端请阅读[第三方 WebUI 制作标准与指南](/dev/webui)，包含 ZIP 包结构、`webui.json`、鉴权、`api/webui/*` 接口、更新发布与恢复默认界面的方法。
+
 第三方 WebUI 推荐:
 
 <https://zzzwannasleep.github.io/ani-rss-themes/webui>

@@ -48,6 +48,7 @@ export default defineConfig({
                     {text: '环境配置', link: '/dev/env'},
                     {text: '开始开发', link: '/dev/start'},
                     {text: '本地编译', link: '/dev/build'},
+                    {text: '第三方 WebUI', link: '/dev/webui'},
                 ]
             },
             {text: '更新历史', link: '/history'},
@@ -111,6 +112,7 @@ export default defineConfig({
                             {text: '环境配置', link: '/dev/env'},
                             {text: '开始开发', link: '/dev/start'},
                             {text: '本地编译', link: '/dev/build'},
+                            {text: '第三方 WebUI', link: '/dev/webui'},
                         ]
                     },
                     {text: '常见问题', link: '/faq'},
