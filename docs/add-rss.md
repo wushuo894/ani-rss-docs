@@ -1,5 +1,9 @@
 # 添加订阅
 
+::: tip 浏览器扩展
+使用 Chrome 时，可以安装 [ANI-RSS Chrome 订阅助手](/chrome-extension)，直接从 AniBT、Mikan 和 AnimeGarden 的番剧页面选择字幕组并添加订阅。
+:::
+
 ## 标题
 
 订阅的标题，用于标识和管理订阅
@@ -101,4 +105,3 @@
 ## 启用
 
 是否开启订阅
-

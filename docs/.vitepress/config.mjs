@@ -77,7 +77,8 @@ export default defineConfig({
                             {
                                 text: '自定义集数匹配规则',
                                 link: '/custom-episode'
-                            }
+                            },
+                            {text: 'Chrome 订阅助手', link: '/chrome-extension'}
                         ]
                     },
                     {
