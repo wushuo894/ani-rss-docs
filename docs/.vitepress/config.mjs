@@ -36,8 +36,8 @@ export default defineConfig({
                     {text: '添加订阅', link: '/add-rss'},
                     {text: '下载设置', link: '/config/download'},
                     {text: '基本设置', link: '/config/basic/page'},
-                    {text: '代理设置', link: '/config/proxy'},
-                    {text: '登录设置', link: '/config/login'},
+                    {text: '代理', link: '/config/proxy'},
+                    {text: '安全', link: '/config/security'},
                     {text: '通知', link: '/config/notification'},
                 ]
             },
@@ -99,8 +99,8 @@ export default defineConfig({
                             {text: '其他', link: '/config/basic/other'},
                         ]
                     },
-                    {text: '代理设置', link: '/config/proxy'},
-                    {text: '登录设置', link: '/config/login'},
+                    {text: '代理', link: '/config/proxy'},
+                    {text: '安全', link: '/config/security'},
                     {text: '通知', link: '/config/notification'}
                 ]
             },
