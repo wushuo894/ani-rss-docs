@@ -56,7 +56,7 @@
 
 ::: warning 首次登录后建议立刻做的事
 
-1. 前往 [登录设置](/config/login) 修改默认账号密码
+1. 前往 [登录设置](/config/security) 修改默认账号密码
 2. 如果服务需要被局域网或公网访问，顺手检查 `IP 校验`、`IP 白名单`、`信任的反代IP`
 3. 如果后续要和第三方工具联动，记得保存好 `API Key`
 
@@ -158,7 +158,7 @@
 
 1. 选择 [Docker 部署](/deploy/docker)
 2. 配置 [下载设置](/config/download)
-3. 修改 [登录设置](/config/login)
+3. 修改 [登录设置](/config/security)
 4. 添加一个 [测试订阅](/add-rss)
 5. 确认正常后，再看 [重命名设置](/config/basic/rename) 和 [通知](/config/notification)
 

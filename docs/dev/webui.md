@@ -143,7 +143,7 @@ Authorization: <登录返回的 Token>
 
 这里不加 `Bearer ` 前缀。登录有效期、IP 校验、禁止多设备登录或修改密码都可能使 Token 失效，前端应清理失效凭据、停止受保护接口的轮询并返回登录状态。
 
-脚本也可以使用在[登录设置](/config/login)中配置的 API Key：
+脚本也可以使用在[登录设置](/config/security)中配置的 API Key：
 
 ```http
 api-key: <用户配置的 API Key>

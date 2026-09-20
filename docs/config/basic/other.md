@@ -40,7 +40,7 @@
 | Events                                     | `播放`, `用户-标记为已播放`, `用户-标记为未播放` |
 | 播放, 用户-标记为已播放, 用户-标记为未播放 | `番剧`                                           |
 
-**如何查看 ApiKey：** 请参考 [API 密钥获取方法](/config/login#api-key)
+**如何查看 ApiKey：** 请参考 [API 密钥获取方法](/config/security#api-key)
 
 ::: info
 
