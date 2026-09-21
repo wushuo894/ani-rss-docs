@@ -25,7 +25,7 @@
             category="Polls"
             category-id="DIC_kwDONKaoJ84Cn0w0"
             mapping="url"
-            strict="1"
+            strict="0"
             reactions-enabled="0"
             emit-metadata="0"
             input-position="bottom"
