@@ -1,6 +1,6 @@
 /* .vitepress/theme/custom.css */
 
-img {
+.vp-doc img {
     display: inline;
     margin: 2px !important;
 }
