@@ -11,7 +11,7 @@
 <img src="/image/Aria2.webp" alt="aria2" width="60">
 </div>
 
-- `ani-rss` 支持 **Transmission**、 **qBittorrent**、 **Aria2**、 三种下载工具
+- `ani-rss` 支持 **Transmission**、 **qBittorrent**、 **Aria2** 三种下载工具
 - 由于各下载工具的 API 限制，`ani-rss` 对各工具的功能支持情况如下
 
 <div style="overflow-x: auto;">
