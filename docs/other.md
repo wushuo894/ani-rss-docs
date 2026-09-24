@@ -15,10 +15,6 @@
 
 ## 贡献者
 
-<script setup>
-import Contributors from './components/Contributors.vue'
-</script>
-
 <Contributors/>
 
 ## Sponsors
@@ -80,21 +76,3 @@ qBittorrent、Transmission、Aria2 等）推送任务指令。工具本身不具
     - 因网络政策、技术更新或源站限制造成的服务中断或功能失效
 - **例外追责**
     - 若监管机构认定本工具违背技术中立原则，开发者保留终止服务的权利
-
-## 依赖项目列表
-
-- [OpenList](https://github.com/OpenListTeam/OpenList)
-- [bittorrent](https://www.eclipse.org/)
-- [gson](https://github.com/google/gson)
-- [hutool](https://hutool.cn/)
-- [launch4j-maven-plugin](https://github.com/orphan-oss/launch4j-maven-plugin)
-- [Lombok](https://github.com/projectlombok/lombok)
-- [logback](https://github.com/qos-ch/logback)
-- [maven](https://github.com/apache/maven)
-- [maven-assembly-plugin](https://github.com/apache/maven-assembly-plugin)
-- [sqlite-jdbc](https://github.com/xerial/sqlite-jdbc)
-- [TinyPinyin](https://github.com/promeG/TinyPinyin)
-- [Vue.js](https://cn.vuejs.org/)
-- [VitePress](https://vitepress.dev/zh/)
-- [jsoup](https://github.com/jhy/jsoup)
-

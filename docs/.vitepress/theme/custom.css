@@ -2,7 +2,7 @@
 
 img {
     display: inline;
-    margin: 2px;
+    margin: 2px !important;
 }
 
 @media (min-width: 1000px) {

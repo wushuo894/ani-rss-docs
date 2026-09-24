@@ -8,8 +8,4 @@
 下载后替换掉原 `config.v2.json` 文件并重启程序即可
 :::
 
-<script setup>
-import ChangeThePassword from './components/ChangeThePassword.vue'
-</script>
-
 <ChangeThePassword/>

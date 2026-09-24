@@ -2,6 +2,9 @@
 import DefaultTheme from 'vitepress/theme';
 
 import Layout from './Layout.vue';
+import ChangeThePassword from '../../components/ChangeThePassword.vue';
+import Contributors from '../../components/Contributors.vue';
+import History from '../../components/History.vue';
 
 // 引入 Element Plus
 import plugin, {ID_INJECTION_KEY, ZINDEX_INJECTION_KEY} from 'element-plus'
@@ -23,6 +26,10 @@ export default {
     Layout,
     extends: DefaultTheme,
     enhanceApp({app, router}) {
+        app.component('ChangeThePassword', ChangeThePassword)
+        app.component('Contributors', Contributors)
+        app.component('History', History)
+
         app.use(plugin, {
             locale: zhCn
         })
