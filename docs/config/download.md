@@ -9,10 +9,9 @@
 <img src="/image/Transmission.webp" alt="transmission" width="60">
 <img src="/image/Qbittorrent.webp" alt="qbittorrent" width="60">
 <img src="/image/Aria2.webp" alt="aria2" width="60">
-<img src="/image/OpenList.webp" alt="OpenList" width="60">
 </div>
 
-- `ani-rss` 支持 **Transmission**、 **qBittorrent**、 **Aria2**、 **OpenList** 四种下载工具
+- `ani-rss` 支持 **Transmission**、 **qBittorrent**、 **Aria2**、 三种下载工具
 - 由于各下载工具的 API 限制，`ani-rss` 对各工具的功能支持情况如下
 
 <div style="overflow-x: auto;">
@@ -23,7 +22,6 @@
 | qBittorrent  | `5.2.3`  | ✅       | ✅           | ✅                   | ✅               | ✅                 | ✅           | ✅               | ✅       |
 | Transmission | `4.1.3`  | ✅       | ✅           | ❌                   | ✅               | ✅                 | ✅           | ✅               | ✅       |
 | Aria2        | `1.37.0` | ✅       | ❌           | ❌                   | ✅               | ❌                 | ❌           | ❌               | ❌       |
-| OpenList     | `4.2.1`  | ✅       | ❌           | ❌                   | ✅               | ❌                 | ✅           | ❌               | ❌       |
 
 </div>
 </div>
@@ -48,11 +46,6 @@
 
 如果出现 `登录成功` 则说明设置成功
 
-:::
-
-::: warning OpenList 请在 OpenList -> 设置 -> 其他 -> 配置临时目录
-
-支持使用 OpenList 离线下载到 115、123、PikPak、迅雷云盘
 :::
 
 ::: warning **使用 Docker 部署时，务必让 `ani-rss` 与 `下载器` 路径保持一致**

@@ -39,10 +39,9 @@ ANI-RSS
 <img src="./image/Transmission.webp" alt="transmission" width="60">
 <img src="./image/Qbittorrent.webp" alt="qbittorrent" width="60">
 <img src="./image/Aria2.webp" alt="aria2" width="60">
-<img src="./image/OpenList.webp" alt="OpenList" width="60">
 </div>
 
-<p>支持 <strong>Transmission</strong> <strong>qBittorrent</strong> <strong>Aria2</strong> <strong>OpenList</strong></p>
+<p>支持 <strong>Transmission</strong> <strong>qBittorrent</strong> <strong>Aria2</strong></p>
 
 </div>
 
