@@ -26,7 +26,6 @@ export default defineConfig({
                     {text: 'Docker 部署', link: '/deploy/docker'},
                     {text: 'macOS 部署', link: '/deploy/macos'},
                     {text: 'Windows 部署', link: '/deploy/windows'},
-                    {text: '群晖 NAS 部署', link: '/deploy/dsm'},
                 ]
             },
             {
@@ -63,7 +62,6 @@ export default defineConfig({
                     {text: 'Docker 部署', link: '/deploy/docker'},
                     {text: 'macOS 部署', link: '/deploy/macos'},
                     {text: 'Windows 部署', link: '/deploy/windows'},
-                    {text: '群晖 NAS 部署', link: '/deploy/dsm'},
                 ]
             },
             {
