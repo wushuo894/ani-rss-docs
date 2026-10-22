@@ -35,7 +35,6 @@
 
 - **eclipse-temurin**：拥有更小的镜像体积
 - **ibm-semeru-runtimes**：拥有更少的内存占用
-  :::
 
 ::: code-group
 
