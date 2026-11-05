@@ -22,8 +22,8 @@ export default defineConfig({
             {
                 text: '部署',
                 items: [
-                    {text: 'Linux 部署', link: '/deploy/linux'},
                     {text: 'Docker 部署', link: '/deploy/docker'},
+                    {text: 'Linux 部署', link: '/deploy/linux'},
                     {text: 'macOS 部署', link: '/deploy/macos'},
                     {text: 'Windows 部署', link: '/deploy/windows'},
                 ]
@@ -58,8 +58,8 @@ export default defineConfig({
             {
                 text: '部署',
                 items: [
-                    {text: 'Linux 部署', link: '/deploy/linux'},
                     {text: 'Docker 部署', link: '/deploy/docker'},
+                    {text: 'Linux 部署', link: '/deploy/linux'},
                     {text: 'macOS 部署', link: '/deploy/macos'},
                     {text: 'Windows 部署', link: '/deploy/windows'},
                 ]
