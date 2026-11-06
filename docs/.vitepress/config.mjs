@@ -34,6 +34,11 @@ export default defineConfig({
                 items: [
                     {text: '参数与变量', link: '/args-and-env'},
                     {text: '添加订阅', link: '/add-rss'},
+                    // 将新增的操作指南放进导航，便于从功能入口直接查阅。
+                    {text: '批量添加', link: '/batch-add'},
+                    {text: '合集下载', link: '/collection'},
+                    {text: '视频播放', link: '/play'},
+                    {text: 'MCP 工具', link: '/mcp'},
                     {text: '下载设置', link: '/config/download'},
                     {text: '基本设置', link: '/config/basic/page'},
                     {text: '代理', link: '/config/proxy'},
@@ -73,6 +78,7 @@ export default defineConfig({
                         text: '添加订阅',
                         link: '/add-rss',
                         items: [
+                            {text: '批量添加订阅', link: '/batch-add'},
                             {
                                 text: '自定义集数匹配规则',
                                 link: '/custom-episode'
@@ -80,6 +86,9 @@ export default defineConfig({
                             {text: 'Chrome 订阅助手', link: '/chrome-extension'}
                         ]
                     },
+                    {text: '合集下载', link: '/collection'},
+                    {text: '视频播放', link: '/play'},
+                    {text: 'MCP 工具', link: '/mcp'},
                     {
                         text: '下载设置',
                         link: '/config/download',
@@ -93,9 +102,13 @@ export default defineConfig({
                             {text: '页面设置', link: '/config/basic/page'},
                             {text: '添加订阅', link: '/config/basic/add'},
                             {text: '重命名设置', link: '/config/basic/rename'},
+                            // 与 WebUI 的基本设置分组对应，独立展示配置和恢复指南。
+                            {text: '刮削设置', link: '/config/basic/scrape'},
                             {text: 'RSS 设置', link: '/config/basic/rss'},
                             {text: 'Trackers', link: '/config/basic/trackers'},
+                            {text: 'Bangumi', link: '/config/basic/bangumi'},
                             {text: '其他', link: '/config/basic/other'},
+                            {text: '备份与恢复', link: '/config/basic/backup'},
                         ]
                     },
                     {text: '代理', link: '/config/proxy'},

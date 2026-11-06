@@ -56,7 +56,9 @@ cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host termina
 请使用代理网络，不要使用运营商默认的DNS
 :::
 
-## 无法调用 VLC、MPV 播放器 { id=player }
+## 无法调用 VLC、MPV 播放器 {#player}
+
+内置播放器与外部播放器入口见[视频播放](/play)。以下项目用于注册外部播放器协议：
 
 需要安装以下项目：
 

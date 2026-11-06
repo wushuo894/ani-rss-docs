@@ -26,7 +26,7 @@
 - **启用Swagger:** `SWAGGER_ENABLED=true` (设置环境变量)
 - **通过链接访问:** `/swagger-ui/index.html`
 
-## MCP 使用方式
+## MCP 使用方式 {#mcp}
 
 - **启用MCP:** `MCP_ENABLED=true` (设置环境变量)
 - **接入类型:** `streamable`
@@ -34,3 +34,5 @@
 - **Header:** `api-key=xxxxxx`
 - **请求超时时长:** `30秒`
 - **执行超时时长:** `300秒`
+
+完整的工具列表、添加 / 编辑 / 删除流程和参数使用原则见[MCP 工具](/mcp)。

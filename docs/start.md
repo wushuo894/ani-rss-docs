@@ -115,6 +115,8 @@
 3. 保持其他高级选项先用默认值
 4. 保存后观察是否能正常拉取、识别、推送到下载器
 
+从选番页面一次添加多部作品时，参见[批量添加订阅](/batch-add)；下载整季种子时，参见[合集下载](/collection)。
+
 如果集数识别不对，再看：
 
 - [自定义集数匹配规则](/custom-episode)
@@ -145,6 +147,11 @@
 - [页面设置](/config/basic/page)
 - [Trackers](/config/basic/trackers)
 - [其他配置](/config/basic/other)
+- [刮削设置](/config/basic/scrape)
+- [Bangumi 授权](/config/basic/bangumi)
+- [备份与恢复](/config/basic/backup)
+- [视频播放](/play)
+- [MCP 工具](/mcp)
 - [忘记密码](/change-the-password)
 
 ::: tip 使用建议

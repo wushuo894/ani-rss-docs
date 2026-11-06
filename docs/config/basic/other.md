@@ -11,15 +11,15 @@
 
 ## TMDB API 地址
 
-配置 TMDB 的 API 调用地址，可以替换为镜像地址以提高访问速度。
+此设置现位于“基本设置 → 刮削设置”。API 地址、密钥和图片地址说明见[TMDB 接口配置](/config/basic/scrape)。
 
 ## TMDB API 密钥
 
-设置 TMDB 的 API 密钥，用于获取影视作品的元数据信息。
+设置自备的 TMDB API 密钥，用于获取影视作品的元数据信息；留空使用系统默认。入口同上。
 
 ## Bangumi Token
 
-在 [Bangumi Token 生成页面](https://next.bgm.tv/demo/access-token) 生成 Access Token。
+此设置现位于“基本设置 → Bangumi”，支持手工输入和自动获取、续期两种方式。配置步骤见[Bangumi 设置](/config/basic/bangumi)。
 
 ::: info
 
@@ -46,6 +46,18 @@
 
 **最佳实践：** 保持 Emby 与 ani-rss 的映射路径一致，可以获得更好的同步效果
 :::
+
+## ICS 日历 {#ics-calendar}
+
+在“设置 → 基本设置 → 其他”点击“复制 ics”，将链接粘贴到日历应用的“订阅日历 / 通过 URL 添加”入口。
+
+日历接口为 `/api/calendar.ics?api-key=你的APIKey`，只包含当前启用的订阅，按订阅首播日期生成日程；TV 条目按周重复，剧场版为单次日程。日期按 `Asia/Shanghai` 处理，不代表字幕组实际发布或下载完成时间。
+
+订阅链接包含 API Key，应作为私密链接保存。重新生成 API Key 后需更新日历链接；刷新频率取决于日历客户端。
+
+## GitHub Token
+
+在“其他”中填写 GitHub Token，或点击“获取GithubToken”完成获取流程，用于程序访问 GitHub API，例如查询版本信息。Token 需要随设置保存，不必修改订阅内容。
 
 ## 系统设置
 
@@ -92,3 +104,11 @@
 ### 缓存管理
 
 清理系统中不再使用的缓存文件，释放存储空间并优化系统性能。
+
+### 开机自启
+
+通过“开机自启”开关管理支持环境中的自启动。Docker 和系统服务部署的启动策略应由容器或服务管理器配置；平台部署说明见[快速开始](/start)。
+
+### 备份
+
+自动备份、导出和导入已独立放在“基本设置 → 备份”，具体范围与覆盖行为见[备份与恢复](/config/basic/backup)。
