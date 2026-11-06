@@ -1,5 +1,6 @@
 import {defineConfig} from 'vitepress'
 import compression from 'vite-plugin-compression'
+import md5 from "md5";
 
 const ts = Date.now().valueOf()
 
@@ -238,7 +239,7 @@ export default defineConfig({
         },
         anchor: {
             slugify: (str) => {
-                return Buffer.from(str).toString('base64');
+                return md5(str);
             }
         }
     },
