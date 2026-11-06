@@ -1,10 +1,10 @@
-# 常见问题
+# ❓ 常见问题
 
 [[toc]]
 
 ## qBittorrent 设置注意事项 { #qb-options }
 
-::: details 下载设置
+::: details 📖 下载设置
 
 - 勾选 `为不完整的文件添加扩展名 .!qB`
 - 设置 `保存未完成的 torrent 到`
@@ -12,7 +12,7 @@
 ![qb-options-downloads.webp](image/qb-options-downloads.webp)
 :::
 
-::: details 做种限制设置
+::: details 📖 做种限制设置
 
 <el-alert title="请勿在 qBittorrent 中设置「做种后删除任务」！" type="warning" :closable="false"/>
 
@@ -52,7 +52,7 @@ cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host termina
         at ani.rss.task.RssTask.run(RssTask.java:104)
 ```
 
-::: info 解决方案
+::: info ℹ️ 解决方案
 请使用代理网络，不要使用运营商默认的DNS
 :::
 
@@ -67,7 +67,7 @@ cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host termina
 
 ## 集数识别错误 { id=episode-error }
 
-::: info 解决方案
+::: info ℹ️ 解决方案
 
 - 开启 [自定义集数规则](add-rss#custom-episode)
 - 如果默认的集数规则也无法识别，可以自己修改正则表达式
@@ -79,7 +79,7 @@ cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host termina
 
 ## 自动重命名不生效 { id=auto-rename }
 
-::: info 解决方案
+::: info ℹ️ 解决方案
 
 - 如果使用的是 **aria2**，需要 **ani-rss** 与 **aria2** 的 **Docker** 挂载路径一致
 - 确保 **qBittorrent** 版本在 **4.6.11** 以上
@@ -89,7 +89,7 @@ cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host termina
 
 ## qBittorrent 下载时出现错误 { id=qb-download-error }
 
-::: info 解决方案
+::: info ℹ️ 解决方案
 大概率为权限问题
 
 修改 **qBittorrent** 容器的 `PUID` 与 `GUID` 为 `0`
@@ -97,7 +97,7 @@ cn.hutool.core.io.IORuntimeException: SSLHandshakeException: Remote host termina
 或者使用命令赋予文件夹权限
 :::
 
-::: details 使用命令赋予文件夹权限
+::: details 📖 使用命令赋予文件夹权限
 
 ```bash
 chmod -R 777 /Media
@@ -105,7 +105,7 @@ chmod -R 777 /Media
 
 :::
 
-::: warning 进一步排查
+::: warning ⚠️ 进一步排查
 如果还未解决请自行查看 qBittorrent 日志进行排查
 :::
 
@@ -121,7 +121,7 @@ BindException: Address already in use: bind
 
 **以下有两种解决方法**
 
-::: details 修改Hyper-V动态端口解决
+::: details 📖 修改Hyper-V动态端口解决
 
 可以通过以下命令去调整 TCP 动态端口范围
 
@@ -134,7 +134,7 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 
 :::
 
-::: details 修改程序端口解决
+::: details 📖 修改程序端口解决
 
 可通过创建快捷方式并添加参数修改端口号
 
@@ -147,25 +147,25 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 
 ## qBittorrent 未配置完成 { id=qb-config }
 
-::: info 检查项目
+::: info ℹ️ 检查项目
 是否已配置下载器的 **地址、用户名、密码** 和 **下载位置**
 :::
 
 ## 为什么程序的自更新无法使用 {id=update-error}
 
-::: info 网络检查
+::: info ℹ️ 网络检查
 更新时使用的是 [GitHub](https://github.com)，请检查你的网络条件
 :::
 
 ## 自动跳过无法生效 { id=auto-skip }
 
-::: info 路径检查
+::: info ℹ️ 路径检查
 请确保 **ani-rss** 和 **qBittorrent** 的映射位置一致
 :::
 
 ## 开启备用RSS后自动洗版无法自动删除旧的视频 { id=standby-rss-error }
 
-::: info 配置检查
+::: info ℹ️ 配置检查
 
 - 请确保 **ani-rss** 和 **qBittorrent** 的映射位置一致
 - 请关闭❌ [自动跳过](config/basic/rss#auto-skip)
@@ -175,13 +175,13 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 
 ## 删除了视频，在预览中还是显示本地存在 { id=items-delete }
 
-::: info 解决方案
+::: info ℹ️ 解决方案
 在预览界面删除对应的种子缓存
 :::
 
 ## 为什么没有第X集
 
-::: info 检查项目
+::: info ℹ️ 检查项目
 
 - 检查源 RSS 是否包含该集
 - 检查排除规则
@@ -190,7 +190,7 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 
 ## 不会自动下载某集的v2、v3版本，并覆盖老版本 { id=download-v2 }
 
-::: info 配置调整
+::: info ℹ️ 配置调整
 
 - 请关闭❌ [自动跳过](config/basic/rss#auto-skip)
 - 请开启✅ [自动删除](config/download#auto-delete)
@@ -199,7 +199,7 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 
 ## 套件版qbittorrent和ani-ass的兼容问题
 
-::: info 解决方案
+::: info ℹ️ 解决方案
 灵活使用映射, 脑子不要太死板
 
 参照: <https://github.com/wushuo894/ani-rss/issues/611>
@@ -207,6 +207,6 @@ netsh int ipv6 set dynamic tcp start=55000 num=10536
 
 ## 有些NSFW番剧无法解析 { id=nsfw }
 
-::: info 解决方案
+::: info ℹ️ 解决方案
 请在设置中完善 [BgmToken](config/basic/other#bgmtoken)
 :::

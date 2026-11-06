@@ -1,8 +1,8 @@
-# Linux 部署
+# 🐧 Linux 部署
 
 ## 安装为服务
 
-::: tip 适用系统
+::: tip 💡 适用系统
 Ubuntu / Debian / CentOS / RHEL
 :::
 
@@ -29,7 +29,7 @@ bash ./run.sh
 
 访问网页：`http://127.0.0.1:7789`
 
-::: info 默认账号
+::: info ℹ️ 默认账号
 
 用户名: `admin` 密码: `admin`
 :::

@@ -1,4 +1,4 @@
-# MCP 工具
+# 🤖 MCP 工具
 
 MCP 可让支持 Streamable HTTP 的客户端查询、添加和管理 ANI-RSS 订阅。
 

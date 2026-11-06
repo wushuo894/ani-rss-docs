@@ -1,4 +1,4 @@
-# Bangumi 设置
+# 🔑 Bangumi 设置
 
 入口：**设置 → 基本设置 → Bangumi**。这里配置 Bangumi API 地址与 Token 授权，Emby 自动点格子设置见[Emby Webhook](/config/basic/other#emby-webhook)。
 

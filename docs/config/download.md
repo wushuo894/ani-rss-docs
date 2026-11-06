@@ -1,4 +1,4 @@
-# 下载设置
+# 📥 下载设置
 
 <img src="/image/screenshot/download-screenshot.webp" alt="download-screenshot" class="light-only dialog-screenshot">
 <img src="/image/screenshot/download-screenshot-dark.webp" alt="download-screenshot" class="dark-only dialog-screenshot">
@@ -30,7 +30,7 @@
 
 OpenList 已不再作为下载工具提供。下载完成后向 OpenList 上传文件的功能仍保留，需在[通知设置](/config/notification#openlist-upload)中配置。
 
-::: details qBittorrent 设置
+::: details ⚙️ qBittorrent 设置
 
 1. 在设置面板中打开 WebUI 并生成 API 密钥
 
@@ -50,10 +50,10 @@ OpenList 已不再作为下载工具提供。下载完成后向 OpenList 上传�
 
 :::
 
-::: warning **使用 Docker 部署时，务必让 `ani-rss` 与 `下载器` 路径保持一致**
+::: warning ⚠️ **使用 Docker 部署时，务必让 `ani-rss` 与 `下载器` 路径保持一致**
 :::
 
-::: info 不支持下载时重命名会导致的问题
+::: info ℹ️ 不支持下载时重命名会导致的问题
 
 在视频文件未重命名时已经有 Emby 生成视频缩略图 .nfo 元数据，当重命名后还会再次生成一次。且重命名后的视频再次被刮削到时
 Emby 无法触发 Webhook 通知。
@@ -67,7 +67,7 @@ Emby 无法触发 Webhook 通知。
 
 下载器的保存位置
 
-::: info 默认保存位置
+::: info ℹ️ 默认保存位置
 
 ```txt
 /Media/番剧/${title}/Season ${season}
@@ -104,7 +104,7 @@ macOS 与 Windows 默认使用当前用户 `Downloads/番剧` 下的对应模板
 
 ## 剧场版保存位置
 
-::: info 默认剧场版保存位置
+::: info ℹ️ 默认剧场版保存位置
 
 ```txt
 /Media/剧场版/${title}
@@ -122,7 +122,7 @@ macOS 与 Windows 默认使用当前用户 `Downloads/番剧` 下的对应模板
 
 等待做种完成后才会删除任务
 
-::: warning 推荐等待做种，否则可能被 [PeerBanHelper](https://github.com/PBH-BTN/PeerBanHelper) 标记为吸血
+::: warning ⚠️ 推荐等待做种，否则可能被 [PeerBanHelper](https://github.com/PBH-BTN/PeerBanHelper) 标记为吸血
 :::
 
 ### 仅在主 RSS 更新后删除备用 RSS

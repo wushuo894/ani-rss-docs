@@ -1,8 +1,8 @@
-# Chrome 订阅助手
+# 🧩 Chrome 订阅助手
 
 [ANI-RSS Chrome 订阅助手](https://github.com/wushuo894/ani-rss-chrome-ext) 可以在 AniBT、Mikan 和 AnimeGarden 的番剧页面中识别番剧与字幕组，并将订阅直接添加到自己的 ANI-RSS。
 
-::: info 使用前提
+::: info ℹ️ 使用前提
 
 - 已部署并可以通过浏览器访问 ANI-RSS
 - Chrome 127 或更高版本
@@ -35,7 +35,7 @@
 
 `API Key` 可以在 ANI-RSS 的“设置 → 登录 → API Key”中获取。填写完成后点击“测试连接”或“保存”，并按 Chrome 的提示允许扩展访问 ANI-RSS 所在的主机。
 
-::: warning 妥善保管 API Key
+::: warning ⚠️ 妥善保管 API Key
 服务地址和 `API Key` 只保存在本机的扩展存储中，不会同步到浏览器账号。请像保管密码一样保管 `API Key`，不要在截图或公开配置中泄露。
 :::
 
@@ -99,6 +99,6 @@
 
 写入请求超时后，先到 ANI-RSS 中检查订阅是否已经添加，再决定是否重试。扩展不会自动重试写入操作。
 
-::: tip
+::: tip 💡 提示
 扩展当前用于添加订阅，不包含批量添加和已有订阅管理。服务端默认拒绝重复 ID 或同标题、同季的订阅，不会根据全局设置自动覆盖。需要替换时，请在 ANI-RSS WebUI 中处理，详见[重复订阅处理](/add-rss#duplicate-subscriptions)。
 :::

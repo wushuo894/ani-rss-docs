@@ -1,4 +1,4 @@
-# Windows 部署
+# 🪟 Windows 部署
 
 ## 安装 JDK { #install-jdk }
 
@@ -14,7 +14,7 @@ winget install --id EclipseAdoptium.Temurin.25.JDK
 
 运行后， **右下角系统托盘会出现程序图标**，可通过其打开浏览器
 
-::: info 默认账号
+::: info ℹ️ 默认账号
 
 用户名: `admin` 密码: `admin`
 :::

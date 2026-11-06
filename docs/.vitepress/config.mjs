@@ -18,120 +18,120 @@ export default defineConfig({
             alt: 'logo',
         },
         nav: [
-            {text: '首页', link: '/'},
-            {text: '快速开始', link: '/start'},
+            {text: '🏠 首页', link: '/'},
+            {text: '🚀 快速开始', link: '/start'},
             {
-                text: '部署',
+                text: '🖥️ 部署',
                 items: [
-                    {text: 'Docker 部署', link: '/deploy/docker'},
-                    {text: 'Linux 部署', link: '/deploy/linux'},
-                    {text: 'macOS 部署', link: '/deploy/macos'},
-                    {text: 'Windows 部署', link: '/deploy/windows'},
+                    {text: '🐳 Docker 部署', link: '/deploy/docker'},
+                    {text: '🐧 Linux 部署', link: '/deploy/linux'},
+                    {text: '🍎 macOS 部署', link: '/deploy/macos'},
+                    {text: '🪟 Windows 部署', link: '/deploy/windows'},
                 ]
             },
             {
-                text: '功能说明',
+                text: '📖 功能说明',
                 items: [
-                    {text: '参数与变量', link: '/args-and-env'},
-                    {text: '添加订阅', link: '/add-rss'},
+                    {text: '⚙️ 参数与变量', link: '/args-and-env'},
+                    {text: '➕ 添加订阅', link: '/add-rss'},
                     // 将新增的操作指南放进导航，便于从功能入口直接查阅。
-                    {text: '批量添加', link: '/batch-add'},
-                    {text: '合集下载', link: '/collection'},
-                    {text: '视频播放', link: '/play'},
-                    {text: 'MCP 工具', link: '/mcp'},
-                    {text: '下载设置', link: '/config/download'},
-                    {text: '基本设置', link: '/config/basic/page'},
-                    {text: '代理', link: '/config/proxy'},
-                    {text: '安全', link: '/config/security'},
-                    {text: '通知', link: '/config/notification'},
+                    {text: '📚 批量添加', link: '/batch-add'},
+                    {text: '📦 合集下载', link: '/collection'},
+                    {text: '▶️ 视频播放', link: '/play'},
+                    {text: '🤖 MCP 工具', link: '/mcp'},
+                    {text: '📥 下载设置', link: '/config/download'},
+                    {text: '⚙️ 基本设置', link: '/config/basic/page'},
+                    {text: '🌐 代理', link: '/config/proxy'},
+                    {text: '🔐 安全', link: '/config/security'},
+                    {text: '🔔 通知', link: '/config/notification'},
                 ]
             },
             {
-                text: '参与开发',
+                text: '🛠️ 参与开发',
                 items: [
-                    {text: '基本流程', link: '/dev/basic'},
-                    {text: '环境配置', link: '/dev/env'},
-                    {text: '开始开发', link: '/dev/start'},
-                    {text: '本地编译', link: '/dev/build'},
-                    {text: '第三方 WebUI', link: '/dev/webui'},
+                    {text: '🛠️ 基本流程', link: '/dev/basic'},
+                    {text: '🧰 环境配置', link: '/dev/env'},
+                    {text: '🚀 开始开发', link: '/dev/start'},
+                    {text: '📦 本地编译', link: '/dev/build'},
+                    {text: '🎨 第三方 WebUI', link: '/dev/webui'},
                 ]
             },
-            {text: '更新历史', link: '/history'},
-            {text: '常见问题', link: '/faq'}
+            {text: '🕘 更新历史', link: '/history'},
+            {text: '❓ 常见问题', link: '/faq'}
         ],
         sidebar: [
-            {text: '快速开始', link: '/start'},
+            {text: '🚀 快速开始', link: '/start'},
             {
-                text: '部署',
+                text: '🖥️ 部署',
                 items: [
-                    {text: 'Docker 部署', link: '/deploy/docker'},
-                    {text: 'Linux 部署', link: '/deploy/linux'},
-                    {text: 'macOS 部署', link: '/deploy/macos'},
-                    {text: 'Windows 部署', link: '/deploy/windows'},
+                    {text: '🐳 Docker 部署', link: '/deploy/docker'},
+                    {text: '🐧 Linux 部署', link: '/deploy/linux'},
+                    {text: '🍎 macOS 部署', link: '/deploy/macos'},
+                    {text: '🪟 Windows 部署', link: '/deploy/windows'},
                 ]
             },
             {
-                text: '功能说明',
+                text: '📖 功能说明',
                 items: [
-                    {text: '参数与变量', link: '/args-and-env'},
+                    {text: '⚙️ 参数与变量', link: '/args-and-env'},
                     {
-                        text: '添加订阅',
+                        text: '➕ 添加订阅',
                         link: '/add-rss',
                         items: [
-                            {text: '批量添加订阅', link: '/batch-add'},
+                            {text: '📚 批量添加订阅', link: '/batch-add'},
                             {
-                                text: '自定义集数匹配规则',
+                                text: '🏷️ 自定义集数匹配规则',
                                 link: '/custom-episode'
                             },
-                            {text: 'Chrome 订阅助手', link: '/chrome-extension'}
+                            {text: '🧩 Chrome 订阅助手', link: '/chrome-extension'}
                         ]
                     },
-                    {text: '合集下载', link: '/collection'},
-                    {text: '视频播放', link: '/play'},
-                    {text: 'MCP 工具', link: '/mcp'},
+                    {text: '📦 合集下载', link: '/collection'},
+                    {text: '▶️ 视频播放', link: '/play'},
+                    {text: '🤖 MCP 工具', link: '/mcp'},
                     {
-                        text: '下载设置',
+                        text: '📥 下载设置',
                         link: '/config/download',
                         items: [
-                            {text: 'qBittorrent', link: '/config/download/qbittorrent'}
+                            {text: '⚙️ qBittorrent', link: '/config/download/qbittorrent'}
                         ]
                     },
                     {
-                        text: '基本设置',
+                        text: '⚙️ 基本设置',
                         items: [
-                            {text: '页面设置', link: '/config/basic/page'},
-                            {text: '添加订阅', link: '/config/basic/add'},
-                            {text: '重命名设置', link: '/config/basic/rename'},
+                            {text: '🎨 页面设置', link: '/config/basic/page'},
+                            {text: '➕ 添加订阅', link: '/config/basic/add'},
+                            {text: '🏷️ 重命名设置', link: '/config/basic/rename'},
                             // 与 WebUI 的基本设置分组对应，独立展示配置和恢复指南。
-                            {text: '刮削设置', link: '/config/basic/scrape'},
-                            {text: 'RSS 设置', link: '/config/basic/rss'},
-                            {text: 'Trackers', link: '/config/basic/trackers'},
-                            {text: 'Bangumi', link: '/config/basic/bangumi'},
-                            {text: '其他', link: '/config/basic/other'},
-                            {text: '备份与恢复', link: '/config/basic/backup'},
+                            {text: '🪄 刮削设置', link: '/config/basic/scrape'},
+                            {text: '📡 RSS 设置', link: '/config/basic/rss'},
+                            {text: '📡 Trackers', link: '/config/basic/trackers'},
+                            {text: '🔑 Bangumi', link: '/config/basic/bangumi'},
+                            {text: 'ℹ️ 其他', link: '/config/basic/other'},
+                            {text: '💾 备份与恢复', link: '/config/basic/backup'},
                         ]
                     },
-                    {text: '代理', link: '/config/proxy'},
-                    {text: '安全', link: '/config/security'},
-                    {text: '通知', link: '/config/notification'}
+                    {text: '🌐 代理', link: '/config/proxy'},
+                    {text: '🔐 安全', link: '/config/security'},
+                    {text: '🔔 通知', link: '/config/notification'}
                 ]
             },
             {
                 items: [
                     {
-                        text: '参与开发',
+                        text: '🛠️ 参与开发',
                         items: [
-                            {text: '基本流程', link: '/dev/basic'},
-                            {text: '环境配置', link: '/dev/env'},
-                            {text: '开始开发', link: '/dev/start'},
-                            {text: '本地编译', link: '/dev/build'},
-                            {text: '第三方 WebUI', link: '/dev/webui'},
+                            {text: '🛠️ 基本流程', link: '/dev/basic'},
+                            {text: '🧰 环境配置', link: '/dev/env'},
+                            {text: '🚀 开始开发', link: '/dev/start'},
+                            {text: '📦 本地编译', link: '/dev/build'},
+                            {text: '🎨 第三方 WebUI', link: '/dev/webui'},
                         ]
                     },
-                    {text: '常见问题', link: '/faq'},
-                    {text: '更新历史', link: '/history'},
-                    {text: '忘记密码', link: '/change-the-password'},
-                    {text: '其他', link: '/other'}
+                    {text: '❓ 常见问题', link: '/faq'},
+                    {text: '🕘 更新历史', link: '/history'},
+                    {text: '🔑 忘记密码', link: '/change-the-password'},
+                    {text: 'ℹ️ 其他', link: '/other'}
                 ]
             }
         ],

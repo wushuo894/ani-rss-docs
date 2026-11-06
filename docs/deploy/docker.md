@@ -1,4 +1,4 @@
-# Docker 部署
+# 🐳 Docker 部署
 
 <div>
 
@@ -10,12 +10,12 @@
 <img src="/image/screenshot/screenshot.webp" alt="screenshot" class="light-only">
 <img src="/image/screenshot/screenshot-dark.webp" alt="screenshot-dark" class="dark-only">
 
-::: info 默认账号
+::: info ℹ️ 默认账号
 
 用户名: `admin` 密码: `admin`
 :::
 
-::: warning 
+::: warning ⚠️ 注意
 
 **使用 Docker 部署时，务必让 `ani-rss` 与 `下载器` 的挂载路径保持一致**
 :::
@@ -31,7 +31,7 @@
 </div>
 </div>
 
-::: info
+::: info ℹ️ 说明
 
 - **eclipse-temurin**：拥有更小的镜像体积
 - **ibm-semeru-runtimes**：拥有更少的内存占用
@@ -113,7 +113,7 @@ docker run -d \
 
 :::
 
-::: info 启动容器
+::: info ℹ️ 启动容器
 
 ```bash
 docker compose up -d
@@ -121,7 +121,7 @@ docker compose up -d
 
 :::
 
-::: info
+::: info ℹ️ 说明
 如需对 Docker 容器内的 `ani-rss` 设置本机跳过身份验证，请留意登录日志内的 IP 信息。
 :::
 
@@ -136,7 +136,7 @@ docker compose up -d
 | 保存位置       | `/Media/番剧/${title}/Season ${season}` |
 | 剧场版保存位置 | `/Media/剧场版/${title}`                |
 
-::: info
+::: info ℹ️ 说明
 初次启动时 `qBittorrent` 会为 `admin` 用户生成一个随机密码，请查看容器日志获取初始密码。
 :::
 

@@ -1,10 +1,10 @@
-# 其他配置
+# 🔧 其他配置
 
 ## Mikan 域名
 
 自定义 Mikan 的访问域名，支持使用第三方镜像站或自建服务。
 
-::: info **推荐镜像站：** `https://mikan.sakiko.de/`
+::: info ℹ️ **推荐镜像站：** `https://mikan.sakiko.de/`
 
 可以设置为第三方蜜柑镜像站或您自己搭建的服务
 :::
@@ -21,7 +21,7 @@
 
 此设置现位于“基本设置 → Bangumi”，支持手工输入和自动获取、续期两种方式。配置步骤见[Bangumi 设置](/config/basic/bangumi)。
 
-::: info
+::: info ℹ️ 说明
 
 **自动点格子功能：** 设置 BgmToken 与 Emby Webhook 后，支持自动在 Bangumi 上标记观看进度
 :::
@@ -42,7 +42,7 @@
 
 **如何查看 ApiKey：** 请参考 [API 密钥获取方法](/config/security#api-key)
 
-::: info
+::: info ℹ️ 说明
 
 **最佳实践：** 保持 Emby 与 ani-rss 的映射路径一致，可以获得更好的同步效果
 :::
@@ -69,7 +69,7 @@
 
 系统将在每天 06:00 自动检查并更新程序。
 
-::: info
+::: info ℹ️ 说明
 
 **更新范围：** 仅进行小版本号更新（如：`1.2.x`），不会自动更新主版本号
 :::

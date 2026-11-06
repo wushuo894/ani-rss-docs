@@ -1,8 +1,8 @@
-# 本地编译指南
+# 📦 本地编译指南
 
 ## 编译代码
 
-::: tip Windows须知
+::: tip 💡 Windows须知
 由于编译过程需要使用 Unix/GNU 命令，如果你使用的是 Windows 系统，请将以下路径添加到系统环境变量 `PATH` 中；macOS/Linux
 用户可忽略此步骤。
 
@@ -20,7 +20,7 @@ C:\Program Files\Git\mingw64\bin
 mvn -B package -DskipTests --file pom.xml
 ```
 
-::: info 编译成功标志
+::: info ℹ️ 编译成功标志
 当出现 `BUILD SUCCESS` 提示时，表示编译成功。
 
 编译结果存放在 `ani-rss-application/target` 文件夹下：

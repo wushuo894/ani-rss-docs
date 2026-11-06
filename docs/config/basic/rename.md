@@ -1,4 +1,4 @@
-# 重命名设置
+# 🏷️ 重命名设置
 
 自动命名视频和字幕文件，便于媒体库刮削识别
 
@@ -15,7 +15,7 @@
 
 启用后，下载完成的文件将根据模板自动重命名
 
-::: info
+::: info ℹ️ 说明
 重命名操作不会影响 BT 做种
 :::
 
@@ -31,7 +31,7 @@
 
 ### 重命名模板 {#rename-template}
 
-::: info 默认模板
+::: info 📝 默认模板
 
 ```txt
 [${subgroup}] ${title} S${seasonFormat}E${episodeFormat}
@@ -39,7 +39,7 @@
 
 :::
 
-::: warning
+::: warning ⚠️ 注意
 模板中至少需要保留 `S${seasonFormat}E${episodeFormat}` 或 `S${season}E${episode}`，否则将无法正常重命名
 :::
 

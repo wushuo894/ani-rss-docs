@@ -1,26 +1,26 @@
 ---
 layout: home
-title: 首页
+title: 🏠 首页
 ---
 
 <div align="center">
 <img alt="icon.svg" height="80" width="80" src="./image/icon.svg"/>
 <h1>
-ANI-RSS
+📺 ANI-RSS
 </h1>
 <p align="center">
 基于RSS自动追番、订阅、下载、刮削、洗版
 </p>
 
-<a href="start">快速开始</a>
+<a href="start">🚀 快速开始</a>
 |
-<a href="add-rss">使用文档</a>
+<a href="add-rss">📖 使用文档</a>
 |
-<a href="faq">常见问题</a>
+<a href="faq">❓ 常见问题</a>
 |
-<a href="history">更新历史</a>
+<a href="history">🕘 更新历史</a>
 |
-<a href="dev/basic">参与开发</a>
+<a href="dev/basic">🛠️ 参与开发</a>
 
 <p></p>
 

@@ -1,4 +1,4 @@
-# macOS 部署
+# 🍎 macOS 部署
 
 ## 通过 Homebrew 安装
 
@@ -18,7 +18,7 @@ brew install --cask wushuo894/tap/ani-rss
 
 运行后， **菜单栏会出现程序图标**，可通过其打开浏览器
 
-::: details 遇到程序无法打开的提示
+::: details 📖 遇到程序无法打开的提示
 
 <img src="/image/macos-cannot-open.webp" alt="macos-cannot-open">
 
@@ -29,7 +29,7 @@ brew install --cask wushuo894/tap/ani-rss
 
 [macOS无法进行更新 Read-only file system](/faq#macos-update)
 
-::: info 默认账号
+::: info ℹ️ 默认账号
 
 用户名: `admin` 密码: `admin`
 :::

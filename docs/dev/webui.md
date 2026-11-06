@@ -1,4 +1,4 @@
-# 第三方 WebUI 制作标准与指南
+# 🎨 第三方 WebUI 制作标准与指南
 
 第三方 WebUI 是由 ANI-RSS 托管的静态前端，通过现有 API 操作订阅、下载和设置。可以使用 Vue、React 或原生
 JavaScript，发布时交付可直接运行的 ZIP 构建产物。

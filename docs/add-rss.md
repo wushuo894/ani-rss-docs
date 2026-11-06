@@ -1,6 +1,6 @@
-# 添加订阅
+# ➕ 添加订阅
 
-::: tip 浏览器扩展
+::: tip 🧩 浏览器扩展
 使用 Chrome 时，可以安装 [ANI-RSS Chrome 订阅助手](/chrome-extension)，直接从 AniBT、Mikan 和 AnimeGarden 的番剧页面选择字幕组并添加订阅。
 :::
 
@@ -28,7 +28,7 @@
 
 使用剧集组后，集标题将根据剧集组信息获取
 
-::: info 联动效果
+::: info 🔗 联动效果
 剧集组还会参与 TMDB 季、集元数据的获取，影响刮削生成的 [tvshow.nfo](/config/basic/scrape#tvshow-nfo) 等文件。
 :::
 
@@ -46,7 +46,7 @@
 
 [详细说明](/config/basic/rss#back-rss)
 
-::: warning 使用前提
+::: warning ⚠️ 使用前提
 如需使用备用 RSS，请前往设置中开启 [备用RSS](/config/basic/rss#back-rss) 功能
 :::
 
@@ -104,7 +104,7 @@
 
 由于剧场版命名与文件结构各异，故并不会使用重命名功能
 
-::: info Emby 兼容性
+::: info ℹ️ Emby 兼容性
 `Emby` 会自动根据文件夹名获取正确的剧场版元数据，因此不重命名也不影响刮削
 :::
 
@@ -142,7 +142,7 @@
 
 若有遗漏会自动发送通知
 
-::: warning 误判提醒
+::: warning ⚠️ 误判提醒
 缺少集数大于 10 个时可能是误判，因此不进行通知
 :::
 
