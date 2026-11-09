@@ -6,7 +6,8 @@
 
 ## 添加方式
 
-可以从 Mikan、AniBT、AnimeGarden 的选番页面选择作品与字幕组，也可以手工填写 RSS。RSS 解析完成后，会进入订阅编辑界面，确认标题、季、集数偏移、匹配规则和保存路径后再添加。
+可以从 Mikan、AniBT、AnimeGarden 的选番页面选择作品与字幕组，也可以手工填写 RSS。RSS
+解析完成后，会进入订阅编辑界面，确认标题、季、集数偏移、匹配规则和保存路径后再添加。
 
 多作品、多字幕组操作见[批量添加订阅](/batch-add)。使用整季种子补番时，可改用[合集下载](/collection)。
 
@@ -14,7 +15,8 @@
 
 重复判断包括订阅 ID 相同，或标题与季同时相同。添加默认不覆盖已有订阅，WebUI 检测到重复后会询问是否覆盖；取消则保留原订阅。
 
-第三方调用 `POST /api/addAni` 时，`override` 查询参数默认为 `false`，只有明确传入 `override=true` 才覆盖重复订阅。MCP 的 `add_subscription` 不提供覆盖参数，修改已有订阅应使用 `edit_subscription`。
+第三方调用 `POST /api/addAni` 时，`override` 查询参数默认为 `false`，只有明确传入 `override=true` 才覆盖重复订阅。MCP 的
+`add_subscription` 不提供覆盖参数，修改已有订阅应使用 `edit_subscription`。
 
 ## 标题
 
@@ -64,7 +66,8 @@
 
 开启 [自动剧集偏移](/config/basic/add#自动剧集偏移) 后，添加订阅时会自动填写主 RSS 和各个备用 RSS 的偏移，也可以手动调整。
 
-支持通过 [自动偏移类型](/config/basic/add#自动偏移类型) 选择从第 `1` 集开始编号的 `AutoOffset`，或跟随 Bangumi 正篇编号的 `BgmOffset`。使用 `BgmOffset` 时，若 Bangumi 的最小正篇集数大于 `1`，季会自动设为 `1`。
+支持通过 [自动偏移类型](/config/basic/add#自动偏移类型) 选择从第 `1` 集开始编号的 `Auto`，或跟随 Bangumi 正篇编号的
+`Bangumi`。使用 `Bangumi` 时，若 Bangumi 的最小正篇集数大于 `1`，季会自动设为 `1`。
 
 ## 总集数
 
@@ -92,7 +95,8 @@
 {{ANi}}:1080[Pp]
 ```
 
-该规则仅要求 `ANi` 条目的标题包含 `1080P` 或 `1080p`，其他字幕组不受该条规则限制。字幕组名称应与主 RSS 的字幕组名或备用 RSS 标签一致。
+该规则仅要求 `ANi` 条目的标题包含 `1080P` 或 `1080p`，其他字幕组不受该条规则限制。字幕组名称应与主 RSS 的字幕组名或备用
+RSS 标签一致。
 
 ## 全局排除
 
@@ -120,7 +124,8 @@
 
 ## 自定义上传
 
-为该订阅指定 OpenList 上传目标路径，覆盖上传通知中的全局目标路径。需要先配置[OpenList 上传通知](/config/notification#openlist-upload)。
+为该订阅指定 OpenList
+上传目标路径，覆盖上传通知中的全局目标路径。需要先配置[OpenList 上传通知](/config/notification#openlist-upload)。
 
 ## 自定义完结迁移
 
@@ -130,11 +135,13 @@
 
 - **重命名模板：** 开启后使用订阅自己的模板，变量见[重命名设置](/config/basic/rename#rename-template)。
 - **自定义标签：** 为下载任务添加标签，用于下载器中的筛选和管理。
-- **优先保留：** 开启订阅级设置后，使用该订阅的关键词列表替代全局列表；可从全局导入后再调整。仅用于 qBittorrent，见[优先保留](/config/download#priority-keywords)。
+- **优先保留：** 开启订阅级设置后，使用该订阅的关键词列表替代全局列表；可从全局导入后再调整。仅用于
+  qBittorrent，见[优先保留](/config/download#priority-keywords)。
 
 ## 通知、摸鱼与完结迁移开关
 
-订阅的“自定义 → 其它”中可单独控制通知、摸鱼检测和完结迁移。关闭“通知”会跳过该订阅的通知处理，也包括通过通知配置的文件移动和 OpenList 上传。摸鱼检测、完结迁移仍需对应的全局开关开启。
+订阅的“自定义 → 其它”中可单独控制通知、摸鱼检测和完结迁移。关闭“通知”会跳过该订阅的通知处理，也包括通过通知配置的文件移动和
+OpenList 上传。摸鱼检测、完结迁移仍需对应的全局开关开启。
 
 ## 遗漏检测
 
