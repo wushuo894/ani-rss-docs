@@ -78,7 +78,7 @@ ${emoji}${emoji}${emoji}
 
 ## 通知方式
 
-支持 Telegram、邮箱、Server 酱、Bark、Webhook、系统通知、Shell、Emby 媒体库刷新、文件移动和 OpenList 上传。
+支持 Telegram、邮箱、Server 酱、Bark、Webhook、AstrBot 推送、系统通知、Shell、Emby 媒体库刷新、文件移动和 OpenList 上传。
 
 <img src="/image/screenshot/notification-screenshot.webp" alt="notification-screenshot" class="light-only dialog-screenshot">
 <img src="/image/screenshot/notification-screenshot-dark.webp" alt="notification-screenshot" class="dark-only dialog-screenshot">
@@ -130,6 +130,39 @@ ${emoji}${emoji}${emoji}
 ### Webhook
 
 设置 HTTP 方法、URL、Header 和 Body，可用于接入自己的消息服务。正文可使用本页的通知变量，`${notification}` 为生成的完整通知文字。JSON 请求需设置匹配的 Content-Type，并确保变量替换后的正文仍是有效 JSON。
+
+### AstrBot 推送 {#astrbot}
+
+通过 AstrBot OpenAPI 将通知发送到 AstrBot 已接入的消息平台。需要 AstrBot **v4.18.0 及以上版本**，并确保目标平台的机器人已连接。
+
+1. 在 AstrBot WebUI 的「设置 → OpenAPI」中创建 API Key，授予 `im` 权限并复制密钥。
+2. 在要接收通知的私聊或群聊中向机器人发送 `/sid`，复制返回的完整 UMO。
+3. 在 ANI-RSS 通知设置中添加通知，类型选择「AstrBot推送」，填写下表配置。
+4. 选择需要的[通知状态](#notification-status)，点击「测试」。测试会向目标会话实际发送消息，确认收到后保存设置。
+
+| 配置项 | 说明 |
+| --- | --- |
+| 服务地址 | ANI-RSS 可访问的 AstrBot 服务根地址，例如 `http://192.168.1.10:6185`；使用反向代理子路径时保留该前缀，无需填写 `/api/v1/im/message` |
+| API Key | AstrBot 创建的密钥，形如 `abk_xxx`，直接填写密钥，无需添加 `Bearer` 前缀 |
+| 目标 UMO | 从目标会话获取的完整标识，形如 `平台ID:消息类型:会话ID`，每条通知配置填写一个目标 |
+| 通知模版 | 默认 `${notification}`，复用全局通知模板，也可使用本页变量自定义消息内容 |
+
+通知模版按文本消息发送，换行和引号会自动处理。Markdown 符号会随正文原样传递，最终显示效果取决于目标消息平台。
+
+::: tip Docker 部署
+ANI-RSS 与 AstrBot 位于同一 Docker 网络时，可使用 AstrBot 的服务名，例如 `http://astrbot:6185`。分开部署时，填写 ANI-RSS 容器可访问的主机地址和映射端口。
+
+`127.0.0.1` 指 ANI-RSS 自身所在的容器，仅在 AstrBot 与其共享网络环境时适用。
+:::
+
+发送失败会在测试时反馈错误；事件推送失败时按通知配置重试。常见问题：
+
+- **HTTP 401：** 检查 API Key 是否填写正确、是否已被删除或撤销。
+- **HTTP 403：** 检查 API Key 是否具有 `im` 权限。
+- **HTTP 404 或响应格式不正确：** 检查服务地址、反向代理路径和 AstrBot 版本，确认填写的是服务根地址。
+- **目标会话未收到通知：** 确认 UMO 来自实际接收通知的会话、对应机器人已连接，并查看测试错误或 AstrBot 日志。
+
+更多接口说明见 [AstrBot HTTP API 文档](https://docs.astrbot.app/dev/openapi.html)。
 
 ### 系统通知
 
